@@ -21,6 +21,9 @@ On 4/23/2013, the requirements were: Ruby 1.9.3-p392; Rails 4.0.0.beta1
 
 4. Project is on Github at https://github.com/jasnow/atlrug4. (when I push it)
 
+5. Follow these instructions regarding Heroku and Rails 4.
+ * https://gist.github.com/peter/3025502
+
 == To Contribute
 
 1. Fork project on Github.
