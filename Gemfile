@@ -46,7 +46,7 @@ gem 'rest-client'
 gem 'haml'
 gem 'hassle3' 
 gem 'kgio'
-gem 'dalli'
+#U# gem 'dalli'
 gem 'tzinfo'
 gem 'thin'
 

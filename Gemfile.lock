@@ -36,7 +36,6 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     daemons (1.1.9)
-    dalli (2.6.2)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
@@ -120,7 +119,6 @@ PLATFORMS
 DEPENDENCIES
   activerecord-deprecated_finders
   coffee-rails (~> 4.0.0.beta1)
-  dalli
   haml
   hassle3
   jbuilder (~> 1.0.1)
