@@ -7,7 +7,7 @@ ruby "1.9.3"
 gem 'rails', '4.0.0.beta1'
 
 group :development, :test do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3'
 end
 
 group :production do
