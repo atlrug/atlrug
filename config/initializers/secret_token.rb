@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Atlrug4::Application.config.secret_key_base = ENV["AR4_S_K_B"]
+Atlrug4::Application.config.secret_key_base = ENV['AR4_S_K_B']
