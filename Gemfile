@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "1.9.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # NOTE (4/22/2013) : Previously used only 'actionpack', 'activesupport',
