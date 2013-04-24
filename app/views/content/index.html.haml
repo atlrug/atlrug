@@ -1,0 +1,21 @@
+.sections
+  %p.question How do I ... 
+  %h1
+    = link_to 'Go to a meeting?', '/meetings'
+  .detail= render 'meetings'
+  
+  %h1
+    = link_to 'Watch old presentations?', '/videos'
+  .detail= render 'videos'
+  
+  %h1
+    = link_to 'Learn Ruby?', '/learn'
+  .detail= render 'learn'
+  
+  %h1 
+    = link_to 'Get a job?', '/job'
+  .detail= render 'job'
+  
+  %h1 
+    = link_to 'Hire someone?', '/hire'
+  .detail= render 'hire'

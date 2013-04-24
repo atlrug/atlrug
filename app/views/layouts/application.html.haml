@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title Atlanta Ruby Users' Group
+
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+
+    %script{:type=>"text/javascript", :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
+    = javascript_include_tag 'application'
+    = csrf_meta_tag
+
+  %body
+    #tweet
+      %a{:href=>"http://twitter.com/atlrug", :class=> "twitter-follow-button", :'data-show-count'=> "false"} Follow @atlrug
+      %script{:src=> "http://platform.twitter.com/widgets.js", :type=>"text/javascript"}
+    #sidebar
+      #masthead
+        %a{:href => '/'}
+          =image_tag "gem-small.png", :alt => 'Atlanta Ruby Logo'
+    #main= yield
+    #footer
+      = render 'sponsors'
