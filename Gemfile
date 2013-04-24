@@ -6,7 +6,9 @@ ruby "1.9.3"
 #    'railties' and 'bundler' instead of whole rails stack.
 gem 'rails', '4.0.0.beta1'
 
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+end
 
 group :production do
   gem 'pg'
