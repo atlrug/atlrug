@@ -34,9 +34,6 @@ Atlrug4::Application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
-#U#   # Log error messages when you accidentally call methods on nil.
-#U#   config.whiny_nils = true
-#U#
 #U#   # Use SQL instead of Active Record's schema dumper when creating the test database.
 #U#   # This is necessary if your schema can't be completely dumped by the schema dumper,
 #U#   # like if you have constraints or database-specific column types

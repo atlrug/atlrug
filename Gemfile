@@ -22,6 +22,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'activerecord-deprecated_finders'
+
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read
@@ -36,18 +38,13 @@ gem 'jbuilder', '~> 1.0.1'
 gem 'rest-client'
 gem 'haml'
 gem 'hassle3' 
-#U#, :git => 'git://github.com/koppen/hassle.git'
 gem 'kgio'
 gem 'dalli'
 gem 'tzinfo'
 gem 'thin'
 
-#U# group :development, :test do
-#U#   gem 'webrat'
-#U#   gem 'ruby-debug19'
-#U# end
-
 ######################################################################
+# 4/24/2013: The following was created by "rails new" command.
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 #

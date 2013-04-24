@@ -24,12 +24,4 @@ Atlrug4::Application.configure do
 
   # Debug mode disables concatenation and preprocessing of assets.
   config.assets.debug = true
-
-#U#   config.action_view.debug_rjs             = true
-#U#
-#U#   # Log error messages when you accidentally call methods on nil.
-#U#   config.whiny_nils = true
-#U#
-#U#   # Only use best-standards-support built into browsers
-#U#   config.action_dispatch.best_standards_support = :builtin
 end

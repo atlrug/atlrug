@@ -2,9 +2,8 @@ Atlrug4::Application.routes.draw do
 
   root :to => "content#index"
 
-#U#
-#  get "contents#meetings"
-#  get "contents#videos"
+  get '/meetings' => 'content#meetings'
+  get '/videos' => 'content#videos'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

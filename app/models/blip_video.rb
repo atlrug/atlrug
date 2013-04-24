@@ -3,7 +3,7 @@ require 'cacheable'
 
 class BlipVideo
   include Cacheable
-  
+
   def self.all
     result = memcached('blip-all') do
       RestClient.get 'http://blip.tv/posts/?user=skiptree&skin=json&pagelen=5'
