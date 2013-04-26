@@ -1,4 +1,4 @@
-= ATLRUG4
+= atlrug Web Site (atlrug4)
 
 This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group).
 
@@ -24,6 +24,10 @@ On 4/23/2013, the requirements were: Ruby 1.9.3-p392; Rails 4.0.0.beta1
 5. Follow these instructions regarding Heroku and Rails 4.
  * https://gist.github.com/peter/3025502
 
+6. You have two env variable to set:
+ * AR4_S_K_B (secret key base)
+ * meetup (meetup.com api key)
+
 == To Contribute
 
 1. Fork project on Github.
@@ -42,5 +46,5 @@ If you have questions, please use this Google group: atlrug-website@googlegroups
 
 == License
 
-Atlrug4 is released under the MIT License. http://www.opensource.org/licenses/mit-license
+atlrug4 is released under the MIT License. http://www.opensource.org/licenses/mit-license
 
