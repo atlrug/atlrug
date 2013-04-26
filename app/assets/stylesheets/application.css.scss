@@ -1,8 +1,12 @@
+@import "reset";
+@import "mixins";
+
 body {
   font: normal normal normal 0.8125em/normal Verdana, sans-serif;
 }
 
 a {
+  @include hover-link;
   color: rgb(168,68,46);
 }
 
