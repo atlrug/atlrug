@@ -1,0 +1,2 @@
+# Find your key at http://www.meetup.com/meetup_api/key/
+meetup: ENV['MEETUP_UP_VALUE']
