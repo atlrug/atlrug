@@ -26,7 +26,7 @@ On 4/26/2013, the requirements were: Ruby 2.0.0-p0; Rails 4.0.0.beta1
 
 6. You have two env variable to set:
  * AR4_S_K_B (secret key base)
- * meetup (meetup.com api key)
+ * MEETUP_KEY (ENV var for meetup.com api key)
 
 == To Contribute
 

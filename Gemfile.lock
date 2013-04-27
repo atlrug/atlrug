@@ -28,6 +28,8 @@ GEM
     arel (4.0.0)
     atomic (1.1.8)
     builder (3.1.4)
+    cane (2.5.2)
+      parallel
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -62,6 +64,7 @@ GEM
     mime-types (1.23)
     minitest (4.7.3)
     multi_json (1.7.2)
+    parallel (0.6.4)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -125,6 +128,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-deprecated_finders
+  cane
   coffee-rails (~> 4.0.0.beta1)
   dalli
   haml

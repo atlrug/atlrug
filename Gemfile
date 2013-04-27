@@ -8,6 +8,7 @@ gem 'rails', '4.0.0.beta1'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'cane'
 end
 
 group :production do
