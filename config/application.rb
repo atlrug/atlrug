@@ -1,18 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-#U# # require 'rails/all'
-#U# require "action_controller/railtie"
-#U# # require "action_mailer/railtie"
-#U# # require "active_resource/railtie"
-#U# require "rails/test_unit/railtie"
 
 # Assets should be precompiled for production (so we don't need the gems loaded then)
 Bundler.require(*Rails.groups(assets: %w(development test)))
-
-#U# # If you have a Gemfile, require the gems listed there, including any gems
-#U# # you've limited to :test, :development, or :production.
-#U# Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Atlrug4
   class Application < Rails::Application
@@ -32,22 +23,5 @@ module Atlrug4
     config.autoload_paths += %W(#{config.root}/lib)
 
     config.assets.initialize_on_precompile = true
-
-#U#     # Only load the plugins named here, in the order given (default is alphabetical).
-#U#     # :all can be used as a placeholder for all plugins not explicitly named.
-#U#     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
-#U# 
-#U#     # Activate observers that should always be running.
-#U#     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
-#U# 
-#U#     # JavaScript files you want as :defaults (application.js is always included).
-#U#     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
-#U# 
-#U#     # Configure the default encoding used in templates for Ruby 1.9.
-#U#     config.encoding = "utf-8"
-#U# 
-#U#     # Configure sensitive parameters which will be filtered from the log file.
-#U#     config.filter_parameters += [:password]
-
   end
 end

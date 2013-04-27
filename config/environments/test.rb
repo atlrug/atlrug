@@ -33,9 +33,4 @@ Atlrug4::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
-
-#U#   # Use SQL instead of Active Record's schema dumper when creating the test database.
-#U#   # This is necessary if your schema can't be completely dumped by the schema dumper,
-#U#   # like if you have constraints or database-specific column types
-#U#   # config.active_record.schema_format = :sql
 end
