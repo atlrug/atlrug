@@ -8,7 +8,27 @@ gem 'rails', '4.0.0.beta1'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'cane'
+  gem 'rails-footnotes', '>= 3.7.5.rc4'
+
+  gem "capybara"
+  gem 'capybara-screenshot' 
+
+  gem "email_spec", ">= 1.2.1"
+
+  gem "autotest-rails"
+  gem "autotest-fsevent"
+  gem "autotest-growl"
+
+  gem "cucumber-rails", :require => false, :git =>
+    'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
+  gem "database_cleaner", ">= 0.8.0", :git => 'https://github.com/bmabey/database_cleaner.git'
+
+  gem "factory_girl_rails", ">= 4.0.0"
+  gem "launchy", ">= 2.1.2"
+  gem "letter_opener", :git => 'git://github.com/ryanb/letter_opener.git'
+
+  gem 'simplecov', :require => false
+  gem 'simplecov-json', :require => false
 end
 
 group :production do

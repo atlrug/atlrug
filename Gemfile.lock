@@ -1,6 +1,31 @@
+GIT
+  remote: git://github.com/ryanb/letter_opener.git
+  revision: 075ebe2b3387dab392fbb0b53daf783e3ddd844b
+  specs:
+    letter_opener (1.1.0)
+      launchy (~> 2.2.0)
+
+GIT
+  remote: https://github.com/bmabey/database_cleaner.git
+  revision: 20136e8987c222013d96e07c27d1230d2bbebd61
+  specs:
+    database_cleaner (0.9.1)
+
+GIT
+  remote: https://github.com/cucumber/cucumber-rails.git
+  revision: d5bded34c28b8c5d3541aee7cb047da7870209a1
+  branch: master_rails4_test
+  specs:
+    cucumber-rails (1.3.1)
+      capybara (>= 1.1.2)
+      cucumber (>= 1.2.0)
+      nokogiri (>= 1.5.0)
+      rails (>= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    ZenTest (4.9.1)
     actionmailer (4.0.0.beta1)
       actionpack (= 4.0.0.beta1)
       mail (~> 2.5.3)
@@ -25,11 +50,23 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.33)
+    addressable (2.3.4)
     arel (4.0.0)
     atomic (1.1.8)
+    autotest-fsevent (0.2.8)
+      sys-uname
+    autotest-growl (0.2.16)
+    autotest-rails (4.1.2)
+      ZenTest (~> 4.5)
     builder (3.1.4)
-    cane (2.5.2)
-      parallel
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    capybara-screenshot (0.3.6)
+      capybara (>= 1.0, < 3)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -37,12 +74,29 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    cucumber (1.3.1)
+      builder (>= 2.1.2)
+      diff-lcs (>= 1.1.3)
+      gherkin (~> 2.12.0)
+      multi_json (~> 1.3)
     daemons (1.1.9)
     dalli (2.6.2)
+    diff-lcs (1.1.3)
+    email_spec (1.4.0)
+      launchy (~> 2.1)
+      mail (~> 2.2)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
+    ffi (1.8.1)
+    gherkin (2.12.0)
+      multi_json (~> 1.3)
     haml (4.0.2)
       tilt
     hassle3 (0.0.2)
@@ -57,6 +111,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.7.7)
     kgio (2.8.0)
+    launchy (2.2.0)
+      addressable (~> 2.3)
     mail (2.5.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -64,7 +120,7 @@ GEM
     mime-types (1.23)
     minitest (4.7.3)
     multi_json (1.7.2)
-    parallel (0.6.4)
+    nokogiri (1.5.9)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -78,6 +134,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.0.beta1)
       sprockets-rails (~> 2.0.0.rc3)
+    rails-footnotes (3.7.9)
+      rails (>= 3.0.0)
     railties (4.0.0.beta1)
       actionpack (= 4.0.0.beta1)
       activesupport (= 4.0.0.beta1)
@@ -95,6 +153,13 @@ GEM
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0.rc0)
       tilt (~> 1.3)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
+    simplecov-json (0.1.1)
+      json
+      simplecov
     sprockets (2.9.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -105,6 +170,8 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     sqlite3 (1.3.7)
+    sys-uname (0.9.1)
+      ffi (>= 1.0.0)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -122,24 +189,39 @@ GEM
     uglifier (2.0.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activerecord-deprecated_finders
-  cane
+  autotest-fsevent
+  autotest-growl
+  autotest-rails
+  capybara
+  capybara-screenshot
   coffee-rails (~> 4.0.0.beta1)
+  cucumber-rails!
   dalli
+  database_cleaner (>= 0.8.0)!
+  email_spec (>= 1.2.1)
+  factory_girl_rails (>= 4.0.0)
   haml
   hassle3
   jbuilder (~> 1.0.1)
   jquery-rails
   kgio
+  launchy (>= 2.1.2)
+  letter_opener!
   pg
   rails (= 4.0.0.beta1)
+  rails-footnotes (>= 3.7.5.rc4)
   rest-client
   sass-rails (~> 4.0.0.beta1)
+  simplecov
+  simplecov-json
   sqlite3
   thin
   turbolinks
