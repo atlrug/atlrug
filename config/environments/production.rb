@@ -78,5 +78,5 @@ Atlrug4::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  MEMCACHED = Dalli::Client.new rescue nil
+  #4/27/2013: HID FOR NOW: MEMCACHED = Dalli::Client.new rescue nil
 end
