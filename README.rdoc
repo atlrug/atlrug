@@ -2,7 +2,7 @@
 
 This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group).
 
-{<img src="https://travis-ci.org/jasnow/atlrug4.png" />}[http://travis-ci.org/jasnow/atlrug4.png]
+{<img src="https://travis-ci.org/jasnow/altrug4.png" />}[https://travis-ci.org/jasnow/atlrug4.png]
 
 {<img src="https://gemnasium.com/jasnow/atlrug4.png" />}[https://gemnasium.com/jasnow/atlrug4.png]
 
