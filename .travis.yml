@@ -1,12 +1,17 @@
+---
 language: ruby
-
 rvm:
-  - 1.9.3
-  - 2.0.0
-
+- 1.9.3
+- 2.0.0
 notifications:
   email:
     recipients:
-      - jasnow@hotmail.com
+    - jasnow@hotmail.com
     on_success: change
     on_failure: always
+env:
+  global:
+  - secure: |-
+      ICdl02RfrcuVQICMxXVk7PpzBjKpzDxvOn9MAsyGYwnanFv7J2s7CxP2okDW
+      Rmcpm5uq6iVTjT2jAl7XIExgRziZdpnIs3BzQodmmVzyKt1mPXIYlkzL6ReZ
+      o/Lzjsf0mg4GbUKQQ1LMclLQ1zOrEPvaCWoChdldvmqN49A7LHs=
