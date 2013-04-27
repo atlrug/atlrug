@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # NOTE (4/22/2013) : Previously used only 'actionpack', 'activesupport',
 #    'railties' and 'bundler' instead of whole rails stack.
 gem 'rails', '4.0.0.beta1'
+ruby "2.0.0"
 
 group :development, :test do
   gem 'sqlite3'
