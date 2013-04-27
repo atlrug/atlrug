@@ -44,6 +44,7 @@ On 4/26/2013, the requirements were: Ruby 2.0.0-p0; Rails 4.0.0.beta1
 
 If you have questions, please use this Google group: atlrug-website@googlegroups.com
 
+
 == License
 
 atlrug4 is released under the MIT License. http://www.opensource.org/licenses/mit-license
