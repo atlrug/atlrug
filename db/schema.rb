@@ -11,6 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20120322034209) do
+
+  create_table "talks", force: true do |t|
+    t.string   "title"
+    t.integer  "duration"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "email"
+    t.string   "twitter"
+    t.text     "description"
+    t.boolean  "approved",    default: false
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "uid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "github_login"
+    t.string   "github_token"
+  end
 
 end

@@ -5,6 +5,16 @@ Atlrug4::Application.routes.draw do
   get '/meetings' => 'content#meetings'
   get '/videos' => 'content#videos'
 
+  resources :talks, :only => [:new, :create] do
+    get :approve, :on => :collection
+    put :accept, :on => :member
+  end
+
+  get '/auth/:provider/callback', :to => 'sessions#create'
+  get "/pages/*id" => 'pages#show', :as => :page, :format => false
+  get '/login' => redirect('/auth/github'), :as => :login
+  get '/log_out' => 'sessions#destroy', :as => :log_out
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

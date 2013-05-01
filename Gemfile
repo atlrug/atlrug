@@ -10,6 +10,9 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rails-footnotes', '>= 3.7.5.rc4'
 
+  gem 'rspec-rails', "~> 2.0"
+  gem 'pry'
+
   gem "capybara"
   gem 'capybara-screenshot' 
 
@@ -21,7 +24,7 @@ group :development, :test do
 
   gem "cucumber-rails", :require => false, :git =>
     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
-  gem "database_cleaner", ">= 0.8.0", :git => 'https://github.com/bmabey/database_cleaner.git'
+  #BROKEN: gem "database_cleaner", ">= 0.8.0", :git => 'https://github.com/bmabey/database_cleaner.git'
 
   gem "factory_girl_rails", ">= 4.0.0"
   gem "launchy", ">= 2.1.2"
@@ -35,6 +38,14 @@ group :production do
   gem 'pg'
 end
 
+#gem 'slim'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'octokit'
+gem 'high_voltage'
+gem 'simple_form'
+gem 'unicorn'
+
 # Gems used only for assets and not required
 #    in production environments by default.
 group :assets do
@@ -44,11 +55,15 @@ group :assets do
   gem 'coffee-rails', '~> 4.0.0.beta1'
   gem 'sass-rails', '~> 4.0.0.beta1'
 
+  gem 'uglifier', '>= 1.0.3'
+
   # See https://github.com/sstephenson/execjs#readme for more
   #    supported runtimes
   # gem 'therubyracer', platforms: :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem "therubyracer"
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
 end
 
 gem 'activerecord-deprecated_finders'
@@ -85,3 +100,4 @@ gem 'thin'
 #
 # To use debugger
 # gem 'debugger'
+

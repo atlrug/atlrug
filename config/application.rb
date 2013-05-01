@@ -22,6 +22,8 @@ module Atlrug4
     # Custom directories with classes and modules you want to be autoloadable.
     config.autoload_paths += %W(#{config.root}/lib)
 
+    config.filter_parameters += [:password]
+
     config.assets.initialize_on_precompile = true
   end
 end
