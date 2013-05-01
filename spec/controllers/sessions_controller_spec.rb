@@ -9,7 +9,7 @@ describe SessionsController do
                     { 'uid' => uid, 'info' => { 'name' => name, 'nickname' => login },
                       'credentials' => { 'token' => token } }
                   }
-  let(:user)      { create(:user) }
+  let(:user)      { FactoryGirl.create(:user) }
 
   describe '#create' do
     before { user.stub(:atlrug_organizer? => true) }

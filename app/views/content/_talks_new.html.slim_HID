@@ -1,6 +1,6 @@
 h2 Interested in speaking?
 
-p Please fill out this form, and Mike will get back to you as soon as he can.
+p Please fill out this form, and group leader will get back to you as soon as he can.
 
 = simple_form_for @talk, :html => {:class => 'form-horizontal'} do |f|
   fieldset
