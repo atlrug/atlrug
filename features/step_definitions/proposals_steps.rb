@@ -5,7 +5,7 @@ When /^I submit a talk named "([^\"]*)" with length of (\d+) minutes$/ do |title
   fill_in "Email", :with => 'mike@atlrug.com'
   fill_in "Twitter Username", :with => 'skalnik'
   fill_in "Description", :with => 'This talk will blow your mind!'
-  #click_button "Submit Proposal"
+  #U# click_button "Submit Proposal"
 end
 
 Then /^I should see the talk was submitted successfully$/ do
