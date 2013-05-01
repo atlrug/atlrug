@@ -24,7 +24,7 @@ group :development, :test do
 
   gem "cucumber-rails", :require => false, :git =>
     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
-  #BROKEN: gem "database_cleaner", ">= 0.8.0", :git => 'https://github.com/bmabey/database_cleaner.git'
+  #4/30/2013: BROKEN: gem "database_cleaner", ">= 0.8.0", :git => 'https://github.com/bmabey/database_cleaner.git'
 
   gem "factory_girl_rails", ">= 4.0.0"
   gem "launchy", ">= 2.1.2"
@@ -38,7 +38,7 @@ group :production do
   gem 'pg'
 end
 
-#gem 'slim'
+gem 'slim'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'octokit'
@@ -49,17 +49,10 @@ gem 'unicorn'
 # Gems used only for assets and not required
 #    in production environments by default.
 group :assets do
-
-  # NOTE: Removed sass and compass.
-
   gem 'coffee-rails', '~> 4.0.0.beta1'
   gem 'sass-rails', '~> 4.0.0.beta1'
 
   gem 'uglifier', '>= 1.0.3'
-
-  # See https://github.com/sstephenson/execjs#readme for more
-  #    supported runtimes
-  # gem 'therubyracer', platforms: :ruby
 
   gem "therubyracer"
   gem 'less-rails'
