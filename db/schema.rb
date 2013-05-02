@@ -11,7 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20120322034209) do
+ActiveRecord::Schema.define(version: 20130502202542) do
+
+  create_table "comments", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "holder_id"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.string   "commentable_url"
+    t.string   "commentable_title"
+    t.string   "commentable_state"
+    t.string   "anchor"
+    t.string   "title"
+    t.string   "contacts"
+    t.text     "raw_content"
+    t.text     "content"
+    t.string   "view_token"
+    t.string   "state",             default: "draft"
+    t.string   "ip",                default: "undefined"
+    t.string   "referer",           default: "undefined"
+    t.string   "user_agent",        default: "undefined"
+    t.integer  "tolerance_time"
+    t.boolean  "spam",              default: false
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth",             default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ip_black_lists", force: true do |t|
+    t.string  "ip"
+    t.integer "count", default: 0
+    t.string  "state", default: "warning"
+  end
 
   create_table "talks", force: true do |t|
     t.string   "title"
@@ -24,6 +58,12 @@ ActiveRecord::Schema.define(version: 20120322034209) do
     t.boolean  "approved",    default: false
   end
 
+  create_table "user_agent_black_lists", force: true do |t|
+    t.string  "user_agent"
+    t.integer "count",      default: 0
+    t.string  "state",      default: "warning"
+  end
+
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "uid"
@@ -31,6 +71,11 @@ ActiveRecord::Schema.define(version: 20120322034209) do
     t.datetime "updated_at"
     t.string   "github_login"
     t.string   "github_token"
+    t.integer  "my_comments_count",       default: 0
+    t.integer  "draft_comcoms_count",     default: 0
+    t.integer  "published_comcoms_count", default: 0
+    t.integer  "deleted_comcoms_count",   default: 0
+    t.integer  "spam_comcoms_count",      default: 0
   end
 
 end

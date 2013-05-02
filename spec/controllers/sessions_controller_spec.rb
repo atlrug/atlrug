@@ -6,7 +6,8 @@ describe SessionsController do
   let(:login)     { 'skalnik' }
   let(:token)     { 'abcedf123456' }
   let(:auth_hash) {
-                    { 'uid' => uid, 'info' => { 'name' => name, 'nickname' => login },
+                    { 'uid' => uid, 'info' => { 'name' => name,
+                      'nickname' => login },
                       'credentials' => { 'token' => token } }
                   }
   let(:user)      { FactoryGirl.create(:user) }

@@ -1,9 +1,12 @@
 class User < ActiveRecord::Base
+  include TheCommentsUser
+
   validates :uid, :uniqueness => true
 
   def atlrug_organizer?
     if atlrug_team_id
-      octokit.team_members(atlrug_team_id).detect { |member| member.id.to_i == uid.to_i }
+      octokit.team_members(atlrug_team_id).detect {
+        |member| member.id.to_i == uid.to_i }
     end
   end
 
@@ -14,7 +17,19 @@ class User < ActiveRecord::Base
   end
 
   def octokit
-    @client ||= Octokit::Client.new(:login => github_login, :oauth_token => github_token)
+    @client ||= Octokit::Client.new(:login => github_login,
+      :oauth_token => github_token)
+  end
+
+  # The_comments: Implementation of role policy
+  def admin?
+    self == User.first
+  end
+
+  # The_comments: Comments moderator checking (simple example)
+  #    Usually comment's holder should be moderator.
+  def comment_moderator? comment
+    admin? || id == comment.holder_id
   end
 
   class << self

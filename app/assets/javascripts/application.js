@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require the_comments
+//= require the_comments_manage
 //= require turbolinks
 //= require_tree .
 

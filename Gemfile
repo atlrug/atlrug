@@ -80,6 +80,10 @@ gem 'dalli'
 gem 'tzinfo'
 gem 'thin'
 
+# "the_comments" uses haml gem for default views.
+gem 'awesome_nested_set'
+gem 'the_comments'
+
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.
 # To use ActiveModel has_secure_password

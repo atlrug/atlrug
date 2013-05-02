@@ -1,0 +1,4 @@
+%h1= @blog.title
+%p=  @blog.content
+
+= render partial: 'the_comments/tree', locals: { commentable: @blog, comments_tree: @comments }
