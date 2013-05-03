@@ -1,5 +1,14 @@
-#talks
-  %h1 TALKS (TBD)
-  %h3 TBD
-  %p 
-    TBD
+#videos
+  - if @most_recent_video
+    %h1
+      %a{:href => @most_recent_video['url']}= @most_recent_video['title']
+    %embed{:src=> @most_recent_video['embedUrl'], :type=>"application/x-shockwave-flash", :width=>"480", :height=>"320", :allowscriptaccess=>"always", :allowfullscreen=>"true"}
+    - if @other_videos.any?
+      %h3 Other videos
+      %ul
+        - @other_videos.each do |video|
+          %li
+            %a{:href => video['url']}= video['title']
+    %h2
+      See more on
+      = link_to 'Blip.tv', 'http://skiptree.blip.tv'

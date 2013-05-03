@@ -1,0 +1,12 @@
+h1 Looking for a Job?
+
+h2 Our sponsors are usually hiring!
+p
+  ' Check the
+  = link_to "Sponsors Page", page_path('sponsors')
+  |.
+
+h2 Networking
+p Networking sounds like an MBA buzzword, but it is as easy as coming to a
+  meeting and talking about what interests you in software. We encourage you to
+  come and ask people about their jobs.
