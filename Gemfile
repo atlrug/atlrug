@@ -38,12 +38,12 @@ group :production do
   gem 'pg'
 end
 
-#U# gem "slim", "~> 1.3.8"
-#U# gem 'omniauth'
-#U# gem 'omniauth-github'
+gem "slim", "~> 1.3.8"
+gem 'omniauth'
+gem 'omniauth-github'
 gem 'octokit'
 #U# gem 'high_voltage'
-#U# gem 'simple_form'
+gem 'simple_form'
 #U# gem 'unicorn'
 
 # Gems used only for assets and not required

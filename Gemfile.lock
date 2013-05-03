@@ -104,6 +104,7 @@ GEM
       haml
       rack
     hike (1.2.2)
+    httpauth (0.2.0)
     i18n (0.6.4)
     jbuilder (1.3.0)
       activesupport (>= 3.0.0)
@@ -112,6 +113,8 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.7)
+    jwt (0.1.8)
+      multi_json (>= 1.5)
     kgio (2.8.0)
     launchy (2.2.0)
       addressable (~> 2.3)
@@ -126,6 +129,12 @@ GEM
     multipart-post (1.2.0)
     netrc (0.7.7)
     nokogiri (1.5.9)
+    oauth2 (0.8.1)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
     octokit (1.24.0)
       addressable (~> 2.2)
       faraday (~> 0.8)
@@ -133,6 +142,15 @@ GEM
       hashie (~> 2.0)
       multi_json (~> 1.3)
       netrc (~> 0.7.7)
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
+    omniauth-github (1.1.0)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.8.0)
+      omniauth (~> 1.0)
     pg (0.15.1)
     polyglot (0.3.3)
     pry (0.9.12.1)
@@ -177,6 +195,7 @@ GEM
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0.rc0)
       tilt (~> 1.3)
+    simple_form (1.4.1)
     simplecov (0.7.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
@@ -184,6 +203,9 @@ GEM
     simplecov-json (0.1.1)
       json
       simplecov
+    slim (1.3.8)
+      temple (~> 0.6.3)
+      tilt (~> 1.3.3)
     slop (3.4.4)
     sprockets (2.9.3)
       hike (~> 1.2)
@@ -197,6 +219,7 @@ GEM
     sqlite3 (1.3.7)
     sys-uname (0.9.2)
       ffi (>= 1.0.0)
+    temple (0.6.4)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -204,7 +227,7 @@ GEM
     thor (0.18.1)
     thread_safe (0.1.0)
       atomic
-    tilt (1.4.0)
+    tilt (1.3.7)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -241,6 +264,8 @@ DEPENDENCIES
   launchy (>= 2.1.2)
   letter_opener!
   octokit
+  omniauth
+  omniauth-github
   pg
   pry
   rails (= 4.0.0.rc1)
@@ -248,8 +273,10 @@ DEPENDENCIES
   rest-client
   rspec-rails (~> 2.0)
   sass-rails (~> 4.0.0.beta1)
+  simple_form
   simplecov
   simplecov-json
+  slim (~> 1.3.8)
   sqlite3
   thin
   turbolinks
