@@ -7,7 +7,6 @@ Feature: Visit Web Site
     When I go to the home page
     Then I should see "How do I ..."
     Then I should see "Go to a meeting?"
-    Then I should see "Give a talk?"
     Then I should see "Watch old presentations?"
     Then I should see "Learn Ruby?"
     Then I should see "Get a job?"
