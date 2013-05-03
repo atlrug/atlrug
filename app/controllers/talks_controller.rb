@@ -16,9 +16,4 @@ class TalksController < ApplicationController
   def approve
     @talks = Talk.pending.map { |talk| TalkDecorator.new(talk) }
   end
-
-private
-  def talk_params
-    params.require(:talk).permit(:title, :duration, :email, :description, :twitter)
-  end
 end
