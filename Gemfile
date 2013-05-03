@@ -3,12 +3,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # NOTE (4/22/2013) : Previously used only 'actionpack', 'activesupport',
 #    'railties' and 'bundler' instead of whole rails stack.
-gem 'rails', '4.0.0.beta1'
+gem 'rails', '4.0.0.rc1'
 ruby "2.0.0"
 
 group :development, :test do
   gem 'sqlite3'
   gem 'rails-footnotes', '>= 3.7.5.rc4'
+
+  gem 'rspec-rails', "~> 2.0"
+  gem 'pry'
 
   gem "capybara"
   gem 'capybara-screenshot' 
@@ -21,7 +24,7 @@ group :development, :test do
 
   gem "cucumber-rails", :require => false, :git =>
     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
-  gem "database_cleaner", ">= 0.8.0", :git => 'https://github.com/bmabey/database_cleaner.git'
+  gem "database_cleaner", "1.0.0.RC1"
 
   gem "factory_girl_rails", ">= 4.0.0"
   gem "launchy", ">= 2.1.2"
@@ -35,20 +38,26 @@ group :production do
   gem 'pg'
 end
 
+#U# gem "slim", "~> 1.3.8"
+#U# gem 'omniauth'
+#U# gem 'omniauth-github'
+gem 'octokit'
+#U# gem 'high_voltage'
+#U# gem 'simple_form'
+#U# gem 'unicorn'
+
 # Gems used only for assets and not required
 #    in production environments by default.
 group :assets do
 
-  # NOTE: Removed sass and compass.
-
   gem 'coffee-rails', '~> 4.0.0.beta1'
   gem 'sass-rails', '~> 4.0.0.beta1'
 
-  # See https://github.com/sstephenson/execjs#readme for more
-  #    supported runtimes
-  # gem 'therubyracer', platforms: :ruby
-
   gem 'uglifier', '>= 1.0.3'
+
+##  gem "therubyracer"
+##  gem 'less-rails'
+##  gem 'twitter-bootstrap-rails'
 end
 
 gem 'activerecord-deprecated_finders'
@@ -60,7 +69,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.0.1'
+gem 'jbuilder'
 
 # APP-specific gems
  

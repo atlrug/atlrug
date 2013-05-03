@@ -1,0 +1,10 @@
+OTHERREPO="atlrug4-broken"
+if [ "X$2X" == "XX" ] ; then
+    diff $1 ../${OTHERREPO}/$1
+else
+    echo "##### $1 ../${OTHERREPO}/$1 ##############################"
+    sdiff -w80  $1 ../${OTHERREPO}/$1
+fi
+
+
+
