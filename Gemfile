@@ -24,7 +24,7 @@ group :development, :test do
 
   gem "cucumber-rails", :require => false, :git =>
     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
-  gem "database_cleaner", "1.0.0.RC1"
+  #4/30/2013: BROKEN: gem "database_cleaner", ">= 0.8.0", :git => 'https://github.com/bmabey/database_cleaner.git'
 
   gem "factory_girl_rails", ">= 4.0.0"
   gem "launchy", ">= 2.1.2"
