@@ -38,7 +38,7 @@ group :production do
   gem 'pg'
 end
 
-gem 'slim'
+gem "slim", "~> 1.3.8"
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'octokit'
@@ -68,7 +68,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.0.1'
+gem 'jbuilder'
 
 # APP-specific gems
  
@@ -93,4 +93,3 @@ gem 'thin'
 #
 # To use debugger
 # gem 'debugger'
-
