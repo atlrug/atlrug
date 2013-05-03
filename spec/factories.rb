@@ -6,7 +6,7 @@ FactoryGirl.define do
 
   factory :talk do
     title       "Debugging with Pry"
-    description "An introduction to pry and how to use it as a debugger (w/pry-debug)"
+    description "An introduction to pry and how to use it as a debugger"
     duration    30
     email       "mike@atlrug.com"
     twitter     "@skalnik"

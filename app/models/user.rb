@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
 
   def atlrug_organizer?
     if atlrug_team_id
-      octokit.team_members(atlrug_team_id).detect { |member| member.id.to_i == uid.to_i }
+      octokit.team_members(atlrug_team_id).detect {
+        |member| member.id.to_i == uid.to_i }
     end
   end
 
@@ -14,7 +15,8 @@ class User < ActiveRecord::Base
   end
 
   def octokit
-    @client ||= Octokit::Client.new(:login => github_login, :oauth_token => github_token)
+    @client ||= Octokit::Client.new(:login => github_login,
+      :oauth_token => github_token)
   end
 
   class << self
