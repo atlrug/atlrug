@@ -6,8 +6,7 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 {<img src="https://gemnasium.com/jasnow/atlrug4.png" />}[https://gemnasium.com/jasnow/atlrug4.png]
 
-{<img src="https://codeclimate.com/github/jasnow/atlrug4.png" />}[https://codeclimate.com/github/jasnow/altrug4)
-
+{<img src="https://codeclimate.com/github/jasnow/atlrug4.png" />}[https://codeclimate.com/github/jasnow/altrug4]
 
 == Setup
 
