@@ -8,15 +8,15 @@ ruby "2.0.0"
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rails-footnotes', '>= 3.7.5.rc4'
+  gem 'rails-footnotes'
 
-  gem 'rspec-rails', "~> 2.0"
+  gem 'rspec-rails'
   gem 'pry'
 
   gem "capybara"
   gem 'capybara-screenshot' 
 
-  gem "email_spec", ">= 1.2.1"
+  gem "email_spec"
 
   gem "autotest-rails"
   gem "autotest-fsevent"
@@ -26,8 +26,8 @@ group :development, :test do
     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
   gem "database_cleaner", "1.0.0.RC1"
 
-  gem "factory_girl_rails", ">= 4.0.0"
-  gem "launchy", ">= 2.1.2"
+  gem "factory_girl_rails"
+  gem "launchy"
   gem "letter_opener", :git => 'git://github.com/ryanb/letter_opener.git'
 
   gem 'simplecov', :require => false
@@ -38,7 +38,7 @@ group :production do
   gem 'pg'
 end
 
-gem "slim", "~> 1.3.8"
+gem "slim"
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'octokit'
@@ -49,11 +49,10 @@ gem 'simple_form'
 # Gems used only for assets and not required
 #    in production environments by default.
 group :assets do
-
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'coffee-rails'
   gem 'sass-rails', '~> 4.0.0.beta1'
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 
 ##  gem "therubyracer"
 ##  gem 'less-rails'
