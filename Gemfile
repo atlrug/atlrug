@@ -34,6 +34,25 @@ group :development, :test do
   gem 'simplecov-json', :require => false
 end
 
+# Gems from  http://rubysource.com/boosting-your-rails-development-workflow
+group :development do
+  # For Guard
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'ruby_gntp' # Linux
+  gem 'libnotify' # LInux
+  gem 'rb-fsevent', :require => false # for Linux
+  gem 'rb-inotify', :require => false # for OS X
+  #gem 'rb-fchange', :require => false # for Windows
+
+  gem "better_errors"
+  gem "binding_of_caller"
+
+  gem 'quiet_assets'
+
+  gem 'awesome_print'
+end
+
 group :production do
   gem 'pg'
 end

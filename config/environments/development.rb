@@ -24,4 +24,6 @@ Atlrug4::Application.configure do
 
   # Debug mode disables concatenation and preprocessing of assets.
   config.assets.debug = true
+
+  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 end
