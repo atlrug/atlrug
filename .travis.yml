@@ -15,3 +15,5 @@ env:
       tcyZAhWbDODIf2rP8TWV5eq9T/vgmaDvML/NwZ0hv/LXHayMnyL6GK0eS8pu
       MGX+aKo8J4pxpEDfMDJZSFwSW4pLHsP1bxgMGlTPETtlFNOuvesH82mEJ+di
       H1TOsMyapBg6Ofv9kTPL52bi55CyE4wgpxOSDrJYLvk3jlQ7STs=
+before_script:
+ - if [ "X${MEETUP_KEY}X" == "XX" ] ; then ; echo NO_MEETUP_KEY ; fi
