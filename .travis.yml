@@ -11,9 +11,4 @@ notifications:
 env:
   global:
   - AR4_S_K_B=09ced0f5527b74049d122b000b36e7d5531584788dc2650ac0e8ade11d79668d8978ad725fe2c0dcba4f0f2cff7bba336fc726019def6b2dea969554c7deb2d8
-  - secure: |-
-      tcyZAhWbDODIf2rP8TWV5eq9T/vgmaDvML/NwZ0hv/LXHayMnyL6GK0eS8pu
-      MGX+aKo8J4pxpEDfMDJZSFwSW4pLHsP1bxgMGlTPETtlFNOuvesH82mEJ+di
-      H1TOsMyapBg6Ofv9kTPL52bi55CyE4wgpxOSDrJYLvk3jlQ7STs=
-before_script:
- - if [ "X${MEETUP_KEY}X" == "XX" ] ; then ; echo NO_MEETUP_KEY ; fi
+  - MEETUP_KEY="DUMMY_VALUE" 
