@@ -1,6 +1,7 @@
 # WAS: unless (Rails.env == 'production') || File.exists?("#{Rails.root}/config/api_keys.yml")
 unless (Rails.env == 'production') || ENV['MEETUP_KEY']
-  raise "Copy config/api_keys.yml.sample to config/api_keys.yml and edit with your api key(s). :)"
+  #raise "Copy config/api_keys.yml.sample to config/api_keys.yml and edit with your api key(s). :)"
+  raise "Need to define ENV['MEETUP_KEY']"
 end
 
 class ApiCredentials

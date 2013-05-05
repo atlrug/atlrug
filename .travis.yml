@@ -1,20 +1,17 @@
 ---
 language: ruby
-
 rvm:
- - 2.0.0
-
+- 2.0.0
 notifications:
   email:
     recipients:
     - jasnow@hotmail.com
     on_success: change
     on_failure: always
-
-env: 
+env:
   global:
-   - AR4_S_K_B=09ced0f5527b74049d122b000b36e7d5531584788dc2650ac0e8ade11d79668d8978ad725fe2c0dcba4f0f2cff7bba336fc726019def6b2dea969554c7deb2d8 
-x  - secure: |-
-      ICdl02RfrcuVQICMxXVk7PpzBjKpzDxvOn9MAsyGYwnanFv7J2s7CxP2okDW
-      Rmcpm5uq6iVTjT2jAl7XIExgRziZdpnIs3BzQodmmVzyKt1mPXIYlkzL6ReZ
-      o/Lzjsf0mg4GbUKQQ1LMclLQ1zOrEPvaCWoChdldvmqN49A7LHs=
+  - AR4_S_K_B=09ced0f5527b74049d122b000b36e7d5531584788dc2650ac0e8ade11d79668d8978ad725fe2c0dcba4f0f2cff7bba336fc726019def6b2dea969554c7deb2d8
+  - secure: |-
+      tcyZAhWbDODIf2rP8TWV5eq9T/vgmaDvML/NwZ0hv/LXHayMnyL6GK0eS8pu
+      MGX+aKo8J4pxpEDfMDJZSFwSW4pLHsP1bxgMGlTPETtlFNOuvesH82mEJ+di
+      H1TOsMyapBg6Ofv9kTPL52bi55CyE4wgpxOSDrJYLvk3jlQ7STs=
