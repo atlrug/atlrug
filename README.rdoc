@@ -51,4 +51,3 @@ If you have questions, please use this Google group: atlrug-website@googlegroups
 == License
 
 atlrug4 is released under the MIT License. http://www.opensource.org/licenses/mit-license
-
