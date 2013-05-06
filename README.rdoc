@@ -46,7 +46,7 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 == DISCUSSION
 
-If you have questions, please use this Google group: atlrug-website@googlegroups.com
+If you have questions, please use this Google group: ** atlrug-website@googlegroups.com **
 
 == License
 
