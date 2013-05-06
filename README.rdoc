@@ -29,6 +29,9 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 6. You have two env variable to set:
  * AR4_S_K_B (secret key base)
  * MEETUP_KEY (ENV var for meetup.com API key)
+  * Used **travis encrypt MEETUP_KEY=${MEETUP_KEY} --add** to encrypt and add it to .travis.yml file.
+  * You can get an meetup.com API key at **http://www.meetup.com/meetup_api/key** .
+  * Make sure you do not have a $HOME/.travis/config file with your repos in it or it will lock down your key to only your repos.
 
 7. For more detail about **Guard LiveReload*, go to https://github.com/guard/guard-livereload.
 
