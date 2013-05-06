@@ -189,6 +189,8 @@ GEM
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
+    rack-livereload (0.3.13)
+      rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.0.0.rc1)
@@ -312,6 +314,7 @@ DEPENDENCIES
   pg
   pry
   quiet_assets
+  rack-livereload
   rails (= 4.0.0.rc1)
   rails-footnotes
   rb-fsevent
