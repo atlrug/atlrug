@@ -26,4 +26,13 @@ Atlrug4::Application.configure do
   config.assets.debug = true
 
   config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
+
+  config.middleware.insert_before(
+    Rack::Lock, Rack::LiveReload,
+    :min_delay => 500,
+    :max_delay => 10000,
+    :port => 56789,
+    :host => 'localhost', :ignore => [ %r{dont/modify\.html$} ]                                  
+  )
+
 end

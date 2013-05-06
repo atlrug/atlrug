@@ -30,6 +30,8 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
  * AR4_S_K_B (secret key base)
  * MEETUP_KEY (ENV var for meetup.com API key)
 
+7. For more detail about **Guard LiveReload*, go to https://github.com/guard/guard-livereload.
+
 == To Contribute
 
 1. Go over to the **Projects needing help:** page on http://contribhub.co web site and click the project's "Wanna Help!" button.

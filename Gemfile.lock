@@ -154,7 +154,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     minitest (4.7.4)
-    multi_json (1.7.2)
+    multi_json (1.7.3)
     multipart-post (1.2.0)
     netrc (0.7.7)
     nokogiri (1.5.9)
