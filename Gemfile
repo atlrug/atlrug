@@ -39,6 +39,7 @@ group :development do
   # For Guard
   gem 'guard'
   gem 'guard-livereload'
+  gem 'rack-livereload'
   gem 'ruby_gntp' # Linux
   gem 'libnotify' # LInux
   gem 'rb-fsevent', :require => false # for Linux
