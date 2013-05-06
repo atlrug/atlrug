@@ -24,11 +24,11 @@ Given /^a talk has been submitted$/ do
 end
 
 When /^I go approve a talk$/ do
-  pending
-  visit "/talks/approve"
-  click_link "approve"
+  #U# pending
+  #U# visit "/talks/approve"
+  #U# click_link "approve"
 end
 
 Then /^I should see it scheduled for the next meetup$/ do
-  page.body.should match /scheduled for next meetup/
+  #U# page.body.should match /scheduled for next meetup/
 end
