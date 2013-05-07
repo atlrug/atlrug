@@ -17,3 +17,25 @@
 
 /.DS_Store
 /coverage/**
+bin/autospec
+bin/autotest
+bin/coderay
+bin/cucumber
+bin/guard
+bin/htmldiff
+bin/launchy
+bin/ldiff
+bin/multigem
+bin/multiruby
+bin/multiruby_setup
+bin/nokogiri
+bin/pry
+bin/rspec
+bin/sass
+bin/sass-convert
+bin/scss
+bin/slimrb
+bin/unit_diff
+bin/zentest
+.gitignore
+Gemfile.lock
