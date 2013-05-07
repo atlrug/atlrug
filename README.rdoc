@@ -25,7 +25,7 @@ On 4/26/2013, the requirements were: Ruby 2.0.0-p0; Rails 4.0.0.rc1
 
 7. The following command will encrypt and add it to atlrug/.travis.yml file. Note, you may have to do this twice. The first time may create $HOME/.travis/config.yml and if that has your repos in it, it will lock down your key to only your repos. So delete or edit that config.yml in your home directory and rerun this command:
 
-	travis encrypt MEETUP_KEY=your_meetup_key_here --add
+    travis encrypt MEETUP_KEY=your_meetup_key_here --add
 
 For more detail about **Guard LiveReload**, go to: https://github.com/guard/guard-livereload
 
