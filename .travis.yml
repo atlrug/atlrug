@@ -7,6 +7,7 @@ notifications:
     recipients:
     - jasnow@hotmail.com
     - atlrug-website@googlegroups.com
+    - me@jessecummins.com
     on_success: change
     on_failure: always
 env:
@@ -16,3 +17,7 @@ env:
       c0XZtT+1bSTo7cJliy5ADkNaBhT/qPyaZYKj5b76HuAThaS0pwjpUcQFiF2T
       np8OoejhuUOV7s3jqunxx9QFwoYkCipvrA/WwnUM1FsmfOwyIa3c8zm+xl1K
       GlG+N57HXynaiEKWWCTdjrVhCGlJxM6iAX9zA2BC+KHJAx8GPuE=
+  - secure: |-
+      b5tBZvM5/84HF9j/OFc5s9nmlT3moJ9U1Dk+InDA59wJZ9w9WrWZtzD2debh
+      bfA3Etf8W4bsgcKbwESum8spuI2WSCbEc3k54rMuaqiyZ/e4a3jHyYCu2WzN
+      7iFkPDDQjhuVjblspCDGc1gAj5SyzAGS4zViNmY9o1sd70cFzZc=
