@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>README - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-atlrug+Web+Site+%28atlrug4%29">atlrug Web Site (atlrug4)</a>
+      <li><a href="#label-Setup">Setup</a>
+      <li><a href="#label-To+Contribute">To Contribute</a>
+      <li><a href="#label-DISCUSSION">DISCUSSION</a>
+      <li><a href="#label-License">License</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h1 id="label-atlrug+Web+Site+%28atlrug4%29">atlrug Web Site (atlrug4)<span><a href="#label-atlrug+Web+Site+%28atlrug4%29">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p>This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User
+Group).</p>
+
+<h2 id="label-Setup">Setup<span><a href="#label-Setup">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>On 4/26/2013, the requirements were: Ruby 2.0.0-p0; Rails 4.0.0.rc1</p>
+<ol><li>
+<p>To install gems, run:</p>
+
+<pre>bundle install</pre>
+</li><li>
+<p>Create databases and tables:</p>
+
+<pre>rake db:create
+rake db:migrate</pre>
+</li><li>
+<p>Run the tests by typing “rake”. (when we write them – smile)</p>
+</li><li>
+<p>Project is on Github at <a
+href="https://github.com/atlrug/atlrug4">github.com/atlrug/atlrug4</a>.</p>
+</li><li>
+<p>Follow these instructions regarding Heroku and Rails 4 (avoid “bundle
+–binstubs”): <a
+href="https://gist.github.com/peter/3025502">gist.github.com/peter/3025502</a></p>
+</li><li>
+<p>You have two env variable to set:</p>
+</li></ol>
+
+<pre>* AR4_S_K_B (secret key base)
+* MEETUP_KEY (ENV var for meetup.com API key)
+ * Use **travis encrypt MEETUP_KEY=${MEETUP_KEY} --add** to encrypt and add it to .travis.yml file.
+ * You can get an meetup.com API key at **http://www.meetup.com/meetup_api/key**.
+ * Make sure you do not have a $HOME/.travis/config file with your repos in it or it will lock down your key to only your repos.</pre>
+
+<p>For more detail about **Guard LiveReload**, go to: <a
+href="https://github.com/guard/guard-livereload">github.com/guard/guard-livereload</a></p>
+
+<h2 id="label-To+Contribute">To Contribute<span><a href="#label-To+Contribute">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ol><li>
+<p>Sign in at <a href="http://contribhub.co">contribhub.co</a> and click “I
+Wanna Help!” button at top.</p>
+</li><li>
+<p>Find a project you like.</p>
+</li><li>
+<p>Fork project on Github.</p>
+</li><li>
+<p>Clone it locally.</p>
+</li><li>
+<p>Make change.</p>
+</li><li>
+<p>Push it back to Github.</p>
+</li><li>
+<p>Create a Pull Request to original repo.</p>
+</li></ol>
+
+<h2 id="label-DISCUSSION">DISCUSSION<span><a href="#label-DISCUSSION">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>If you have questions, please use this Google group: <a
+href="https://groups.google.com/forum/?fromgroups#!forum/atlrug-website">atlrug-website</a></p>
+
+<h2 id="label-License">License<span><a href="#label-License">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>atlrug4 is released under the MIT License. <a
+href="http://www.opensource.org/licenses/mit-license">www.opensource.org/licenses/mit-license</a></p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
