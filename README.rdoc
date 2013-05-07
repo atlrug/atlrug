@@ -4,10 +4,6 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 {<img src="https://travis-ci.org/jasnow/altrug4.png" />}[https://travis-ci.org/jasnow/atlrug4.png]
 
-{<img src="https://gemnasium.com/jasnow/atlrug4.png" />}[https://gemnasium.com/jasnow/atlrug4.png]
-
-{<img src="https://codeclimate.com/github/jasnow/atlrug4.png" />}[https://codeclimate.com/github/jasnow/altrug4]
-
 == Setup
 
 1. To install gems, run: <tt>bundle install</tt>.
@@ -21,7 +17,7 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 3. Run the tests by typing "rake". (when we write them - smile)
 
-4. Project is on Github at https://github.com/jasnow/atlrug4.
+4. Project is on Github at https://github.com/atlrug/atlrug4.
 
 5. Follow these instructions regarding Heroku and Rails 4.
  * https://gist.github.com/peter/3025502 (avoid "bundle --binstubs")
