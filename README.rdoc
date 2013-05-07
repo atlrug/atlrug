@@ -2,8 +2,6 @@
 
 This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group).
 
-{<img src="https://travis-ci.org/jasnow/altrug4.png" />}[https://travis-ci.org/jasnow/atlrug4.png]
-
 
 == Setup
 
