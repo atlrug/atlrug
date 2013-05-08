@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/alindeman/rails4_upgrade.git
+  remote: git://github.com/alindeman/rails4_upgrade
   revision: 43b8b338e71107e2aa5acac63531b97e7bd63f21
   specs:
     rails4_upgrade (0.0.5)
