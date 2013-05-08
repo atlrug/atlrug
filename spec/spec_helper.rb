@@ -44,5 +44,7 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.include FactoryGirl::Syntax::Methods
+
+  Zonebie.set_random_timezone
 end
 
