@@ -114,9 +114,15 @@ href="https://gist.github.com/peter/3025502">gist.github.com/peter/3025502</a></
 href="http://www.meetup.com/meetup_api/key">www.meetup.com/meetup_api/key</a></p>
 </li><li>
 <p>The following command will encrypt and add it to atlrug/.travis.yml file.
+<<<<<<< HEAD
 Note, you may have to do this twice. The first time may create
 $HOME/.travis/config.yml and if that has your repos in it, it will lock
 down your key to only your repos. So delete or edit that config.yml in your
+=======
+Note, you may have to do this twice. The first time may add
+$HOME/.travis/config.yml and if that has your repos in it, it will lock
+down you key to only your repos. So delete or edit that config.yml in your
+>>>>>>> working
 home directory and rerun this command:</p>
 
 <pre>travis encrypt MEETUP_KEY=your_meetup_key_here --add</pre>

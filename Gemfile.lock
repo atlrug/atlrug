@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/ryanb/letter_opener.git
-  revision: 075ebe2b3387dab392fbb0b53daf783e3ddd844b
+  revision: bc02cb46e4e6e0a9463d762ce9a1e918b4387a95
   specs:
     letter_opener (1.1.0)
-      launchy (~> 2.2.0)
+      launchy (~> 2.2)
 
 GIT
   remote: https://github.com/cucumber/cucumber-rails.git
@@ -46,7 +46,7 @@ GEM
       tzinfo (~> 0.3.37)
     addressable (2.3.4)
     arel (4.0.0)
-    atomic (1.1.8)
+    atomic (1.1.9)
     autotest-fsevent (0.2.8)
       sys-uname
     autotest-growl (0.2.16)
@@ -108,7 +108,6 @@ GEM
     formatador (0.2.4)
     gherkin (2.12.0)
       multi_json (~> 1.3)
-    growl (1.0.3)
     guard (1.8.0)
       formatador (>= 0.2.4)
       listen (>= 1.0.0)
@@ -139,8 +138,10 @@ GEM
     jwt (0.1.8)
       multi_json (>= 1.5)
     kgio (2.8.0)
-    launchy (2.2.0)
+    launchy (2.3.0)
       addressable (~> 2.3)
+    libnotify (0.8.0)
+      ffi (>= 1.0.11)
     listen (1.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -297,7 +298,6 @@ DEPENDENCIES
   database_cleaner (= 1.0.0.RC1)
   email_spec
   factory_girl_rails
-  growl
   guard
   guard-livereload
   haml
@@ -307,6 +307,7 @@ DEPENDENCIES
   kgio
   launchy
   letter_opener!
+  libnotify
   octokit
   omniauth
   omniauth-github
