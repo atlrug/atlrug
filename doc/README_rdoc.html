@@ -100,7 +100,7 @@ Group).</p>
 <pre>rake db:create
 rake db:migrate</pre>
 </li><li>
-<p>Run the tests by typing “rake”. (when we write them – smile)</p>
+<p>Run the tests by typing <strong>rake</strong> (when we write them – smile)</p>
 </li><li>
 <p>Project is on Github at <a
 href="https://github.com/atlrug/atlrug4">github.com/atlrug/atlrug4</a>.</p>
@@ -114,22 +114,21 @@ href="https://gist.github.com/peter/3025502">gist.github.com/peter/3025502</a></
 href="http://www.meetup.com/meetup_api/key">www.meetup.com/meetup_api/key</a></p>
 </li><li>
 <p>The following command will encrypt and add it to atlrug/.travis.yml file.
-<<<<<<< HEAD
 Note, you may have to do this twice. The first time may create
 $HOME/.travis/config.yml and if that has your repos in it, it will lock
 down your key to only your repos. So delete or edit that config.yml in your
-=======
-Note, you may have to do this twice. The first time may add
-$HOME/.travis/config.yml and if that has your repos in it, it will lock
-down you key to only your repos. So delete or edit that config.yml in your
->>>>>>> working
 home directory and rerun this command:</p>
 
 <pre>travis encrypt MEETUP_KEY=your_meetup_key_here --add</pre>
-</li></ol>
+</li><li>
+<p>To set AR4_S_K_B, run the following command and add <strong>export
+AR4_S_K_B=&lt;secret&gt;</strong> to your .bashrc file.</p>
 
-<p>For more detail about **Guard LiveReload**, go to: <a
+<pre>rake secret</pre>
+</li><li>
+<p>For more detail about <strong>Guard LiveReload</strong>, go to: <a
 href="https://github.com/guard/guard-livereload">github.com/guard/guard-livereload</a></p>
+</li></ol>
 
 <h2 id="label-To+Contribute">To Contribute<span><a href="#label-To+Contribute">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
 <ol><li>
