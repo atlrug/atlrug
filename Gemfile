@@ -30,7 +30,7 @@ group :development, :test do
   gem "launchy"
   gem "letter_opener", :git => 'git://github.com/ryanb/letter_opener.git'
 
-  gem 'rails4_upgrade', github: 'alindeman/rails4_upgrade'
+  gem 'rails4_upgrade', :git => 'git://github.com/alindeman/rails4_upgrade'
   gem 'zonebie'
 
   gem 'simplecov', :require => false
