@@ -66,7 +66,6 @@ gem "slim"
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'octokit'
-#U# gem 'high_voltage'
 gem 'simple_form'
 #U# gem 'unicorn'
 

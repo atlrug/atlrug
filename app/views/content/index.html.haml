@@ -5,10 +5,6 @@
   .detail= render 'meetings'
   
   %h1
-    = link_to 'Give a talk?', '/talks'
-  .detail= render 'talks'
-
-  %h1
     = link_to 'Watch old presentations?', '/videos'
   .detail= render 'videos'
   
@@ -23,3 +19,11 @@
   %h1 
     = link_to 'Hire someone?', '/hire'
   .detail= render 'hire'
+
+  - if flash[:notice]
+    .alert.alert-info
+      a.close{data-dismiss='alert'}&times;
+      = flash[:notice]
+
+  %br
+  = link_to 'Give a talk?', '/talks/new'
