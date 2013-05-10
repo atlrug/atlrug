@@ -20,11 +20,10 @@
     = link_to 'Hire someone?', '/hire'
   .detail= render 'hire'
 
-  - if flash[:notice]
-    .alert.alert-info
-      a.close{data-dismiss='alert'}&times;
-      = flash[:notice]
-
 .talks
   = link_to 'Give a talk?', '/talks/new'
+
+  - if flash[:notice]
+    .alert.alert-info
+      = flash[:notice]
 

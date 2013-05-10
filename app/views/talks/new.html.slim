@@ -18,7 +18,7 @@ p Please fill out this form, and group leader will get back to you as soon as he
     = f.input :duration, :label => "Duration (minutes)", :hint  => "Just estimate. Most talks are 15-30 minutes.", :input_html => { :step => 5, :min => 0 }
 
     = f.input :email
-    = f.input :twitter, :wrapper => :prepend, :label => "Twitter Username" do
+    = f.input :twitter, :wrapper => :prepend, :label => "* Twitter Username" do
       = content_tag :span, "@", :class => "add-on"
       = f.input_field :twitter, :class => 'input-medium'
 
