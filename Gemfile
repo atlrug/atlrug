@@ -71,7 +71,7 @@ gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 
 # Gems used only for assets and not required
 #    in production environments by default.
-group :assets do
+#U# group :assets do
   gem 'coffee-rails'
   gem 'sass-rails', '~> 4.0.0.beta1'
 
@@ -79,9 +79,9 @@ group :assets do
 
   gem "therubyracer"
   gem 'less-rails'
-  gem 'twitter-bootstrap-rails'
+   gem 'twitter-bootstrap-rails'
   #U# gem "erb2haml"
-end
+#U# end
 
 gem 'activerecord-deprecated_finders'
 
