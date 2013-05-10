@@ -2,14 +2,27 @@
   .navbar-inner
     .container
       %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-      .container.nav-collapse        
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => root_url} ATLRUG
+      .nav-collapse.collapse
+        %ul.nav.nav-tabs
+          %li.active
+            %a{:href => "http://meetup.com/atlantaruby/"} Meetup
+          %li
+            %a{:href => "http://twitter.com/atlrug"} @atlrug
         %ul.nav.pull-right
-          - if signed_in?
-            %li.dropdown
-              =link_to"<i class='icon-star icon-white'></i> <b class='caret'></b>".html_safe,
-                        "#", :class => 'dropdown-toggle', :'data-toggle' => 'dropdown'
-              %ul.dropdown-menu
-                %li =link_to "Approve Talks", approve_talks_path
-                %li =link_to "Log out", log_out_path, :method => :delete
-          - else
-            %li =link_to "<i class='icon-lock icon-white'></i>".html_safe, login_path
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Admin
+              %b.caret
+            %ul.dropdown-menu
+              - if signed_in?
+                %li
+                  %a{:href => approve_talks_path, :tabindex => "-1"} "Approve Talks"
+                %li
+                  %a{:href => log_out_path, :method => :delete, :tabindex => "-1"} "Log out"
+              - else
+                %li
+                  %a{:href => login_path, :tabindex => "-1"} Login

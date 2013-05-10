@@ -11,7 +11,6 @@ Atlrug4::Application.routes.draw do
   end
 
   get '/auth/:provider/callback', :to => 'sessions#create'
-  get "/pages/*id" => 'pages#show', :as => :page, :format => false
   get '/login' => redirect('/auth/github'), :as => :login
   get '/log_out' => 'sessions#destroy', :as => :log_out
 

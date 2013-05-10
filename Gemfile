@@ -66,7 +66,7 @@ gem "slim"
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'octokit'
-gem 'simple_form'
+gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 #U# gem 'unicorn'
 
 # Gems used only for assets and not required
@@ -77,9 +77,10 @@ group :assets do
 
   gem 'uglifier'
 
-##  gem "therubyracer"
-##  gem 'less-rails'
-##  gem 'twitter-bootstrap-rails'
+  gem "therubyracer"
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
+  #U# gem "erb2haml"
 end
 
 gem 'activerecord-deprecated_finders'
