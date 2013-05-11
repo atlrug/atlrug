@@ -29,6 +29,11 @@ Feature: Visit Web Site
 ## UNDER "Get a job?"
     Then I should see "Our sponsors are usually hiring"
     Then I should see "Networking"
+## TOPBAR
+    Then I should see "ATLRUG"
+    Then I should see "Meetup"
+    Then I should see "@atlrug"
+    Then I should see "Admin"
 
   Scenario: Check Meetings sub-links
     Given I go to the home page
@@ -42,3 +47,8 @@ Feature: Visit Web Site
     When I follow "Watch old presentations?"
     Then I should see "Other videos"
     Then I should see "See more on Blip.tv"
+
+  Scenario: Check Admin sub-links
+    Given I go to the home page
+    When I follow "Admin"
+    Then I should see "Login"

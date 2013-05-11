@@ -20,9 +20,9 @@
             %ul.dropdown-menu
               - if signed_in?
                 %li
-                  %a{:href => approve_talks_path, :tabindex => "-1"} "Approve Talks"
+                  %a{:href => approve_talks_path, :tabindex => "-1"} Approve Talks
                 %li
-                  %a{:href => log_out_path, :method => :delete, :tabindex => "-1"} "Log out"
+                  %a{:href => log_out_path, :method => :delete, :tabindex => "-1"} Log out
               - else
                 %li
                   %a{:href => login_path, :tabindex => "-1"} Login

@@ -12,3 +12,5 @@ Feature: Talks can be proposed and approved
     And a talk has been submitted
     When I go approve a talk
     Then I should see it scheduled for the next meetup
+
+  Scenario: Non-Admin tries to approve a talk
