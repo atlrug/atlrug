@@ -166,7 +166,7 @@ GEM
     libnotify (0.8.0)
       ffi (>= 1.0.11)
     libv8 (3.11.8.17)
-    listen (1.0.3)
+    listen (1.1.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
