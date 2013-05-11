@@ -8,15 +8,15 @@ ruby "2.0.0"
 
 group :development, :test do
   gem 'sqlite3'
+
+  #TESTING/ANALYSIS
   gem 'rails-footnotes'
 
   gem 'rspec-rails'
-  gem 'pry'
+  gem "email_spec"
 
   gem "capybara"
   gem 'capybara-screenshot' 
-
-  gem "email_spec"
 
   gem "autotest-rails"
   gem "autotest-fsevent"
@@ -29,9 +29,9 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "launchy"
   gem "letter_opener", :git => 'git://github.com/ryanb/letter_opener.git'
+  gem 'zonebie'
 
   gem 'rails4_upgrade', :git => 'git://github.com/alindeman/rails4_upgrade'
-  gem 'zonebie'
 
   gem 'simplecov', :require => false
   gem 'simplecov-json', :require => false
@@ -39,6 +39,11 @@ end
 
 # Gems from  http://rubysource.com/boosting-your-rails-development-workflow
 group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem 'awesome_print'
+  gem 'quiet_assets'
+
   # For Guard
   gem 'guard'
   gem 'guard-livereload'
@@ -49,13 +54,6 @@ group :development do
   gem 'rb-fsevent', :require => false # for Linux
   gem 'rb-inotify', :require => false # for OS X
   #gem 'rb-fchange', :require => false # for Windows
-
-  gem "better_errors"
-  gem "binding_of_caller"
-
-  gem 'quiet_assets'
-
-  gem 'awesome_print'
 end
 
 group :production do
@@ -71,17 +69,14 @@ gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 
 gem 'coffee-rails'
 gem 'sass-rails', '~> 4.0.0.beta1'
-
 gem 'uglifier'
-
 gem "therubyracer"
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 #U# gem "erb2haml"
+gem 'jquery-rails'
 
 gem 'activerecord-deprecated_finders'
-
-gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read
 #    more: https://github.com/rails/turbolinks
@@ -91,7 +86,6 @@ gem 'turbolinks'
 gem 'jbuilder'
 
 # APP-specific gems
- 
 gem 'rest-client'
 gem 'haml'
 gem 'hassle3' 

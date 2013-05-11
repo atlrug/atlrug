@@ -349,7 +349,6 @@ DEPENDENCIES
   omniauth
   omniauth-github
   pg
-  pry
   quiet_assets
   rack-livereload
   rails (= 4.0.0.rc1)
