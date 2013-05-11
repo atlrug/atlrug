@@ -7,6 +7,8 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 On 4/26/2013, the requirements were: Ruby 2.0.0-p0; Rails 4.0.0.rc1
 
+Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
+
 1. To install gems, run:
     bundle install
 
