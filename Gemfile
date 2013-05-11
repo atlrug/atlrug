@@ -69,19 +69,15 @@ gem 'octokit'
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 #U# gem 'unicorn'
 
-# Gems used only for assets and not required
-#    in production environments by default.
-#U# group :assets do
-  gem 'coffee-rails'
-  gem 'sass-rails', '~> 4.0.0.beta1'
+gem 'coffee-rails'
+gem 'sass-rails', '~> 4.0.0.beta1'
 
-  gem 'uglifier'
+gem 'uglifier'
 
-  gem "therubyracer"
-  gem 'less-rails'
-   gem 'twitter-bootstrap-rails'
-  #U# gem "erb2haml"
-#U# end
+gem "therubyracer"
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+#U# gem "erb2haml"
 
 gem 'activerecord-deprecated_finders'
 
