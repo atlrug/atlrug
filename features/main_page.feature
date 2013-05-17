@@ -17,6 +17,8 @@ Feature: Visit Web Site
     Then I should see "Others (also important!)"
     Then I should see "Follow @atlrug"
     Then I should see "Wiki"
+    Then I should see "Linkedin"
+    Then I should see "IRC-Chat"
     Then I should see "ThoughtWorks – bronze sponsor"
     Then I should see "ATDC — supplies room for monthly meetings"
     Then I should see "Primedia — supplies room for Emerald City Meetings"
