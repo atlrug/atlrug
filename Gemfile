@@ -62,20 +62,22 @@ group :production do
   gem 'pg'
 end
 
-gem "slim"
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'octokit'
-gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
-#U# gem 'unicorn'
 
 gem 'coffee-rails'
 gem 'sass-rails', '~> 4.0.0.beta1'
 gem 'uglifier'
 gem "therubyracer"
+
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
-#U# gem "erb2haml"
+
+gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
+gem 'haml'
+gem "haml-rails"
+
 gem 'jquery-rails'
 
 gem 'activerecord-deprecated_finders'
@@ -89,12 +91,12 @@ gem 'jbuilder'
 
 # APP-specific gems
 gem 'rest-client'
-gem 'haml'
 gem 'hassle3' 
 gem 'kgio'
 gem 'dalli'
 gem 'tzinfo'
 gem 'thin'
+#U# gem 'unicorn'
 
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.
