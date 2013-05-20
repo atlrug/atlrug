@@ -24,7 +24,7 @@ group :development, :test do
 
   gem "cucumber-rails", :require => false, :git =>
     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
-  gem "database_cleaner", "1.0.0.RC1"
+  gem "database_cleaner"
 
   gem "factory_girl_rails"
   gem "launchy"
