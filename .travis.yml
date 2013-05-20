@@ -6,7 +6,6 @@ notifications:
   email:
     recipients:
     - jasnow@hotmail.com
-    - atlrug-website@googlegroups.com
     - me@jessecummins.com
     on_success: change
     on_failure: always
