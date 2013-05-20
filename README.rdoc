@@ -4,7 +4,7 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 {<img src="https://travis-ci.org/atlrug/atlrug4.png" />}[https://travis-ci.org/atlrug/atlrug4.png]
 
-{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/atlrug/atlrug4]
+{<img src="https://codeclimate.com/github/atlrug/atlrug4.png" />}[https://codeclimate.com/github/atlrug/atlrug4]
 
 {<img src="https://gemnasium.com/atlrug/atlrug4.png?travis" />}[https://gemnasium.com/atlrug/atlrug4.png?travis]
  
