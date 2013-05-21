@@ -57,10 +57,17 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 7. Create a Pull Request to original repo.
 
+== To Contribute to Wiki
+
+1. Clone https://github.com/atlrug/atlrug4.wiki.git
+
+2. Add your information.
+
+3. Push it back to Github.
+
 == DISCUSSION
 
-If you have questions, please use this Google group: atlrug-website[https://groups.google.com/forum/?fromgroups#!forum/atlrug-website]
-
+If you have questions, please use this [Linkedin group](http://www.linkedin.com/groups/Atlanta-Ruby-Users-Group-106945/about)
 
 == License
 
