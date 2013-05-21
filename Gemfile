@@ -69,7 +69,10 @@ gem 'octokit'
 gem 'coffee-rails'
 gem 'sass-rails', '~> 4.0.0.beta1'
 gem 'uglifier'
-gem "therubyracer"
+
+gem 'execjs'
+#U# (5/2/2013: STUCK AT 3.11.8.17 x86-linux) gem 'libv8', '~> 3.3.10', :platforms => :ruby
+gem 'therubyracer', :platforms => :ruby
 
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
@@ -97,6 +100,7 @@ gem 'dalli'
 gem 'tzinfo'
 gem 'thin'
 #U# gem 'unicorn'
+gem 'backports'
 
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.

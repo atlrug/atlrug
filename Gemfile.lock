@@ -254,7 +254,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
-    ref (1.0.4)
+    ref (1.0.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec-core (2.13.1)
@@ -345,6 +345,7 @@ DEPENDENCIES
   autotest-growl
   autotest-rails
   awesome_print
+  backports
   better_errors
   binding_of_caller
   capybara
@@ -354,6 +355,7 @@ DEPENDENCIES
   dalli
   database_cleaner
   email_spec
+  execjs
   factory_girl_rails
   guard
   guard-livereload
