@@ -3,12 +3,15 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
 
+ * blue: b51,153,255
+
  *= require_self
  *= require_tree .
 */
 
 @import "reset";
 @import "mixins";
+@import "bootstrap";
 
 body {
   font: normal normal normal 0.8125em/normal Verdana, sans-serif;
@@ -16,7 +19,7 @@ body {
 
 a {
   @include hover-link;
-  color: rgb(168,68,46);
+  color: rgb(204,0,0);
 }
 
 .hide {
