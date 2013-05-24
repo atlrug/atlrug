@@ -1,0 +1,11 @@
+To set up the "approving talk proposals" feature, you need to do the following:
+ 1. Click on the Admin tab in the top right corner of the main page.
+ 2. Then click on the Login option.
+ 3. Given that:
+  a. You are one of the OWNERs for the Github "atlrug" repo and
+  b. You have set up Application keys on your Github account as follows and
+   * URL is http://atlrug4.herokuapp.com/
+   * Callback URL is http://atlrug4.herokuapp.com/auth/github/callback/
+  c. You set up GITHUB_KEY and GITHUB_SECRET for Omniauth in your environment.
+ 4. Also remember to do this "heroku config:add" for GITHUB_KEY and GITHUB_SECRET on Heroku while deploying to production.
+
