@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/alindeman/rails4_upgrade
-  revision: 43b8b338e71107e2aa5acac63531b97e7bd63f21
+  revision: 6d71d4418891ef11243451481f28cbb3072c6019
   specs:
-    rails4_upgrade (0.0.5)
+    rails4_upgrade (0.5.0)
       bundler (>= 1.2.2)
       terminal-table (>= 1.4.5)
 
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/ryanb/letter_opener.git
-  revision: cd9d827198ba1f07490a913b2b0e6ed62a663091
+  revision: 3a2e31eefc6515fe95ab0f1bc4fcfc9468d7c514
   specs:
     letter_opener (1.1.1)
       launchy (~> 2.2)
@@ -269,7 +269,7 @@ GEM
       json
       simplecov
     slop (3.4.5)
-    sprockets (2.9.3)
+    sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
