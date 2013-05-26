@@ -3,7 +3,8 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 # Assets should be precompiled for production (so we don't need the gems loaded then)
-Bundler.require(*Rails.groups(assets: %w(development test)))
+#U# Bundler.require(*Rails.groups(assets: %w(development test)))
+Bundler.require(:default, Rails.env)
 
 module Atlrug4
   class Application < Rails::Application
@@ -25,6 +26,7 @@ module Atlrug4
     config.filter_parameters += [:password]
 
     config.assets.initialize_on_precompile = true
+
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

@@ -316,7 +316,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-deprecated_finders
   autotest-fsevent
   autotest-growl
   autotest-rails
