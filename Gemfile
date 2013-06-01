@@ -13,7 +13,7 @@ group :development, :test do
   gem "email_spec"
 
   gem "capybara"
-  gem 'capybara-screenshot' 
+  gem 'capybara-screenshot'
 
   gem "autotest-rails"
   gem "autotest-fsevent"
@@ -71,9 +71,8 @@ gem 'execjs'
 #U# (5/2/2013: STUCK AT 3.11.8.17 x86-linux) gem 'libv8', '~> 3.3.10', :platforms => :ruby
 gem 'therubyracer', :platforms => :ruby
 
-gem 'bootstrap-sass'
-gem 'twitter-bootstrap-rails'
-
+gem "compass-rails"
+gem "bootstrap-sass-rails"
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 gem 'haml'
 gem "haml-rails"
@@ -89,7 +88,7 @@ gem 'jbuilder'
 
 # APP-specific gems
 gem 'rest-client'
-gem 'hassle3' 
+gem 'hassle3'
 gem 'kgio'
 gem 'dalli'
 gem 'tzinfo'
