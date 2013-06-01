@@ -1,0 +1,21 @@
+#footer {
+  display: block;
+  border-top: 1px dashed rgba(168,68,46, 0.2);
+  padding-top: 2em;
+  margin-top: 150px;
+  margin-left: 50px;
+  width: 60%;
+}
+
+#sponsors {
+  h2 {
+    clear:both;
+    padding-bottom: 1em;
+  }
+  .platinum {
+    li {
+      float:left;
+      padding: 0 3em 1em 0;
+    }
+  }
+}

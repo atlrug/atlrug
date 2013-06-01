@@ -1,0 +1,77 @@
+body {
+  font: normal normal normal 0.8125em/normal Verdana, sans-serif;
+}
+
+a {
+  @include hover-link;
+  color: rgb(204,0,0);
+}
+
+.hide {
+  display: none;
+}
+
+body {
+}
+
+#masthead, #navigation {
+  text-align: right;
+  padding-right: 40%;
+  clear:both;
+}
+
+#tweet {
+  margin-top: 1em;
+  margin-left: -1em;
+  padding-left: 10%;
+  float: right;
+  padding-right: 40%;
+}
+
+#navigation {
+  padding: 0 0 0 28%;
+  li {
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+#main {
+  clear:both;
+  padding: 0 10%;
+}
+
+p.question {
+  font-size: 1.5em;
+  margin-left: -1em;
+}
+.sections > h1 {
+  font-size: 2em;
+  padding-top: 1em;
+}
+.detail, #footer {
+  width: 52em;
+  display: none;
+  padding: 1em;
+  h1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-bottom: .5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-weight: bold;
+    padding: .25em 0;
+  }
+  p {
+    line-height: 20px;
+    padding-bottom: .25em;
+  }
+}
+
+.talks {
+  font-size: 2em;
+  padding-top: 1em;
+}
