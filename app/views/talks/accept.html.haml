@@ -1,15 +1,18 @@
-- model_class = Talk
-.page-header
-  %h1 Accepted Talks - scheduled for next meetup
-%table.table.table-striped
-  %thead
-    %tr
-      %th Title
-      %th Description
-      %th Duration
-  %tbody
-    - @talks.each do |talk|
-      %tr
-        %td= talk.title
-        %td= talk.description
-        %td= talk.duration
+#contact-us.container
+  .row
+    .span12
+      - model_class = Talk
+      .page-header
+        %h1 Accepted Talks - scheduled for next meetup
+      %table.table.table-striped
+        %thead
+          %tr
+            %th Title
+            %th Description
+            %th Duration
+        %tbody
+          - @talks.each do |talk|
+            %tr
+              %td= talk.title
+              %td= talk.description
+              %td= talk.duration
