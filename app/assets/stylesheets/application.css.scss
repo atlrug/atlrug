@@ -6,8 +6,12 @@
  * blue: b51,153,255
 
 */
-@import "twitter/bootstrap";
-@import "reset";
-@import "mixins";
-@import "styles";
 
+@import "twitter/bootstrap";
+@import "variables";
+@import "mixins";
+@import "components/footer";
+@import "components/navigation";
+@import "components/banner";
+@import "components/forms";
+@import "styles";
