@@ -1,14 +1,19 @@
-#meetings
-  - if @next_meeting
-    %h1= meetup_link(@next_meeting)
-    .description= raw(@next_meeting['description'])
-    - if @coming_meetings.any?
-      %h3 Future Meetings
-      %ul
-        - @coming_meetings.each do |meeting|
-          %li= meetup_link(meeting)
-  - else
-    %h1 No upcoming meetings.
-  %h2
-    See more on
-    = link_to 'meetup.com', 'http://www.meetup.com/atlantaruby/'
+.container
+  .row
+    .twelve
+      #meetings
+        - if @next_meeting
+          %h1= meetup_link(@next_meeting)
+          .description= raw(@next_meeting['description'])
+          - if @coming_meetings.any?
+            %h3
+              %i.icon-calendar
+              Future Meetings
+            %ul.other-list
+              - @coming_meetings.each do |meeting|
+                %li= meetup_link(meeting)
+        - else
+          %h1 No upcoming meetings.
+        %h4
+          See more on
+          = link_to 'Meetup.com/atlantaruby', 'http://www.meetup.com/atlantaruby/'

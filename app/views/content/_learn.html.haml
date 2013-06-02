@@ -1,36 +1,41 @@
-#learn
-  %h1 Suggestions for learning Ruby and/or Rails
-  %h2 Local
-  %h3 Emerald City Programming Group
-  %p 
-    The Emerald City Programming Group is a group of people getting 
-    together in Norcross to learn how to program in Rails.
-    We start in September of the each year and use a recent "Ruby-on-Rails
-    project" book which incrementally builds a Rails project.
-    Each meeting involves either a book chapter or some other related topic.
-    We usually finish the book by early June. 
-    We meet roughly every 2 weeks (10am-Noon Saturday).
-    Look for Emerald City on the calendar at 
-    = link_to 'Atlanta Ruby on Meetup.com', 'http://www.meetup.com/atlantaruby/'
-  %br
-  %h2 Online
-  %p 
-    Look for materials that are up to date and use current best practices 
-    (probably written in 2012 or 2013).
-  %p 
-    Be wary of tutorial materials that fail to use Ruby 1.9+ and Rails 3.2+, 
-    or fail to reference Git, RVM, or Bundler.
-  %br
-  %h2 Books
-  %ul
-    %li
-      = link_to 'Rails Tutorial', 'http://ruby.railstutorial.org/ruby-on-rails-tutorial-book'
-      %br
-      We've found this book to be an excellent resource for top-down learners: 
-      people who like to attack real problems right away, and figure out how 
-      the language and framework function as they go.
-      %br
-      %br
-      There are lots of various books available, but be wary of outdated ones.
-      The best practices are still evolving. Look for books that talk about some
-      of the current best practices, as mentioned in the online section, above.
+#learn.container
+  .row
+    .span12
+      #learn
+        %h1 Learn Ruby and/or Rails
+        .row
+          .span6
+            %h2 Locally
+            %h3 Emerald City Programming Group
+            %p
+              The Emerald City Programming Group is a group of people getting
+              together in Norcross to learn how to program in Rails.
+              We start in September of the each year and use a recent "Ruby-on-Rails
+              project" book which incrementally builds a Rails project.
+              Each meeting involves either a book chapter or some other related topic.
+              We usually finish the book by early June.
+              We meet roughly every 2 weeks (10am-Noon Saturday).
+              Look for Emerald City on the calendar at
+              = link_to 'Atlanta Ruby on Meetup.com', 'http://www.meetup.com/atlantaruby/'
+          .span6
+            = image_tag "atl_meetup3.jpg", :alt => "Give a Talk", :class => "thumbnail"
+        %h2 Online
+        %p
+          Look for materials that are up to date and use current best practices
+          (probably written in 2012 or 2013).
+        %p
+          Be wary of tutorial materials that fail to use Ruby 1.9+ and Rails 3.2+,
+          or fail to reference Git, RVM, or Bundler.
+        %br
+        %h2 Reading
+        %ul.p-list
+          %li
+            = link_to 'Rails Tutorial', 'http://ruby.railstutorial.org/ruby-on-rails-tutorial-book'
+            %p
+              We've found this book to be an excellent resource for top-down learners:
+              people who like to attack real problems right away, and figure out how
+              the language and framework function as they go.
+            %p
+              There are lots of various books available, but be wary of outdated ones.
+              The best practices are still evolving. Look for books that talk about some
+              of the current best practices, as mentioned in the online section, above.
