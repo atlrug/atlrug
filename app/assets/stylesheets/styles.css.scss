@@ -1,77 +1,24 @@
-body {
-  font: normal normal normal 0.8125em/normal Verdana, sans-serif;
+html 				{  background-color: #C0B4A0; }
+body      { font: normal normal normal 0.8125em/normal Helvetica, Arial, sans-serif; }
+p 			{  font-size: 1.3em; line-height: 1.3em; margin-bottom: 1.5em; }
+a         {  color: #0068a2; }
+h1, h1>a        {  color: #444; margin: 0; line-height: 4rem; font-family: 'Roboto Slab', sans-serif; font-size: 42px; }
+h2 				{  color: #444; margin-bottom: 0; }
+h3 				{  color: #444; margin-bottom: 0; font-size: 1.8em;  }
+h4        {  font-size: 1.6em; line-height: 1.4em; }
+#main>.container  {  margin-top: 4em; margin-bottom: 4em; }
+.hide     { display: none; }
+#home.container   {  margin: 0; }
+.other-list 			{ list-style: none; margin-bottom: 0.5em; margin-left: 30px;
+	li 					{  margin-bottom: 0.5em; }
+	a 						{  font-size: 1.3em; }
 }
-
-a {
-  @include hover-link;
-  color: rgb(204,0,0);
+.thumbnail 				{  margin-bottom: 3em; }
+.p-list 				{  list-style: none; margin-left: 0;
+	li 					{  margin: 0; padding: 0;
+		&>a 			{  font-size: 1.3em; font-weight: bold; padding-top: 1em; display: inline-block; }
+	}
+	p 					{  font-size: 1.3em; line-height: 1.3em; margin-bottom: 1.5em; }
 }
-
-.hide {
-  display: none;
-}
-
-body {
-}
-
-#masthead, #navigation {
-  text-align: right;
-  padding-right: 40%;
-  clear:both;
-}
-
-#tweet {
-  margin-top: 1em;
-  margin-left: -1em;
-  padding-left: 10%;
-  float: right;
-  padding-right: 40%;
-}
-
-#navigation {
-  padding: 0 0 0 28%;
-  li {
-    float: left;
-    padding-left: 20px;
-  }
-}
-
-#main {
-  clear:both;
-  padding: 0 10%;
-}
-
-p.question {
-  font-size: 1.5em;
-  margin-left: -1em;
-}
-.sections > h1 {
-  font-size: 2em;
-  padding-top: 1em;
-}
-.detail, #footer {
-  width: 52em;
-  display: none;
-  padding: 1em;
-  h1 {
-    font-size: 1.25em;
-    font-weight: bold;
-    padding-bottom: .5em;
-  }
-  h2 {
-    font-size: 1.2em;
-  }
-  h3 {
-    font-weight: bold;
-    padding: .25em 0;
-  }
-  p {
-    line-height: 20px;
-    padding-bottom: .25em;
-  }
-}
-
-.talks {
-  font-size: 2em;
-  padding-top: 1em;
-}
+#talk .thumbnail 		{  margin-top: 3em; }
+#learn .thumbnail 		{  margin-top: 2em; }
