@@ -13,16 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require bootstrap
 //= require turbolinks
 //= require_tree .
 
-var ready = function() {
-  $('.sections').on('click', 'h1', function(e) {
-    e.preventDefault();
-    $(this).next().toggle();
-  });
-};
+// var ready = function() {
+//   $('.sections').on('click', 'h1', function(e) {
+//     e.preventDefault();
+//     $(this).next().toggle();
+//   });
+// };
 
 $(document).ready(ready);
 

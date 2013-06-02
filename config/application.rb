@@ -21,6 +21,8 @@ module Atlrug4
     # config.i18n.default_locale = :de
 
     # Custom directories with classes and modules you want to be autoloadable.
+    config.assets.enabled = true
+
     config.autoload_paths += %W(#{config.root}/lib)
 
     config.filter_parameters += [:password]

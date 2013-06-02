@@ -1,34 +1,33 @@
-.navbar.navbar-fixed-top
+#main-nav.navbar
   .navbar-inner
     .container
-      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.brand{:href => root_url} ATLRUG
-      .nav-collapse.collapse
-        %ul.nav.nav-tabs
-          %li.active
-            %a{:href => "http://meetup.com/atlantaruby/"} Meetup
-          %li
-            %a{:href => "http://twitter.com/atlrug"} @atlrug
-          %li
-            %a{:href => "https://github.com/atlrug/atlrug4/wiki"} Wiki
-          %li
-            %a{:href => "http://www.linkedin.com/groups/Atlanta-Ruby-Users-Group-106945/about"} Linkedin
-          %li
-            %a{:href => "http://webchat.freenode.net/?channels=atlrug"} IRC-Chat
-        %ul.nav.pull-right
-          %li.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Admin
-              %b.caret
-            %ul.dropdown-menu
-              - if signed_in?
-                %li
-                  %a{:href => approve_talks_path, :tabindex => "-1"} Approve Talks
-                %li
-                  %a{:href => log_out_path, :method => :delete, :tabindex => "-1"} Log out
-              - else
-                %li
-                  %a{:href => login_path, :tabindex => "-1"} Login
+      %ul.nav.pull-left.nav-links
+        %li
+          = link_to 'Go to Meetings', meetings_path
+        %li
+          = link_to 'Find Presentations', videos_path
+        %li
+          = link_to 'Learn Ruby', '/learn'
+      %a.logo{:href => root_url }
+        =image_tag "ATLRUG_logo.png", :alt => 'Atlanta Ruby Logo'
+      %ul.nav.pull-right.admin-nav
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            Admin
+            %b.caret
+          %ul.dropdown-menu
+            - if signed_in?
+              %li
+                %a{:href => approve_talks_path, :tabindex => "-1"} Approve Talks
+              %li
+                %a{:href => log_out_path, :method => :delete, :tabindex => "-1"} Log out
+            - else
+              %li
+                %a{:href => login_path, :tabindex => "-1"} Login
+      %ul.nav.pull-right.nav-links
+        %li
+          = link_to 'Find a Job', '/job'
+        %li
+          = link_to 'Hire Someone', '/hire'
+        %li
+          = link_to 'Give a Talk', new_talk_path

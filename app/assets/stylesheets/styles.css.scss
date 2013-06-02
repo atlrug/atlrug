@@ -1,0 +1,24 @@
+html 				{  background-color: #C0B4A0; }
+body      { font: normal normal normal 0.8125em/normal Helvetica, Arial, sans-serif; }
+p 			{  font-size: 1.3em; line-height: 1.3em; margin-bottom: 1.5em; }
+a         {  color: #0068a2; }
+h1, h1>a        {  color: #444; margin: 0; line-height: 4rem; font-family: 'Roboto Slab', sans-serif; font-size: 42px; }
+h2 				{  color: #444; margin-bottom: 0; }
+h3 				{  color: #444; margin-bottom: 0; font-size: 1.8em;  }
+h4        {  font-size: 1.6em; line-height: 1.4em; }
+#main>.container  {  margin-top: 4em; margin-bottom: 4em; }
+.hide     { display: none; }
+#home.container   {  margin: 0; }
+.other-list 			{ list-style: none; margin-bottom: 0.5em; margin-left: 30px;
+	li 					{  margin-bottom: 0.5em; }
+	a 						{  font-size: 1.3em; }
+}
+.thumbnail 				{  margin-bottom: 3em; }
+.p-list 				{  list-style: none; margin-left: 0;
+	li 					{  margin: 0; padding: 0;
+		&>a 			{  font-size: 1.3em; font-weight: bold; padding-top: 1em; display: inline-block; }
+	}
+	p 					{  font-size: 1.3em; line-height: 1.3em; margin-bottom: 1.5em; }
+}
+#talk .thumbnail 		{  margin-top: 3em; }
+#learn .thumbnail 		{  margin-top: 2em; }

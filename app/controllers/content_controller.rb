@@ -1,7 +1,7 @@
 class ContentController < ApplicationController
+
   def index
-    load_meetings
-    load_videos
+
   end
 
   def meetings
@@ -11,6 +11,19 @@ class ContentController < ApplicationController
   def videos
     load_videos
   end
+
+  def learn
+    render :template => "content/_learn"
+  end
+
+  def job
+    render :template => "content/_job"
+  end
+
+  def hire
+    render :template => "content/_hire"
+  end
+
 
   protected
     def load_meetings

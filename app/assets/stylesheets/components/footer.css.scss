@@ -1,0 +1,21 @@
+#footer                   { background-color: #d4cbbb;  padding: 30px 0;
+  h2                      {  clear:both;padding-bottom: 1em;}
+  ul                      {  list-style: none; overflow: auto; margin: 0;
+    a                     {  color: #0068a2; font-weight: bold; }
+    span                 {  font-style: italic; color: #645f5b;}
+  }
+  .platinum               {  float: left;
+    li                    { float: left; padding: 0 3em 1em 0; padding-bottom: 3px;     }
+  }
+  h4                      {  color: #3f3b38; }
+}
+#sponsors ul              {  margin-bottom: 2em; }
+#footer-links             {  background-color: #c0b4a0;
+  ul                       {  overflow: auto; margin: 0; }
+  li                      {  float: left; margin-left: 1em;
+    a                     {  color: #5b524c; font-weight: bold; border-bottom: 2px solid transparent;
+      &:hover             {  background-color: transparent; border-bottom: 2px solid $pink;  }
+    }
+  }
+}
+.sponsor-image            {  clear: both; }
