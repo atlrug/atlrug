@@ -39,3 +39,7 @@ bin/unit_diff
 bin/zentest
 .gitignore
 Gemfile.lock
+
+app/.DS_Store
+
+app/assets/.DS_Store
