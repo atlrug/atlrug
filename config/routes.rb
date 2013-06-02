@@ -4,6 +4,9 @@ Atlrug4::Application.routes.draw do
 
   get '/meetings' => 'content#meetings'
   get '/videos' => 'content#videos'
+  get '/hire' => 'content#hire'
+  get '/learn' => 'content#learn'
+  get '/job' => 'content#job'
 
   resources :talks, :only => [:new, :create] do
     get :approve, :on => :collection
