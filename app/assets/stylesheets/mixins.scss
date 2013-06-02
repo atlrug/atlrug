@@ -1,8 +1,0 @@
-// http://compass-style.org/reference/compass/utilities/links/hover_link/
-
-@mixin hover-link {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline
-  }
-}
