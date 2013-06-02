@@ -4,18 +4,20 @@
     %title Atlanta Ruby Users' Group
 
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Roboto+Slab:400,700"
+    = stylesheet_link_tag    "//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tag
 
   %body
     = render 'layouts/navbar'
-    #tweet
-      %a{:href=>"http://twitter.com/atlrug", :class=> "twitter-follow-button", :'data-show-count'=> "false"} Follow @atlrug
-      %script{:src=> "http://platform.twitter.com/widgets.js", :type=>"text/javascript"}
-    #sidebar
-      #masthead
-        %a{:href => '/'}
-          =image_tag "gem-small.png", :alt => 'Atlanta Ruby Logo'
     #main= yield
+    / #tweet
+    /   %a{:href=>"http://twitter.com/atlrug", :class=> "twitter-follow-button", :'data-show-count'=> "false"} Follow @atlrug
+    /   %script{:src=> "http://platform.twitter.com/widgets.js", :type=>"text/javascript"}
+    / #sidebar
+
     #footer
-      = render 'content/sponsors'
+      = render 'layouts/footer'
+    #footer-links
+      = render 'layouts/footerlinks'
