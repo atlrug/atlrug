@@ -16,12 +16,12 @@
 //= require turbolinks
 //= require_tree .
 
-var ready = function() {
-  $('.sections').on('click', 'h1', function(e) {
-    e.preventDefault();
-    $(this).next().toggle();
-  });
-};
+// var ready = function() {
+//   $('.sections').on('click', 'h1', function(e) {
+//     e.preventDefault();
+//     $(this).next().toggle();
+//   });
+// };
 
 $(document).ready(ready);
 
