@@ -2,3 +2,7 @@
 #home.container
   .row
     .twelve
+
+- if flash[:notice]
+  .alert.alert-info
+    = flash[:notice]
