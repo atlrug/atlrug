@@ -6,6 +6,10 @@ Then /^(?:|I )should see "([^\"]*)"$/ do |text|
   end
 end
 
+Then /^I should see the image "(.+)"$/ do |image|
+  page.should have_xpath("//img[@alt=\"#{image}\"]")
+end
+
 When /^(?:|I )go to (.+)$/ do |page_name|
    visit path_to(page_name)
 end
