@@ -96,6 +96,9 @@ gem 'thin'
 #U# gem 'unicorn'
 gem 'backports'
 
+# This loads environment variables from rails_root/.env if that file exists.
+gem 'dotenv-rails', :groups => [:development, :test]
+
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.
 # To use ActiveModel has_secure_password
