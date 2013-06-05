@@ -45,3 +45,7 @@ app/.DS_Store
 app/assets/.DS_Store
 
 app/assets/images/.DS_Store
+
+# This file is a development/test hack to load environment variables from .env
+# See https://github.com/bkeepers/dotenv
+.env
