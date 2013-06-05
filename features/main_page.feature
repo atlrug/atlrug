@@ -21,13 +21,10 @@ Feature: Visit Web Site
     Then I should see "Linkedin"
     Then I should see "IRC-Chat"
 ## MIDDLE/LEFT
-    Then I should see "Platinum Sponsors"
-    Then I should see "Blinq Media"
-    Then I should see "Oracle"
+    Then I should see "Platinum Sponsor"
+    Then I should see "Mandrill"
 ## MIDDLE/RIGHT
     Then I should see "Other Sponsors"
-    Then I should see "ThoughtWorks Bronze Sponsor"
-    Then I should see "ATDC Provides Space for Monthly Meetings"
     Then I should see "Atlanta Tech Village Provides Space for RHOK 2013 Rails Team"
     Then I should see "Primedia Provides Space for Emerald City Meetings"
     Then I should see "Big Nerd Ranch Pays for Meetup Account Fees"
