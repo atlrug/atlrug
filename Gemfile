@@ -34,6 +34,9 @@ group :development, :test do
 
   gem 'simplecov', :require => false
   gem 'simplecov-json', :require => false
+
+  # This loads environment variables from rails_root/.env if that file exists.
+  gem 'dotenv-rails'
 end
 
 # Gems from  http://rubysource.com/boosting-your-rails-development-workflow
@@ -95,9 +98,6 @@ gem 'tzinfo'
 gem 'thin'
 #U# gem 'unicorn'
 gem 'backports'
-
-# This loads environment variables from rails_root/.env if that file exists.
-gem 'dotenv-rails', :groups => [:development, :test]
 
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.
