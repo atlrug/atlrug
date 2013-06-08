@@ -95,8 +95,7 @@ gem 'hassle3'
 gem 'kgio'
 gem 'dalli'
 gem 'tzinfo'
-gem 'thin'
-#U# gem 'unicorn'
+gem 'unicorn'
 gem 'backports'
 
 ######################################################################
