@@ -1,5 +1,8 @@
 class ContentController < ApplicationController
 
+  caches_action :meetings, expires_in: 2.hours
+  caches_action :videos,   expires_in: 1.day
+
   def index
 
   end
