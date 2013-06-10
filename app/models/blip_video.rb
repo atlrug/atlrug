@@ -1,11 +1,9 @@
 require 'rest_client'
-require 'cacheable'
 
 class BlipVideo
-  include Cacheable
 
   def self.all
-    result = memcached('blip-all') do
+    result = begin
      RestClient.get 'http://blip.tv/posts/?user=skiptree&skin=json&pagelen=5'
     end
     result.sub!("blip_ws_results([[{", "[{")

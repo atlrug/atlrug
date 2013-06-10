@@ -93,10 +93,12 @@ gem 'jbuilder'
 gem 'rest-client'
 gem 'hassle3'
 gem 'kgio'
-gem 'dalli'
 gem 'tzinfo'
 gem 'unicorn'
 gem 'backports'
+
+# For old-style action_caching
+gem "actionpack-action_caching"
 
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.

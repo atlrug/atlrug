@@ -1,11 +1,10 @@
 require 'rest_client'
-require 'cacheable'
 
 class MeetupEvent
-  include Cacheable
+
   def self.get_next_month_events
     itime = Time.now.to_i
-    result = memcached('MEETUP_KEY') do
+    result = begin
       RestClient.get "https://api.meetup.com/2/events?key" +
         "=#{ApiCredentials.key('MEETUP_KEY')}&
         sign=true&
