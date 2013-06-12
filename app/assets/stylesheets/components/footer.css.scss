@@ -10,10 +10,10 @@
   h4                      {  color: #3f3b38; }
 }
 #sponsors ul              {  margin-bottom: 2em; }
-#footer-links             {  background-color: #c0b4a0;
+#footer-links             {  background-color: #c0b4a0; padding-top: 1em; padding-bottom: 1em;
   ul                      {  overflow: auto; margin: 0; }
   li                      {  float: left; margin-left: 1em;
-    a                     {  color: #5b524c; font-weight: bold; border-bottom: 2px solid transparent;
+    a                     {  color: #5b524c; font-weight: bold; border-bottom: 2px solid transparent; padding: 5px; margin: 0 0.25em;
       &:hover             {  background-color: transparent; border-bottom: 2px solid $pink;  }
     }
   }
