@@ -1,0 +1,40 @@
+/* Large desktop */
+@media (min-width: 1200px) {
+	.btn-navbar 						{  display: none !important; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 1199px) {
+	.logo 								{  left: 43% !important; }
+		.btn-navbar 					{  display: none !important; }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.navbar-inner 						{  height: 56px; }
+	.nav-collapse 						{  height: 0; overflow: hidden;}
+	.admin-nav 							{  display: none; }
+	.logo 								{  left: 42%;
+		img 							{  height: 110px; width: 110px; }
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body 								{  padding: 0 !important; }
+	.navbar-inner 						{  height: 56px; }
+	.logo 								{  left: 42% !important;
+		img 							{  height: 110px; width: 110px; }
+	}
+	#banner h1, #banner h4,
+	#footer h4, #footer ul,
+	#meetings, #videos, #learn,
+	#job, #hire, #talk					{  margin-left: 20px !important; margin-right: 20px !important; }
+	.admin-nav 							{  display: none; }
+	.input-prepend input 						{  width: 180px !important; }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.logo 								{  left: 32% !important; }
+}
