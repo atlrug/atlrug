@@ -1,15 +1,14 @@
 #main-nav 							{  margin-bottom: 0;
-	a 								{ display: block; text-align: center;  }
+	a 								{  display: block; text-align: center;  }
 }
-.navbar-inner 						{  position: relative; z-index: 50; border-bottom: 1px solid #c8c2b5; @include border-radius(0); background-image: none; background-color: $tan; @include box-shadow(rgba(#000, 0.02) 0 15px 3px);}
+.navbar-inner 						{  position: relative; z-index: 50; border-bottom: 1px solid #c8c2b5; @include border-radius(0); background-image: none; background-color: $tan; @include box-shadow(rgba(#000, 0.02) 0 15px 3px);  }
 .logo 								{  @include box-shadow(rgba(#000, 0.02) 0 15px 3px);background-color: $tan; @include border-radius(1000px); padding: 0px;  position: absolute; top: 3px; left: 45%; z-index: 100; }
 .nav>li>a 							{  line-height: 1em; margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 0.25em; margin-right: 0.25em;  }
 .nav-links  						{
-
-	a 								{ color: #444; font-size: 1.3em; border-bottom: 2px solid $tan;
-		&:hover 					{  border-bottom: 2px solid $pink;}
+	a 								{  color: $gray; font-size: 1.3em; border-bottom: 2px solid $tan;
+		&:hover 					{  border-bottom: 2px solid $pink;  }
 	}
-		li.active a 				{  border-bottom: 2px solid $pink;}
+	li.active a 					{  border-bottom: 2px solid $pink;  }
 }
 .admin-nav>li 						{
 	&>a.dropdown-toggle 			{  margin-top: 2em; }
