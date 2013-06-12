@@ -1,33 +1,37 @@
 #main-nav.navbar
   .navbar-inner
     .container
-      %ul.nav.pull-left.nav-links
-        %li
-          = link_to 'Go to Meetings', meetings_path
-        %li
-          = link_to 'Find Presentations', videos_path
-        %li
-          = link_to 'Learn Ruby', '/learn'
+      %a{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :class => "btn btn-navbar"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
       %a.logo{:href => root_url }
         =image_tag "ATLRUG_logo.png", :alt => 'Atlanta Ruby Logo'
-      %ul.nav.pull-right.admin-nav
-        %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-            Admin
-            %b.caret
-          %ul.dropdown-menu
-            - if signed_in?
-              %li
-                %a{:href => approve_talks_path, :tabindex => "-1"} Approve Talks
-              %li
-                %a{:href => log_out_path, :method => :delete, :tabindex => "-1"} Log out
-            - else
-              %li
-                %a{:href => login_path, :tabindex => "-1"} Login
-      %ul.nav.pull-right.nav-links
-        %li
-          = link_to 'Find a Job', '/job'
-        %li
-          = link_to 'Hire Someone', '/hire'
-        %li
-          = link_to 'Give a Talk', new_talk_path
+      %div.nav-collapse
+        %ul.nav.nav-links.pull-left
+          %li
+            = link_to 'Go to Meetings', meetings_path
+          %li
+            = link_to 'Find Presentations', videos_path
+          %li
+            = link_to 'Learn Ruby', '/learn'
+        %ul.nav.pull-right.nav-links
+          %li
+            = link_to 'Find a Job', '/job'
+          %li
+            = link_to 'Hire Someone', '/hire'
+          %li
+            = link_to 'Give a Talk', new_talk_path
+          %li.dropdown.admin-nav
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Admin
+              %b.caret
+            %ul.dropdown-menu
+              - if signed_in?
+                %li
+                  %a{:href => approve_talks_path, :tabindex => "-1"} Approve Talks
+                %li
+                  %a{:href => log_out_path, :method => :delete, :tabindex => "-1"} Log out
+              - else
+                %li
+                  %a{:href => login_path, :tabindex => "-1"} Login
