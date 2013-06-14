@@ -34,17 +34,17 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
   * GITHUB_KEY, and
   * GITHUB_SECRET.
 
-You can get an meetup.com API key at: http://www.meetup.com/meetup_api/key
-GITHUB_KEY and GITHUB_SECRET are using when submitting talk proposals.
+7. To set AR4_S_K_B variable, run **rake secret** command.
 
-7. << Removed .travis.yml feature for now >>
+8. Get an meetup.com API key ofr MEETUP_KEY at: http://www.meetup.com/meetup_api/key
 
-8. To set AR4_S_K_B, run the following command and add <b>export AR4_S_K_B=<secret></b> to your .bashrc file.
+9. Use GITHUB_KEY and GITHUB_SECRET when setting up talk proposal submittals.
 
-    rake secret
+10. You can put these 4 variables in a **.env** file and it is NOT checked into Github.
 
-9. For more detail about <b>Guard LiveReload</b>, go to: https://github.com/guard/guard-livereload
+11. << Removed .travis.yml feature for now >>
 
+12. For more detail about <b>Guard LiveReload</b>, go to: https://github.com/guard/guard-livereload
 
 == To Contribute
 
