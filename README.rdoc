@@ -28,7 +28,14 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 5. Follow these instructions regarding Heroku and Rails 4 (avoid "bundle --binstubs"): https://gist.github.com/peter/3025502
 
-6. There are two variables to set AR4_S_K_B (secret key base) and MEETUP_KEY (ENV var for meetup.com API key). You can get an meetup.com API key at: http://www.meetup.com/meetup_api/key
+6. There are four variables to set
+  * AR4_S_K_B (secret key base),
+  * MEETUP_KEY (ENV var for meetup.com API key),
+  * GITHUB_KEY, and
+  * GITHUB_SECRET.
+
+You can get an meetup.com API key at: http://www.meetup.com/meetup_api/key
+GITHUB_KEY and GITHUB_SECRET are using when submitting talk proposals.
 
 7. << Removed .travis.yml feature for now >>
 
