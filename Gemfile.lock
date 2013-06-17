@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/simple_form.git
-  revision: 7b2aa6edcf367e300c3f1216b9d82e0230e7e8db
+  revision: 0da7b473cb3ec75f1e8fa84b91d2dc07ff4febf6
   specs:
     simple_form (3.0.0.rc)
       actionpack (>= 4.0.0.rc1, < 4.1)
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/cucumber/cucumber-rails.git
-  revision: d4ec9432b620a6d55469a62ae9409cbd977a83ec
+  revision: 3e6cc89489f8553c698ed944fe683b75d700ec23
   branch: master_rails4_test
   specs:
     cucumber-rails (1.3.1)
@@ -132,7 +132,7 @@ GEM
     formatador (0.2.4)
     gherkin (2.12.0)
       multi_json (~> 1.3)
-    guard (1.8.0)
+    guard (1.8.1)
       formatador (>= 0.2.4)
       listen (>= 1.0.0)
       lumberjack (>= 1.0.2)
@@ -172,7 +172,7 @@ GEM
     libnotify (0.8.0)
       ffi (>= 1.0.11)
     libv8 (3.11.8.17)
-    listen (1.2.1)
+    listen (1.2.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
