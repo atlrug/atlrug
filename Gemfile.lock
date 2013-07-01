@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/simple_form.git
-  revision: 9b2018052e9a7706fd4b2e28cca0d04560c0f1ec
+  revision: dcf4862972792abafeefd73f6b1d385322a64115
   specs:
     simple_form (3.0.0.rc)
       actionpack (>= 4.0.0, < 4.1)
@@ -16,9 +16,9 @@ GIT
 
 GIT
   remote: git://github.com/ryanb/letter_opener.git
-  revision: f2fa76f72755ffae6e04e3ccfe32eed910996a55
+  revision: 414eea2c68112508851c488ef01b5c61e1ee0017
   specs:
-    letter_opener (1.1.1)
+    letter_opener (1.1.2)
       launchy (~> 2.2)
 
 GIT
@@ -71,7 +71,7 @@ GEM
     autotest-rails (4.1.2)
       ZenTest (~> 4.5)
     awesome_print (1.1.0)
-    backports (3.3.2)
+    backports (3.3.3)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
