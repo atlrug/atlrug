@@ -47,16 +47,16 @@ describe User do
   describe '#atlrug_team_id' do
     it "looks up the Owners team id" do
       user = FactoryGirl.build(:user)
-      teams = [stub(:name => 'ATLRUGers'), stub(:name => 'Owners', :id => 1),
-        stub(:name => 'Other')]
-      octokit = stub(:org_teams => teams)
+      teams = [double(:name => 'ATLRUGers'), double(:name => 'Owners', :id => 1),
+        double(:name => 'Other')]
+      octokit = double(:org_teams => teams)
       user.stub(:octokit => octokit)
       user.atlrug_team_id.should == 1
     end
 
     it "doesn't raise exception if user has no permission to ATLRUG org" do
       user = FactoryGirl.build(:user)
-      octokit = stub and octokit.stub(:org_teams).and_raise(Octokit::Forbidden)
+      octokit = double and octokit.stub(:org_teams).and_raise(Octokit::Forbidden)
       user.stub(:octokit => octokit)
 
       expect { user.atlrug_team_id }.to_not raise_error
@@ -67,9 +67,9 @@ describe User do
     let(:user) { FactoryGirl.build(:user, :uid => uid) }
 
     it "is true if the user is in the ATLRUG Owners team" do
-      members = [stub(:id => uid + "1"), stub(:id => uid),
-        stub(:id => uid + "10")]
-      octokit = stub(:team_members => members)
+      members = [double(:id => uid + "1"), double(:id => uid),
+        double(:id => uid + "10")]
+      octokit = double(:team_members => members)
       user.stub(:octokit => octokit)
       user.stub(:atlrug_team_id => 1)
 
@@ -77,8 +77,8 @@ describe User do
     end
 
     it "is false if the user is not in the ATLRUG Owners team" do
-      members = [stub(:id => uid + "1"), stub(:id => uid + "10")]
-      octokit = stub(:team_members => members)
+      members = [double(:id => uid + "1"), double(:id => uid + "10")]
+      octokit = double(:team_members => members)
       user.stub(:octokit => octokit)
       user.stub(:atlrug_team_id)
 
