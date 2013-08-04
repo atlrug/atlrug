@@ -73,7 +73,6 @@ gem 'sass-rails'
 gem 'uglifier'
 
 gem 'execjs'
-#U# (5/2/2013: STUCK AT 3.11.8.17 x86-linux) gem 'libv8', '~> 3.3.10', :platforms => :ruby
 gem 'therubyracer', :platforms => :ruby
 
 gem "bootstrap-sass-rails"
