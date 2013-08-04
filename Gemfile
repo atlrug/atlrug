@@ -69,7 +69,7 @@ gem 'omniauth-github'
 gem 'octokit'
 
 gem 'coffee-rails'
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 gem 'uglifier'
 
 gem 'execjs'
@@ -104,7 +104,7 @@ gem "actionpack-action_caching"
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# gem 'bcrypt-ruby'
 #
 # Use unicorn as the app server
 # gem 'unicorn'
