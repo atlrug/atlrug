@@ -19,8 +19,7 @@ group :development, :test do
   gem "autotest-fsevent"
   gem "autotest-growl"
 
-  gem "cucumber-rails", :require => false, :git =>
-    'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
+  gem "cucumber-rails", :require => false
   gem 'cucumber', '1.3.2'
   gem "database_cleaner"
 
