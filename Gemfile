@@ -99,6 +99,9 @@ gem 'backports'
 # For old-style action_caching
 gem "actionpack-action_caching"
 
+gem 'memcachier'
+gem 'dalli'
+
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.
 # To use ActiveModel has_secure_password
