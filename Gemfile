@@ -30,7 +30,7 @@ group :development, :test do
 
   gem 'rails4_upgrade', :git => 'git://github.com/alindeman/rails4_upgrade'
 
-  #U# gem 'travis'
+  gem 'travis'
 
   gem 'simplecov', :require => false
   gem 'simplecov-json', :require => false
