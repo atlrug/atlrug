@@ -1,7 +1,7 @@
 # BASED ON THIS ARTICLE: https://blog.heroku.com/archives/2013/2/27/unicorn_rails
 
 worker_processes 3
-#U# worker_processes 4
+#TODO# worker_processes 4
 timeout 30
 preload_app true
 

@@ -20,7 +20,6 @@ group :development, :test do
   gem "autotest-growl"
 
   gem "cucumber-rails", :require => false
-  gem 'cucumber', '1.3.2'
   gem "database_cleaner"
 
   gem "factory_girl_rails"
