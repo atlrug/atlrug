@@ -41,6 +41,7 @@ Feature: Visit Web Site
     When I follow "Find Presentations"
     Then I should see "Other videos"
     Then I should see "See more on Blip.tv"
+    Then I should see "See more on YouTube"
 
   Scenario: Check "Learn Ruby" Link
     Given I go to the home page
