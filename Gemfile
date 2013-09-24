@@ -24,10 +24,10 @@ group :development, :test do
 
   gem "factory_girl_rails"
   gem "launchy"
-  gem "letter_opener", :git => 'git://github.com/ryanb/letter_opener.git'
+  gem "letter_opener"
   gem 'zonebie'
 
-  gem 'rails4_upgrade', :git => 'git://github.com/alindeman/rails4_upgrade'
+  gem 'rails4_upgrade'
 
   gem 'travis'
 
@@ -74,7 +74,7 @@ gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 
 gem "bootstrap-sass-rails"
-gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
+gem 'simple_form'
 gem 'haml'
 gem "haml-rails"
 
