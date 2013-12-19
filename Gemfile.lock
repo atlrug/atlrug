@@ -312,8 +312,8 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.1.0)
       coffee-rails
-    typhoeus (0.6.6)
-      ethon (~> 0.6.1)
+    typhoeus (0.6.7)
+      ethon (~> 0.6.2)
     tzinfo (0.3.38)
     uglifier (2.3.3)
       execjs (>= 0.3.0)
