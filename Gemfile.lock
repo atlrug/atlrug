@@ -92,7 +92,7 @@ GEM
       launchy (~> 2.1)
       mail (~> 2.2)
     erubis (2.7.0)
-    ethon (0.6.1)
+    ethon (0.6.2)
       ffi (>= 1.3.0)
       mime-types (~> 1.18)
     eventmachine (1.0.3)
@@ -197,7 +197,7 @@ GEM
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
-    pg (0.17.0)
+    pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -362,6 +362,7 @@ DEPENDENCIES
   letter_opener
   libnotify
   memcachier
+  minitest
   octokit
   omniauth
   omniauth-github
