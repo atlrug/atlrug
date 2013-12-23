@@ -38,7 +38,7 @@ GEM
       ZenTest (~> 4.5)
     awesome_print (1.2.0)
     backports (3.3.5)
-    better_errors (1.0.1)
+    better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
