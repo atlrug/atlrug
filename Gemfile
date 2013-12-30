@@ -15,7 +15,7 @@ group :development, :test do
   gem "capybara"
   gem 'capybara-screenshot'
 
-  gem "minitest"
+  gem "minitest", '4.7.5'
   gem "autotest-rails"
   gem "autotest-fsevent"
   gem "autotest-growl"
