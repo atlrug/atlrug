@@ -363,7 +363,6 @@ DEPENDENCIES
   letter_opener
   libnotify
   memcachier
-  minitest
   octokit
   omniauth
   omniauth-github
