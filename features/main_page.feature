@@ -46,7 +46,7 @@ Feature: Visit Web Site
   Scenario: Check "Learn Ruby" Link
     Given I go to the home page
     When I follow "Learn Ruby"
-    Then I should see "Learn Ruby and/or Rails" 
+    Then I should see "Learn Ruby and/or Rails"
     Then I should see "Locally"
     Then I should see "Emerald City Programming Group"
     Then I should see "Online"

@@ -20,7 +20,7 @@ Spec:
 Cucumber:
  * features/proposals.feature
  * features/step_definitions/proposals_steps.rb
-    
+
 Here is db migrate scripts;
  * db/migrate/20120320230418_create_talks.rb
  * db/migrate/20120322034209_add_approved_to_talks.rb

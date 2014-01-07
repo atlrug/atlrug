@@ -55,7 +55,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-screenshot (0.3.14)
+    capybara-screenshot (0.3.16)
       capybara (>= 1.0, < 3)
       launchy
     celluloid (0.15.2)

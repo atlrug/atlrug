@@ -32,7 +32,7 @@ Atlrug4::Application.configure do
     :min_delay => 500,
     :max_delay => 10000,
     :port => 56789,
-    :host => 'localhost', :ignore => [ %r{dont/modify\.html$} ]                                  
+    :host => 'localhost', :ignore => [ %r{dont/modify\.html$} ]
   )
 
 end

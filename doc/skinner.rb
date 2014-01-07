@@ -12,10 +12,10 @@ GreenOnion.configure do |c|
   # c.threshold = 100
   # c.dimensions = { :width => 1024, :height => 768 }
   # c.skin_name = {
-  #   :match => /[\/]/, 
-  #   :replace => "_", 
+  #   :match => /[\/]/,
+  #   :replace => "_",
   #   :prefix => nil,
-  #   :root => "root" 
+  #   :root => "root"
   # }
 end
 
