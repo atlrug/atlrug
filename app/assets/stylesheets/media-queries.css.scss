@@ -1,18 +1,18 @@
 /* Large desktop */
 @media (min-width: 1200px) {
-	.btn-navbar 						{  display: none !important; }
+	.navbar-btn 						{  display: none !important; }
 }
 
 /* Desktop */
 @media (min-width: 1024px) and (max-width: 1199px) {
 	.logo 								{  left: 43% !important; }
-		.btn-navbar 					{  display: none !important; }
+		.navbar-btn 					{  display: none !important; }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1024px) {
 	.navbar-inner 						{  height: 56px; }
-	.nav-collapse 						{  height: 0; overflow: hidden;}
+	.navbar-collapse 						{  height: 0; overflow: hidden;}
 	.admin-nav 							{  display: none; }
 	.logo 								{  left: 42%;
 		img 							{  height: 110px; width: 110px; }
@@ -31,7 +31,7 @@
 	#meetings, #videos, #learn,
 	#job, #hire, #talk					{  margin-left: 20px !important; margin-right: 20px !important; }
 	.admin-nav 							{  display: none; }
-	.input-prepend input 						{  width: 180px !important; }
+	.input-group input 						{  width: 180px !important; }
 }
 
 /* Landscape phones and down */

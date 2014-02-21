@@ -1,21 +1,22 @@
 #main-nav.navbar
   .navbar-inner
     .container
-      %a{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :class => "btn btn-navbar"}
+      %a{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :class => "btn navbar-btn"}
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
+
       %a.logo{:href => root_url }
         =image_tag "ATLRUG_logo.png", :alt => 'Atlanta Ruby Logo'
-      %div.nav-collapse
-        %ul.nav.nav-links.pull-left
+      %div.navbar-collapse
+        %ul.nav.navbar-nav.nav-links.navbar-left
           %li
             = link_to 'Go to Meetings', meetings_path
           %li
             = link_to 'Find Presentations', videos_path
           %li
             = link_to 'Learn Ruby', '/learn'
-        %ul.nav.pull-right.nav-links
+        %ul.nav.navbar-nav.nav-links.navbar-right
           %li
             = link_to 'Find a Job', '/job'
           %li

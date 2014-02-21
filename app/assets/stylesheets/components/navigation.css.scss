@@ -1,7 +1,7 @@
 #main-nav 							{  margin-bottom: 0;
 	a 								{  display: block; text-align: center;  }
 }
-a.btn.btn-navbar					{  background-image: none; background-color: darken($tan, 30%); border-color: darken($tan, 35%);}
+a.btn.navbar-btn					{  background-image: none; background-color: darken($tan, 30%); border-color: darken($tan, 35%);}
 .navbar-inner 						{  position: relative; z-index: 50; border-bottom: 1px solid #c8c2b5; background-image: none; background-color: $tan; @include box-shadow(rgba(#000, 0.02) 0 15px 3px);  }
 .logo 								{  position: absolute; @include box-shadow(rgba(#000, 0.02) 0 15px 3px);background-color: $tan; padding: 0px;  position: absolute; top: 3px; left: 45%; z-index: 100; }
 .nav>li>a 							{  line-height: 1em; padding: 10px; margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 0.25em; margin-right: 0.25em;  }
@@ -16,7 +16,7 @@ a.btn.btn-navbar					{  background-image: none; background-color: darken($tan, 3
 		&>.caret 					{  position: relative; top: -4px;  }
 	}
 }
-.nav-collapse.in.collapse 						{  background-color: $tan; margin-top: 50px;
+.navbar-collapse.in.collapse 						{  background-color: $tan; margin-top: 50px;
 	.pull-left>li:first-child 		{  margin-top: 70px; }
 	&>.nav 							{  margin-bottom: 0;
 		&>li>a 						{  margin-top: 0; }
