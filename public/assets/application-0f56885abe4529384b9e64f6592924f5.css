@@ -473,17 +473,6 @@ a:focus {
   .container:after {
     clear: both; }
 
-/*.container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
-  *zoom: 1; }
-  .container-fluid:before, .container-fluid:after {
-    display: table;
-    content: "";
-    line-height: 0; }
-  .container-fluid:after {
-    clear: both; }*/
-
 /* Partial: twitter/bootstrap/_type.scss */
 p {
   margin: 0 0 10px; }
@@ -2345,7 +2334,7 @@ table th[class*="span"],
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box; }
-  .dropdown-menu.pull-right {
+  .dropdown-menu.dropdown-menu-right {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -3683,7 +3672,7 @@ input[type="submit"].btn {
   float: left;
   margin: 0 10px 0 0; }
 
-.navbar-nav.pull-right {
+.navbar-nav.navbar-right {
   float: right;
   margin-right: 0; }
 
@@ -3817,19 +3806,19 @@ input[type="submit"].btn {
   border-bottom-color: #555555; }
 
 .navbar-right > li > .dropdown-menu,
-.navbar-nav > li > .dropdown-menu.pull-right {
+.navbar-nav > li > .dropdown-menu.dropdown-menu-right {
   left: auto;
   right: 0; }
   .navbar-right > li > .dropdown-menu:before,
-  .navbar-nav > li > .dropdown-menu.pull-right:before {
+  .navbar-nav > li > .dropdown-menu.dropdown-menu-right:before {
     left: auto;
     right: 12px; }
   .navbar-right > li > .dropdown-menu:after,
-  .navbar-nav > li > .dropdown-menu.pull-right:after {
+  .navbar-nav > li > .dropdown-menu.dropdown-menu-right:after {
     left: auto;
     right: 13px; }
   .navbar-right > li > .dropdown-menu .dropdown-menu,
-  .navbar-nav > li > .dropdown-menu.pull-right .dropdown-menu {
+  .navbar-nav > li > .dropdown-menu.dropdown-menu-right .dropdown-menu {
     left: auto;
     right: 100%;
     margin-left: 0;
@@ -5641,9 +5630,6 @@ a.label .label-default:hover, a.label .label-default:focus, a.badge:hover, a.bad
     margin-left: -20px;
     margin-right: -20px; }
 
-/*  .container-fluid {
-    padding: 0; }*/
-
   .dl-horizontal dt {
     float: none;
     clear: none;
@@ -5902,7 +5888,7 @@ a.label .label-default:hover, a.label .label-default:focus, a.badge:hover, a.bad
     border-top-color: #111111;
     border-bottom-color: #111111; }
 
-  .navbar .navbar-collapse .nav.pull-right {
+  .navbar .navbar-collapse .nav.navbar-right {
     float: none;
     margin-left: 0; }
 
