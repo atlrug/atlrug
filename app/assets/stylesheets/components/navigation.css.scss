@@ -1,12 +1,12 @@
 #main-nav 							{  margin-bottom: 0;
 	a 								{  display: block; text-align: center;  }
 }
-a.btn.navbar-btn					{  background-image: none; background-color: darken($tan, 30%); border-color: darken($tan, 35%);}
-.navbar-inner 						{  position: relative; z-index: 50; border-bottom: 1px solid #c8c2b5; background-image: none; background-color: $tan; @include box-shadow(rgba(#000, 0.02) 0 15px 3px);  }
+a.btn.navbar-btn					{  background-image: none; background-color: darken($tan, 30%); border-color: darken($tan, 35%); padding: 0;}
+.navbar-inner .container 						{ width:100%;  position: relative; z-index: 50; border-bottom: 1px solid #c8c2b5; background-image: none; background-color: $tan; @include box-shadow(rgba(#000, 0.02) 0 15px 3px);  }
 .logo 								{  position: absolute; border-radius: 1000px; @include box-shadow(rgba(#000, 0.02) 0 15px 3px);background-color: $tan; padding: 0px;  position: absolute; top: 3px; left: 45%; z-index: 100; }
 .nav>li>a 							{  line-height: 1em; padding: 10px; margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 0.25em; margin-right: 0.25em;  }
 .nav-links  						{
-	a 								{  color: $gray; font-size: 1.2em; border-bottom: 2px solid $tan;
+	a 								{  color: #777; font-size: 1.2em; border-bottom: 2px solid $tan;
 		&:hover 					{  border-bottom: 2px solid $pink;  }
 	}
 	li.active a 					{  border-bottom: 2px solid $pink;  }
