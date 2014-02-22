@@ -1,31 +1,32 @@
 #talk.container
   .row
-    .span12
+    .col-md-12
       - model_class = Talk
       %h1 Interested in speaking?
       %p Please fill out this form, and a group leader will get back to you as soon as possible.
   .row
-    .span7
+    .col-md-7
       = simple_form_for @talk, :html => {:class => 'form-horizontal'} do |f|
-        .fieldset
+        .fieldset.col-md-6
           %legend ATLRUG Talk Proposal
           - if flash[:alert]
-            %p.alert.alert-error
+            %p.alert.alert-danger
               %a.close{"data-dismiss" => "alert"}&times;
               = flash[:alert]
 
-          = f.input :title
+          = f.input :title, :input_html => {:class => 'form-control'}
 
-          = f.input :description, :input_html => { :rows => 4 }
+          = f.input :description, :input_html => { :rows => 4, :class => 'form-control' }
 
-          = f.input :duration, :label => "Duration (minutes)", :hint  => "Just estimate. Most talks are 15-30 minutes.", :input_html => { :step => 5, :min => 0 }
+          = f.input :duration, :label => "Duration (minutes)", :hint  => "Just estimate. Most talks are 15-30 minutes.", :input_html => { :step => 5, :min => 0, :class => 'form-control' }
 
-          = f.input :email
-          = f.input :twitter, :wrapper => :prepend, :label => "* Twitter Username" do
-            = content_tag :span, "@", :class => "add-on"
-            = f.input_field :twitter, :class => 'input-medium'
+          = f.input :email, :input_html => {:class => 'form-control'}
+          = f.input :twitter, :label => "* Twitter Username" do
+            .input-group
+              %span.input-group-addon @
+              %input.form-control
 
           .form-actions
             = f.button :submit, "Submit Proposal", :class => "btn-info btn-large"
-    .span5
+    .col-md-5
       = image_tag "atl_meetup2.jpg", :alt => "Give a Talk", :class => "thumbnail"
