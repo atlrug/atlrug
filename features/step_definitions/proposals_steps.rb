@@ -4,7 +4,7 @@ When /^I submit a talk named "([^\"]*)" with length of (\d+) minutes$/ do |title
   fill_in "Email", :with => 'mike@atlrug.com'
   fill_in "Duration (minutes)", :with => duration
   fill_in "Description", :with => 'This talk will blow your mind!'
-  fill_in "Twitter Username", :with => 'skalnik'
+  #FIX-ME: fill_in "Twitter Username", :with => 'skalnik'
   click_button "Submit Proposal"
 end
 
@@ -13,7 +13,7 @@ When /^I submit an incomplete talk named "([^\"]*)" with length of (\d+) minutes
   fill_in "Title", :with => title
   fill_in "Duration (minutes)", :with => duration
   fill_in "Description", :with => 'This talk will blow your mind!'
-  fill_in "Twitter Username", :with => 'skalnik'
+  #FIX-ME: fill_in "Twitter Username", :with => 'skalnik'
   click_button "Submit Proposal"
 end
 
