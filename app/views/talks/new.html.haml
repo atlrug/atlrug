@@ -21,10 +21,8 @@
           = f.input :duration, :label => "Duration (minutes)", :hint  => "Just estimate. Most talks are 15-30 minutes.", :input_html => { :step => 5, :min => 0, :class => 'form-control' }
 
           = f.input :email, :input_html => {:class => 'form-control'}
-          = f.input :twitter, :label => "* Twitter Username" do
-            .input-group
-              %span.input-group-addon @
-              %input.form-control
+          = f.input :twitter, :wrapper => :prepend, :label => "* Twitter Username (@)" do
+            = f.input_field :twitter, :class => 'form-control'
 
           .form-actions
             = f.button :submit, "Submit Proposal", :class => "btn-info btn-large"
