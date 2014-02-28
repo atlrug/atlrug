@@ -9,7 +9,7 @@ group :development, :test do
   #TESTING/ANALYSIS
   gem 'rails-footnotes'
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '3.0.0.beta1'
   gem "email_spec"
 
   gem "capybara"
