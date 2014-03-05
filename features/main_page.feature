@@ -12,8 +12,10 @@ Feature: Visit Web Site
     Then I should see the image "Atlanta Ruby Logo"
     Then I should see "Find a Job"
     Then I should see "Hire Someone"
-    Then I should see "Give a Talk"
-    Then I should see "Admin"
+# 3/5/2013: Commented out this in GUI.
+#    Then I should see "Give a Talk"
+#    Then I should see "Admin"
+
 ## BOTTOM BAR
     Then I should see "Meetup"
     Then I should see "@atlrug"
@@ -64,7 +66,8 @@ Feature: Visit Web Site
     When I follow "Hire Someone"
     Then I should see "How to hire a Ruby developer."
 
-  Scenario: Check "Admin" Link
-    Given I go to the home page
-    When I follow "Admin"
-    Then I should see "Login"
+# 3/5/2013: Commented out this in GUI.
+#  Scenario: Check "Admin" Link
+#    Given I go to the home page
+#    When I follow "Admin"
+#    Then I should see "Login"
