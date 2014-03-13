@@ -1,19 +1,16 @@
 #videos
-  - if @most_recent_video
+  - if @most_recent_video.present?
     %h1
-      %a{:href => @most_recent_video['url']}= @most_recent_video['title']
-    %embed.thumbnail{:src=> @most_recent_video['embedUrl'], :type=>"application/x-shockwave-flash", :width=>"480", :height=>"320", :allowscriptaccess=>"always", :allowfullscreen=>"true"}
+      %a{:href => @most_recent_video.player_url}= @most_recent_video.title
+    = raw @player
     - if @other_videos.any?
       %h3 Other videos
       %ul.other-list
         - @other_videos.each do |video|
           %li
-            %a{:href => video['url']}= video['title']
+            %a{:href => video.player_url}= video.title
     %h4
       See more newer stuff on
-      = link_to 'YouTube', 'http://www.youtube.com/playlist?list=PLqZY2tk6rSRn2Vapk2raOTFjXGiDbpQUU'
-    %h4
-      See more older stuff on
-      = link_to 'Blip.tv', 'http://skiptree.blip.tv'
+      = link_to 'YouTube', @playlist_url
     %h4
       = link_to 'Past Talks Wiki page', 'https://github.com/atlrug/atlrug4/wiki/1.-Past-Talks'

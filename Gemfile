@@ -103,6 +103,8 @@ gem "actionpack-action_caching"
 gem 'memcachier'
 gem 'dalli'
 
+gem 'youtube_it'
+
 ######################################################################
 # 4/24/2013: The following was created by "rails new" command.
 # To use ActiveModel has_secure_password

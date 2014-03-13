@@ -36,8 +36,10 @@ class ContentController < ApplicationController
     end
 
     def load_videos
-      @videos            = BlipVideo.all
+      @videos            = Video.all
       @most_recent_video = @videos.first
-      @other_videos      = @videos[1..-1]
+      @other_videos      = @videos[1..5]
+      @player            = %Q{<iframe width="560" height="315" src="#{@most_recent_video.embed_url}" frameborder="0" allowfullscreen></iframe>}
+      @playlist_url      = Video.playlist_url
     end
 end
