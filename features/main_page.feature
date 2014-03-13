@@ -43,7 +43,6 @@ Feature: Visit Web Site
     When I follow "Find Presentations"
     Then I should see "Other videos"
     Then I should see "See more newer stuff on YouTube"
-    Then I should see "See more older stuff on Blip.tv"
 
   Scenario: Check "Learn Ruby" Link
     Given I go to the home page
