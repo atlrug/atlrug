@@ -30,11 +30,12 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 5. Follow these instructions regarding Heroku and Rails 4 (avoid "bundle --binstubs"): https://gist.github.com/peter/3025502
 
-6. There are four variables to set
+6. There are five variables to set
   * AR4_S_K_B (secret key base),
   * MEETUP_KEY (ENV var for meetup.com API key),
-  * GITHUB_KEY, and
-  * GITHUB_SECRET.
+  * GITHUB_KEY,
+  * GITHUB_SECRET,
+  * YOUTUBE_KEY
 
 7. To set AR4_S_K_B variable, run **rake secret** command.
 
@@ -42,11 +43,13 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 9. Use GITHUB_KEY and GITHUB_SECRET when setting up talk proposal submittals.
 
-10. You can put these 4 variables in a **.env** file and it is NOT checked into Github.
+10. Grab a developer API key from Google at: https://developers.google.com/youtube/v3/
 
-11. << Removed .travis.yml feature for now >>
+11. You can put these 5 variables in a **.env** file and it is NOT checked into Github.
 
-12. For more detail about <b>Guard LiveReload</b>, go to: https://github.com/guard/guard-livereload
+12. << Removed .travis.yml feature for now >>
+
+13. For more detail about <b>Guard LiveReload</b>, go to: https://github.com/guard/guard-livereload
 
 == To Contribute
 
