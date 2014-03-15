@@ -72,7 +72,7 @@ GEM
       mechanize
       nokogiri
       rainbow (~> 2.0.0)
-    codesake-dawn (1.0.3)
+    codesake-dawn (1.0.4)
       codesake-commons (~> 0.95.0)
       coveralls
       cvss
@@ -197,7 +197,7 @@ GEM
     libnotify (0.8.2)
       ffi (>= 1.0.11)
     libv8 (3.16.14.3)
-    listen (2.7.0)
+    listen (2.7.1)
       celluloid (>= 0.15.2)
       celluloid-io (>= 0.15.0)
       rb-fsevent (>= 0.9.3)
@@ -219,7 +219,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.5.2)
-    minitest (5.3.0)
+    minitest (5.3.1)
     multi_json (1.9.0)
     multi_test (0.0.3)
     multi_xml (0.5.5)
@@ -326,7 +326,7 @@ GEM
     ruby_gntp (0.3.4)
     ruby_parser (3.4.1)
       sexp_processor (~> 4.1)
-    sass (3.3.2)
+    sass (3.3.3)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
@@ -334,7 +334,7 @@ GEM
     sawyer (0.5.3)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
-    sexp_processor (4.4.1)
+    sexp_processor (4.4.2)
     simple_form (3.0.1)
       actionpack (>= 4.0.0, < 4.1)
       activemodel (>= 4.0.0, < 4.1)
@@ -346,8 +346,8 @@ GEM
     simplecov-json (0.2)
       json
       simplecov
-    slop (3.4.7)
-    sprockets (2.11.0)
+    slop (3.5.0)
+    sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -391,7 +391,7 @@ GEM
       ethon (~> 0.6.2)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
-    uglifier (2.4.0)
+    uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.3)
