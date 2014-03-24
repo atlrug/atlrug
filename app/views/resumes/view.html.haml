@@ -1,2 +1,36 @@
-%h1 Resumes#view
-%p Find me in app/views/resumes/view.html.haml
+.container
+  .row
+    .col-md-12
+      #hire
+        %h1 How to hire a Ruby developer.
+        .row
+          .col-md-6
+            %p There is a lot of demand for Ruby developers, so hiring can be challenging.
+            %p
+              Send one of your current developers to announce an opening at an AtlRug Meeting.
+              Make sure to tell people how your job is different.
+            %p If you have no technical experience, you may need a partner who understands technology.
+          .col-md-6
+            = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
+            
+  .row
+    .col-md-12
+      - model_class = Resume
+      %p
+      %h1= resume_title(@resume)
+      .job-post-meta
+        %span= resume_post_date_by(@resume)
+        =resume_mail_to(@resume)
+      %h3 Personal info
+      %h5= @resume[:personal_info]
+      %h3 Education 
+      %h5= @resume[:education]
+      %h3 Career objective
+      %h5= @resume[:career_objective]
+      %h3 Work experience 
+      %h5= @resume[:work_experience]
+      %h3 Skill
+      %h5= @resume[:skill]
+      %h3 Hoppy
+      %h5= @resume[:hoppy]
+
