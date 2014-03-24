@@ -22,6 +22,16 @@ class ResumesController < ApplicationController
     @resume = Resume.find(params[:id])
   end
   
+  def delete
+    @resume = Resume.find(params[:id])
+    if @resume != nil && @resume.destroy
+      redirect_to root_url,
+        :notice => @resume['name'] + "'s resume has been deleted!"
+    else
+      redirect_to resumes_path
+    end
+  end
+  
 private
   def resume_params
     params.require(:resume).permit(

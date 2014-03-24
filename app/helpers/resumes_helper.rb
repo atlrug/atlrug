@@ -27,6 +27,12 @@ module ResumesHelper
     link_to('Continue Reading  »', view_resume_path(resume), :method => :get)
   end
   
+  def resume_delete(resume)
+    if signed_in?
+      link_to(' Delete  »', delete_resume_path(resume), :method => :get)
+    end
+  end
+  
   def resume_date_display(time)
     time.strftime('%B %d, %Y').sub(' 0',' ')
   end

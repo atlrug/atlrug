@@ -15,10 +15,12 @@ Atlrug4::Application.routes.draw do
   
   resources :jobs, :only => [:index, :new, :create] do
     get :view, :on => :member
+    get :delete, :on => :member
   end
   
   resources :resumes, :only => [:index, :new, :create] do
     get :view, :on => :member
+    get :delete, :on => :member
   end
 
   get '/auth/:provider/callback', :to => 'sessions#create'

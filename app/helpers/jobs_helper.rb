@@ -1,5 +1,5 @@
 module JobsHelper
-  def job_link(job)
+  def job_header_link(job)
     link_to(job['title'], view_job_path(job), :method => :get)
   end
   
@@ -25,6 +25,12 @@ module JobsHelper
   
   def job_more_reading(job)
     link_to('Continue Reading  »', view_job_path(job), :method => :get)
+  end
+  
+  def job_delete(job)
+    if signed_in?
+      link_to(' Delete  »', delete_job_path(job), :method => :get)
+    end
   end
   
   def job_date_display(time)

@@ -35,6 +35,6 @@
                     %span= resume_post_date_by(resume) 
                     =resume_mail_to(resume)
                   %p= resume_short_description(resume)
-                  %h6.continue_read= resume_more_reading(resume)
+                  %h6.continue_read= resume_more_reading(resume) + resume_delete(resume)
         - else
           %h3 No resumes.

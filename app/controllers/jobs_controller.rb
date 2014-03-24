@@ -22,6 +22,16 @@ class JobsController < ApplicationController
     @job = Job.find(params[:id])
   end
   
+  def delete
+    @job = Job.find(params[:id])
+    if @job != nil && @job.destroy
+      redirect_to root_url,
+        :notice => @job['name'] + "'s job has been deleted!"
+    else
+      redirect_to jobs_path
+    end
+  end
+  
 private
   def job_params
     params.require(:job).permit(
