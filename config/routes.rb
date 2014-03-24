@@ -12,6 +12,10 @@ Atlrug4::Application.routes.draw do
     get :approve, :on => :collection
     put :accept, :on => :member
   end
+  
+  resources :jobs, :only => [:index, :new, :create] do
+    get :view, :on => :member
+  end
 
   get '/auth/:provider/callback', :to => 'sessions#create'
   get '/login' => redirect('/auth/github'), :as => :login

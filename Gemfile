@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0.rc1'
 ruby "2.1.1"
 
+# Follow this thread http://stackoverflow.com/questions/22391116/nomethoderror-in-pageshome-undefined-method-environment-for-nilnilclass
+gem 'sprockets', '2.11.0'
+
 group :development, :test do
   gem 'sqlite3'
 
