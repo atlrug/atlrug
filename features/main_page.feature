@@ -60,11 +60,44 @@ Feature: Visit Web Site
     When I follow "Find a Job"
     Then I should see "Our sponsors are usually hiring"
     Then I should see "Networking"
+    Then I should see "Have a new job?"
+    Then I should see "Please click here to submit your new job"
+    Then I should see "Current jobs"
+
+  Scenario: Check "Have a new job?" Link
+    Given I go to the home page
+    When I follow "Find a Job"
+    When I follow "Please click here to submit your new job"
+    Then I should see "ATLRUG Job Proposal"
+    Then I should see "Title"
+    Then I should see "Description"
+    Then I should see "Requirement"
+    Then I should see "Start date"
+    Then I should see "End date"
+    Then I should see "Contact name"
+    Then I should see "Email"
 
   Scenario: Check "Hire Someone" Link
     Given I go to the home page
     When I follow "Hire Someone"
     Then I should see "How to hire a Ruby developer."
+    Then I should see "Have not submitted your resume yet?"
+    When I should see "Please click here to submit your resume"
+    Then I should see "Current resumes"
+
+  Scenario: Check "Submit Resume" Link
+    Given I go to the home page
+    When I follow "Hire Someone"
+    When I follow "Please click here to submit your resume"
+    Then I should see "ATLRUG Resume Proposal"
+    Then I should see "Full name"
+    Then I should see "Email"
+    Then I should see "Your personal info"
+    Then I should see "Education"
+    Then I should see "Career objective"
+    Then I should see "Skill"
+    Then I should see "Hoppy"
+#FIXME: What is Hoppy?
 
 # 3/5/2013: Commented out this in GUI.
 #  Scenario: Check "Admin" Link
