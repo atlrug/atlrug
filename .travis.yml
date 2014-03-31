@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1.1
 before_script: bundle exec rake db:migrate RAILS_ENV=test
-before_install: bundle exec gem update bundler
+before_install: bundle install ; bundle exec gem update bundler
 notifications:
   email:
     recipients:
