@@ -1,0 +1,51 @@
+.container
+  .row
+    .col-md-12
+      #hire
+        %h1 How to hire a Ruby developer.
+        .row
+          .col-md-6
+            %p There is a lot of demand for Ruby developers, so hiring can be challenging.
+            %p
+              Send one of your current developers to announce an opening at an AtlRug Meeting.
+              Make sure to tell people how your job is different.
+            %p If you have no technical experience, you may need a partner who understands technology.
+          .col-md-6
+            = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
+            
+  .row
+    .col-md-12
+      - model_class = Resume
+      %h1 Not submit your resume yet?
+      %p Please fill out this form and submit your resume
+
+  .row
+    .col-md-12
+      = simple_form_for @resume, :html => {:class => 'form-horizontal'} do |f|
+        .fieldset.col-md-12
+          %legend ATLRUG Resume Proposal
+          - if flash[:alert]
+            %p.alert.alert-danger
+              %a.close{"data-dismiss" => "alert"}&times;
+              = flash[:alert]
+              
+          = f.input :name, :label => "Full name", :input_html => {:class => 'form-control'}
+          
+          = f.input :email, :input_html => {:class => 'form-control'}
+          
+          = f.input :personal_info, :label => "Your personal info", :input_html => { :rows => 4, :class => 'form-control' }
+          
+          = f.input :education, :input_html => { :rows => 4, :class => 'form-control' }
+          
+          = f.input :career_objective, :label => "Career objective", :input_html => { :rows => 4, :class => 'form-control' }
+          
+          = f.input :work_experience, :label => "Work experience", :input_html => { :rows => 4, :class => 'form-control' }
+          
+          = f.input :skill, :input_html => { :rows => 4, :class => 'form-control' }
+          
+          = f.input :hoppy, :input_html => { :rows => 4, :class => 'form-control' }
+          
+          .form-actions
+            = f.button :submit, "Submit Resume", :class => "btn-info btn-large"
+      
+    
