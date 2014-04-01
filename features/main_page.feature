@@ -96,8 +96,7 @@ Feature: Visit Web Site
     Then I should see "Education"
     Then I should see "Career objective"
     Then I should see "Skill"
-    Then I should see "Hoppy"
-#FIXME: What is Hoppy?
+    Then I should see "Hobby"
 
 # 3/5/2013: Commented out this in GUI.
 #  Scenario: Check "Admin" Link

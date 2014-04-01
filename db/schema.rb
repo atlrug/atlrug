@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20140214095331) do
     t.text     "work_experience"
     t.text     "education"
     t.text     "skill"
-    t.text     "hoppy"
+    t.text     "hobby"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

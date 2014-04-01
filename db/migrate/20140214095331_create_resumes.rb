@@ -8,7 +8,7 @@ class CreateResumes < ActiveRecord::Migration
       t.text :work_experience
       t.text :education
       t.text :skill
-      t.text :hoppy
+      t.text :hobby
 
       t.timestamps
     end

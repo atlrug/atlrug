@@ -9,6 +9,6 @@ Feature: Submit a Resume
 
   Scenario: Check Resume Form with missing required fields
   #TODO: Full name, Email, Your personal info, Education,
-  #TODO: Career objective, Work experience, Skill, Hoppy
+  #TODO: Career objective, Work experience, Skill, Hobby
 
   Scenario: Check Resume Form with correct data
