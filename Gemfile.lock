@@ -59,7 +59,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-screenshot (0.3.17)
+    capybara-screenshot (0.3.19)
       capybara (>= 1.0, < 3)
       launchy
     celluloid (0.15.2)
@@ -218,7 +218,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.5.3)
-    minitest (5.3.1)
+    minitest (5.3.2)
     multi_json (1.9.2)
     multi_test (0.1.1)
     multi_xml (0.5.5)
