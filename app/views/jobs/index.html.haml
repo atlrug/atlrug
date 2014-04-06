@@ -1,0 +1,42 @@
+.container
+  .row
+    .col-md-12
+      #job
+        %h1 Our sponsors are usually hiring!
+        %p Check the bottom of this page. :)
+        .row
+          .col-md-6
+            %h1 Networking
+            %p
+              Networking sounds like an MBA buzzword, but it is as easy as coming to a Meeting
+              and talking about what interests you in software. We encourage you to come and ask
+              people about their jobs.
+          .col-md-6
+            = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
+            
+  .row
+    .col-md-12
+      - model_class = Job
+      %h1 Have a new job?
+      %a{:href => new_job_path}= 'Please click here to submit your new job'
+      
+  .row
+    .col-md-12
+      - model_class = Job
+      %p
+      %h1 Current jobs
+      #current_jobs
+        - if @jobs.any?
+          %ul.other-list
+            - @jobs.each do |job|
+              %li
+                .job_content
+                  %h4= job_header_link(job)
+                  .job-post-meta
+                    %span= job_post_date_by(job) 
+                    =job_mail_to(job)
+                  %p= job_short_description(job)
+                  %h6.continue_read= job_more_reading(job) + job_delete(job)
+        - else
+          %h3 No jobs.
+      
