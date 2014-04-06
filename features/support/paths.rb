@@ -10,6 +10,10 @@ module NavigationHelpers
     case page_name
     when /the home\s?page/
       '/'
+    when /the new_jobs page/
+      '/jobs/new'
+    when /the new_resume page/
+      '/resumes/new'
     end
   end
 end
