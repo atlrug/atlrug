@@ -38,12 +38,6 @@ Feature: Visit Web Site
     Then I should see "Future Meetings"
     Then I should see "See more on Meetup.com/atlantaruby"
 
-  Scenario: Check "Find Presentations" Link
-    Given I go to the home page
-    When I follow "Find Presentations"
-#TODO:    Then I should see "Other videos"
-    Then I should see "See more newer stuff on YouTube"
-
   Scenario: Check "Learn Ruby" Link
     Given I go to the home page
     When I follow "Learn Ruby"
@@ -102,3 +96,9 @@ Feature: Visit Web Site
 #    Given I go to the home page
 #    When I follow "Admin"
 #    Then I should see "Login"
+
+  Scenario: Check "Find Presentations" Link
+    Given I go to the home page
+    When I follow "Find Presentations"
+    Then I should see "Other videos"
+    Then I should see "See more newer stuff on YouTube"
