@@ -47,9 +47,7 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 11. You can put these 5 variables in a **.env** file and it is NOT checked into Github.
 
-12. << Removed .travis.yml feature for now >>
-
-13. For more detail about <b>Guard LiveReload</b>, go to: https://github.com/guard/guard-livereload
+12. For more detail about <b>Guard LiveReload</b>, go to: https://github.com/guard/guard-livereload
 
 == To Contribute
 
