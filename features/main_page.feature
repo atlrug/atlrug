@@ -12,7 +12,7 @@ Feature: Visit Web Site
     Then I should see the image "Atlanta Ruby Logo"
     Then I should see "Find a Job"
     Then I should see "Hire Someone"
-# 3/5/2013: Commented out this in GUI.
+# 3/5/2013: Commented out "Give a Talk" and "Admin" in GUI.
 #    Then I should see "Give a Talk"
 #    Then I should see "Admin"
 
@@ -91,7 +91,7 @@ Feature: Visit Web Site
     Then I should see "Skill"
     Then I should see "Hobby"
 
-# 3/5/2013: Commented out this in GUI.
+# 3/5/2013: Commented out "Admin" link in GUI.
 #  Scenario: Check "Admin" Link
 #    Given I go to the home page
 #    When I follow "Admin"

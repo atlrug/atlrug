@@ -23,4 +23,3 @@ Feature: Submit Job Proposals
   Scenario: Check Job Proposal with bad email input
     Given I go to the new_jobs page
     When I submit a job proposal with an invalid email
-#TODO
