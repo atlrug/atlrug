@@ -27,7 +27,6 @@ Feature: Visit Web Site
     Then I should see "Mandrill"
 ## MIDDLE/RIGHT
     Then I should see "Other Sponsors"
-    #REMOVED: Then I should see "Atlanta Tech Village Provides Space for RHOK 2013 Rails Team"
     Then I should see "RentPath Provides Space for Emerald City Meetings"
     Then I should see "Big Nerd Ranch Pays for Meetup Account Fees"
 
