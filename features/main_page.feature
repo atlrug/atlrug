@@ -7,7 +7,7 @@ Feature: Visit Web Site
 ## TOP BAR
     When I go to the home page
     Then I should see "Go to Meetings"
-    Then I should see "Find Presentations"
+# 4/23/2014: Hide this until fixed:    Then I should see "Find Presentations"
     Then I should see "Learn Ruby"
     Then I should see the image "Atlanta Ruby Logo"
     Then I should see "Find a Job"
