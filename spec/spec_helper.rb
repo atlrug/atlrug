@@ -1,5 +1,5 @@
-#require 'simplecov'
-#SimpleCov.start
+require 'simplecov'
+SimpleCov.start
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
@@ -47,8 +47,9 @@ RSpec.configure do |config|
 
   Zonebie.set_random_timezone
 
-  config.mock_with :rspec do |c|
-    c.yield_receiver_to_any_instance_implementation_blocks = true
-  end
+#RSPEC 3.0
+#  config.mock_with :rspec do |c|
+#    c.yield_receiver_to_any_instance_implementation_blocks = true
+#  end
 end
 

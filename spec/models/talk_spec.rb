@@ -57,9 +57,9 @@ describe Talk do
                   FactoryGirl.create(:talk, :approved => true)]
       2.times { FactoryGirl.create(:talk) }
 
-      expect(Talk.pending.size).to eq(2)
+      Talk.pending.size.should == 2
       approved.each do |talk|
-        expect(Talk.pending).not_to include talk
+        Talk.pending.should_not include talk
       end
     end
   end

@@ -13,39 +13,39 @@ describe SessionsController do
   let(:user)      { FactoryGirl.create(:user) }
 
   describe '#create' do
-    before { allow(user).to receive_messages(:atlrug_organizer? => true) }
+    before { user.stub(:atlrug_organizer? => true) }
 
     it 'attempts to find a user by auth hash' do
-      allow_any_instance_of(SessionsController).to receive_messages(:auth_hash => auth_hash)
-      expect(User).to receive(:find_by_hash).with(auth_hash).and_return(user)
+      SessionsController.any_instance.stub(:auth_hash => auth_hash)
+      User.should_receive(:find_by_hash).with(auth_hash).and_return(user)
       post :create, :provider => 'github'
     end
 
     it 'creates a user by auth hash if one is not found' do
-      allow_any_instance_of(SessionsController).to receive_messages(:auth_hash => auth_hash)
-      allow(User).to receive_messages(:find_by_hash => nil)
-      expect(User).to receive(:create_from_hash).with(auth_hash).and_return(user)
+      SessionsController.any_instance.stub(:auth_hash => auth_hash)
+      User.stub(:find_by_hash => nil)
+      User.should_receive(:create_from_hash).with(auth_hash).and_return(user)
       post :create, :provider => 'github'
     end
 
     it "logs the user in if they're an organizer" do
-      allow(user).to receive_messages(:atlrug_organizer? => true)
-      allow(User).to receive_messages(:find_by_hash => user)
+      User.stub(:atlrug_organizer? => true)
+      User.stub(:find_by_hash => user)
       post :create, :provider => 'github'
-      expect(session[:user_id]).to eq(user.id)
+      session[:user_id].should == user.id
     end
 
     it "doesn't log the user in if they're not an organizer" do
-      allow(user).to receive_messages(:atlrug_organizer? => false)
-      allow(User).to receive_messages(:find_by_hash => user)
+      user.stub(:atlrug_organizer? => false)
+      User.stub(:find_by_hash => user)
       post :create, :provider => 'github'
-      expect(session[:user_id]).to be_nil
+      session[:user_id].should be_nil
     end
 
     it 'redirects to root' do
-      allow(User).to receive_messages(:find_by_hash => user)
+      User.stub(:find_by_hash => user)
       post :create, :provider => 'github'
-      expect(response).to redirect_to root_url
+      response.should redirect_to root_url
     end
   end
 
@@ -53,7 +53,7 @@ describe SessionsController do
     it 'logs the existing user out' do
       session[:user_id] = 1
       delete :destroy
-      expect(session[:user_id]).to be_nil
+      session[:user_id].should be_nil
     end
   end
 end
