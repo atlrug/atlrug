@@ -12,7 +12,7 @@ group :development, :test do
   #TESTING/ANALYSIS
   gem 'rails-footnotes'
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.14.2'
   gem "email_spec"
 
   gem "capybara"
