@@ -47,9 +47,6 @@ RSpec.configure do |config|
 
   Zonebie.set_random_timezone
 
-#RSPEC 3.0
-#  config.mock_with :rspec do |c|
-#    c.yield_receiver_to_any_instance_implementation_blocks = true
-#  end
+  # RSPEC 3.0
+  config.infer_spec_type_from_file_location!
 end
-

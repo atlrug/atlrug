@@ -74,7 +74,7 @@ describe User do
       user.stub(:octokit => octokit)
       user.stub(:atlrug_team_id => 1)
 
-      user.atlrug_organizer?.should be_true
+      user.atlrug_organizer?.should be_truthy
     end
 
     it "is false if the user is not in the ATLRUG Owners team" do
@@ -83,7 +83,7 @@ describe User do
       user.stub(:octokit => octokit)
       user.stub(:atlrug_team_id)
 
-      user.atlrug_organizer?.should be_false
+      user.atlrug_organizer?.should be_falsey
     end
   end
 end
