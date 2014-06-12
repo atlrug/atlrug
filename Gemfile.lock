@@ -153,7 +153,6 @@ GEM
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
       posix-spawn (~> 0.3.6)
-    growl (1.0.3)
     guard (2.6.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -195,6 +194,8 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
+    libnotify (0.8.3)
+      ffi (>= 1.0.11)
     libv8 (3.16.14.3)
     listen (2.7.7)
       celluloid (>= 0.15.2)
@@ -437,7 +438,6 @@ DEPENDENCIES
   email_spec
   execjs
   factory_girl_rails
-  growl
   guard
   guard-livereload
   haml
@@ -448,6 +448,7 @@ DEPENDENCIES
   kgio
   launchy
   letter_opener
+  libnotify
   memcachier
   octokit
   omniauth
