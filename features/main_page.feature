@@ -7,7 +7,7 @@ Feature: Visit Web Site
 ## TOP BAR
     When I go to the home page
     Then I should see "Go to Meetings"
-# 4/23/2014: Hide this until fixed:    Then I should see "Find Presentations"
+    Then I should see "Find Presentations"
     Then I should see "Learn Ruby"
     Then I should see the image "Atlanta Ruby Logo"
     Then I should see "Find a Job"
@@ -98,6 +98,6 @@ Feature: Visit Web Site
 
   Scenario: Check "Find Presentations" Link
     Given I go to the home page
-#FIXME    When I follow "Find Presentations"
-#FIXME    Then I should see "Other videos"
-#FIXME    Then I should see "See more newer stuff on YouTube"
+    When I follow "Find Presentations"
+    Then I should see "Other videos"
+    Then I should see "See more newer stuff on YouTube"
