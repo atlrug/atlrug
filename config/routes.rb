@@ -12,12 +12,12 @@ Atlrug4::Application.routes.draw do
     get :approve, :on => :collection
     put :accept, :on => :member
   end
-  
+
   resources :jobs, :only => [:index, :new, :create] do
     get :view, :on => :member
     get :delete, :on => :member
   end
-  
+
   resources :resumes, :only => [:index, :new, :create] do
     get :view, :on => :member
     get :delete, :on => :member
@@ -26,6 +26,15 @@ Atlrug4::Application.routes.draw do
   get '/auth/:provider/callback', :to => 'sessions#create'
   get '/login' => redirect('/auth/github'), :as => :login
   get '/log_out' => 'sessions#destroy', :as => :log_out
+
+  #########################
+  # Friendly redirects to make it easier to tell people how to get the the YouTube
+
+  # http://atlrug.com/youtube will be redirected to the playlist. Better that bit.ly.
+  get '/youtube', to: redirect('https://www.youtube.com/playlist?list=PLqZY2tk6rSRn2Vapk2raOTFjXGiDbpQUU')
+
+  #########################
+  # Original Comments
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
