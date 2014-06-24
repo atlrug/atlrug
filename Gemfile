@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.2.rc2'
+gem 'rails', '4.1.2.rc3'
 ruby "2.1.2"
 
 # Follow this thread http://stackoverflow.com/questions/22391116/nomethoderror-in-pageshome-undefined-method-environment-for-nilnilclass
