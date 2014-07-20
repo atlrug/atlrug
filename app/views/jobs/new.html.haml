@@ -13,13 +13,13 @@
               people about their jobs.
           .col-md-6
             = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
-            
+
   .row
     .col-md-12
       - model_class = Job
       %h1 Have a new job?
       %p Please fill out this form and submit your new job
-      
+
   .row
     .col-md-12
       = simple_form_for @job, :html => {:class => 'form-horizontal'} do |f|
@@ -29,22 +29,22 @@
             %p.alert.alert-danger
               %a.close{"data-dismiss" => "alert"}&times;
               = flash[:alert]
-              
+
           = f.input :title, :input_html => { :class => 'form-control' }
-          
+
           = f.input :description, :input_html => { :rows => 4, :class => 'form-control' }
-          
+
           = f.input :requirement, :input_html => { :rows => 4, :class => 'form-control' }
-          
+
           = f.input :start_date, :label => "Start date", :input_html => { :class => 'form-control' }
-          
+
           = f.input :end_date, :label => "End date", :hint  => "End date must be greater than start date.", :input_html => { :class => 'form-control' }
-          
+
           = f.input :name, :label => "Contact name", :input_html => {:class => 'form-control'}
-          
+
           = f.input :email, :input_html => {:class => 'form-control'}
-          
+
           .form-actions
             = f.button :submit, "Submit Proposal", :class => "btn-info btn-large"
-      
-    
+
+

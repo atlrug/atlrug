@@ -2,11 +2,11 @@ class JobsController < ApplicationController
   def index
     @jobs = Job.all
   end
-  
+
   def new
     @job = Job.new
   end
-  
+
   def create
     @job = Job.new(job_params)
     if @job.save
@@ -17,11 +17,11 @@ class JobsController < ApplicationController
       render :new
     end
   end
-  
+
   def view
     @job = Job.find(params[:id])
   end
-  
+
   def delete
     @job = Job.find(params[:id])
     if @job != nil && @job.destroy
@@ -31,7 +31,7 @@ class JobsController < ApplicationController
       redirect_to jobs_path
     end
   end
-  
+
 private
   def job_params
     params.require(:job).permit(

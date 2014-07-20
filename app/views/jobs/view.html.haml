@@ -13,7 +13,7 @@
               people about their jobs.
           .col-md-6
             = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
-            
+
   .row
     .col-md-12
       - model_class = Job
@@ -25,7 +25,7 @@
         =job_mail_to(@job)
       %h3 Working time:
       %h5= job_start_end_date(@job)
-      %h3 Description 
+      %h3 Description
       %h5= @job[:description]
       %h3 Requirement
       %h5= @job[:requirement]

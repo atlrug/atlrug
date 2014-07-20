@@ -12,13 +12,13 @@
             %p If you have no technical experience, you may need a partner who understands technology.
           .col-md-6
             = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
-            
+
   .row
     .col-md-12
       - model_class = Resume
       %h1 Have not submitted your resume yet?
       %a{:href => new_resume_path}= 'Please click here to submit your resume'
-      
+
   .row
     .col-md-12
       - model_class = Resume
@@ -32,7 +32,7 @@
                 .job_content
                   %h4= resume_link(resume)
                   .job-post-meta
-                    %span= resume_post_date_by(resume) 
+                    %span= resume_post_date_by(resume)
                     =resume_mail_to(resume)
                   %p= resume_short_description(resume)
                   %h6.continue_read= resume_more_reading(resume) + resume_delete(resume)

@@ -12,7 +12,7 @@
             %p If you have no technical experience, you may need a partner who understands technology.
           .col-md-6
             = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
-            
+
   .row
     .col-md-12
       - model_class = Resume
@@ -23,11 +23,11 @@
         =resume_mail_to(@resume)
       %h3 Personal info
       %h5= @resume[:personal_info]
-      %h3 Education 
+      %h3 Education
       %h5= @resume[:education]
       %h3 Career objective
       %h5= @resume[:career_objective]
-      %h3 Work experience 
+      %h3 Work experience
       %h5= @resume[:work_experience]
       %h3 Skill
       %h5= @resume[:skill]

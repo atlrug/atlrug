@@ -6,7 +6,7 @@ class ResumesController < ApplicationController
   def new
     @resume = Resume.new
   end
-  
+
   def create
     @resume = Resume.new(resume_params)
     if @resume.save
@@ -21,7 +21,7 @@ class ResumesController < ApplicationController
   def view
     @resume = Resume.find(params[:id])
   end
-  
+
   def delete
     @resume = Resume.find(params[:id])
     if @resume != nil && @resume.destroy
@@ -31,7 +31,7 @@ class ResumesController < ApplicationController
       redirect_to resumes_path
     end
   end
-  
+
 private
   def resume_params
     params.require(:resume).permit(

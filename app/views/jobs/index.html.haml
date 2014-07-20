@@ -13,13 +13,13 @@
               people about their jobs.
           .col-md-6
             = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
-            
+
   .row
     .col-md-12
       - model_class = Job
       %h1 Have a new job?
       %a{:href => new_job_path}= 'Please click here to submit your new job'
-      
+
   .row
     .col-md-12
       - model_class = Job
@@ -33,10 +33,10 @@
                 .job_content
                   %h4= job_header_link(job)
                   .job-post-meta
-                    %span= job_post_date_by(job) 
+                    %span= job_post_date_by(job)
                     =job_mail_to(job)
                   %p= job_short_description(job)
                   %h6.continue_read= job_more_reading(job) + job_delete(job)
         - else
           %h3 No jobs.
-      
+

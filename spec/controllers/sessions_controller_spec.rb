@@ -24,7 +24,8 @@ describe SessionsController, :type => :controller do
     it 'creates a user by auth hash if one is not found' do
       SessionsController.any_instance.stub(:auth_hash => auth_hash)
       User.stub(:find_by_hash => nil)
-      expect(User).to receive(:create_from_hash).with(auth_hash).and_return(user)
+      expect(User).to receive(:create_from_hash).with(auth_hash
+        ).and_return(user)
       post :create, :provider => 'github'
     end
 
