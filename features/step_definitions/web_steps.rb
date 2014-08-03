@@ -1,13 +1,13 @@
 Then /^(?:|I )should see "([^\"]*)"$/ do |text|
   if page.respond_to? :should
-    page.should have_content(text)
+    expect(page).to have_content(text)
   else
     puts assert page.has_content?(text)
   end
 end
 
 Then /^I should see the image "(.+)"$/ do |image|
-  page.should have_xpath("//img[@alt=\"#{image}\"]")
+  expect(page).to have_xpath("//img[@alt=\"#{image}\"]")
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|

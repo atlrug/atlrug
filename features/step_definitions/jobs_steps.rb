@@ -16,7 +16,7 @@ When /^I submit a job proposal with good values$/ do
 
   click_button "Submit Proposal"
 
-  page.body.should match /Your job has been submitted!/
+  expect(page.body).to match /Your job has been submitted!/
 end
 
 When(/^I submit a job proposal with empty "(.*?)"$/) do |field|
@@ -40,8 +40,8 @@ When(/^I submit a job proposal with empty "(.*?)"$/) do |field|
 
   click_button "Submit Proposal"
 
-  page.body.should match /Your proposal couldn\'t be submitted!/
-  page.body.should match /can\'t be blank/
+  expect(page.body).to match /Your proposal couldn\'t be submitted!/
+  expect(page.body).to match /can\'t be blank/
 end
 
 When(/^I submit a job proposal with start date greater than end date$/) do
@@ -62,8 +62,8 @@ When(/^I submit a job proposal with start date greater than end date$/) do
 
   click_button "Submit Proposal"
 
-  page.body.should match /Your proposal couldn\'t be submitted!/
-  page.body.should match /End date must be greater than start date./
+  expect(page.body).to match /Your proposal couldn\'t be submitted!/
+  expect(page.body).to match /End date must be greater than start date./
 end
 
 When(/^I submit a job proposal with an invalid email$/) do
@@ -84,6 +84,6 @@ When(/^I submit a job proposal with an invalid email$/) do
 
   click_button "Submit Proposal"
 
-  page.body.should match /Your proposal couldn\'t be submitted!/
-  page.body.should match /is invalid/
+  expect(page.body).to match /Your proposal couldn\'t be submitted!/
+  expect(page.body).to match /is invalid/
 end

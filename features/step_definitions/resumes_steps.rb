@@ -10,7 +10,7 @@ When /^I submit a resume proposal with good values$/ do
 
   click_button "Submit Resume"
 
-  page.body.should match /Your resume has been submitted!/
+  expect(page.body).to match /Your resume has been submitted!/
 end
 
 When(/^I submit a resume proposal with empty "(.*?)"$/) do |field|
@@ -28,8 +28,8 @@ When(/^I submit a resume proposal with empty "(.*?)"$/) do |field|
 
   click_button "Submit Resume"
 
-  page.body.should match /Your resume couldn\'t be submitted!/
-  page.body.should match /can\'t be blank/
+  expect(page.body).to match /Your resume couldn\'t be submitted!/
+  expect(page.body).to match /can\'t be blank/
 end
 
 When(/^I submit a resume proposal with an invalid email$/) do
@@ -46,8 +46,8 @@ When(/^I submit a resume proposal with an invalid email$/) do
 
   click_button "Submit Resume"
 
-  page.body.should match /Your resume couldn\'t be submitted!/
-  page.body.should match /is invalid/
+  expect(page.body).to match /Your resume couldn\'t be submitted!/
+  expect(page.body).to match /is invalid/
 end
 
 When(/^I submit a resume proposal with optional "(.*?)" input$/) do |arg1|
@@ -62,6 +62,5 @@ When(/^I submit a resume proposal with optional "(.*?)" input$/) do |arg1|
 
   click_button "Submit Resume"
 
-  page.body.should match /Your resume has been submitted!/
-
+  expect(page.body).to match /Your resume has been submitted!/
 end
