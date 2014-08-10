@@ -1,0 +1,7 @@
+{
+  "name": "ATLRUG web site",
+  "description": "Atlanta Ruby Users Group web site",
+  "repository": "https://github.com/atlrug/atlrug4",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["rails", "ruby"]
+}
