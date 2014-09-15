@@ -22,6 +22,7 @@ group :development, :test do
   gem "autotest-fsevent"
   gem "autotest-growl"
 
+  gem 'cucumber', '2.0.0.beta.3'
   gem "cucumber-rails", :require => false
   gem "database_cleaner"
 

@@ -62,3 +62,6 @@ require 'cucumber/rspec/doubles'
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
+# To fix https://github.com/rspec/rspec-rails/issues/1171
+require "multi_test"
+MultiTest.disable_autorun
