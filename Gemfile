@@ -46,7 +46,7 @@ group :development do
   gem 'awesome_print'
   gem 'quiet_assets'
 
-  gem 'codesake-dawn', :require => false
+  gem 'dawn', :require => false
 
   # For Guard
   gem 'guard'
