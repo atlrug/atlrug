@@ -76,7 +76,8 @@ gem 'uglifier'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 
-gem "bootstrap-sass-rails"
+#WAS:gem "bootstrap-sass-rails"
+gem "bootstrap-sass"
 gem 'simple_form'
 gem 'haml'
 gem "haml-rails"

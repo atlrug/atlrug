@@ -47,10 +47,6 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.0.2)
       sass (~> 3.2)
-    bootstrap-sass-rails (3.1.0.0)
-      bootstrap-sass (~> 3.1.0.0)
-      railties (>= 3.2.0)
-      sass-rails (>= 3.2.0)
     builder (3.2.2)
     capybara (2.4.1)
       mime-types (>= 1.16)
@@ -372,7 +368,7 @@ DEPENDENCIES
   backports
   better_errors
   binding_of_caller
-  bootstrap-sass-rails
+  bootstrap-sass
   capybara
   capybara-screenshot
   coffee-rails
