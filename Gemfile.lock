@@ -38,7 +38,7 @@ GEM
     autotest-rails (4.2.1)
       ZenTest (~> 4.5)
     awesome_print (1.2.0)
-    backports (3.6.0)
+    backports (3.6.1)
     better_errors (2.0.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
