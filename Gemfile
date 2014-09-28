@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0.beta1'
 ruby '2.1.3'
 
 group :development, :test do
@@ -70,7 +70,7 @@ gem 'omniauth-github'
 gem 'octokit'
 
 gem 'coffee-rails'
-gem 'sass-rails'
+gem 'sass-rails',   '5.0.0.beta1' # For Rails 4.2
 gem 'uglifier'
 
 gem 'execjs'
