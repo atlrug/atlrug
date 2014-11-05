@@ -52,4 +52,3 @@ These are the files with "bootstrap" in the filename:
  * app/assets/javascripts/application.js (1 new line/BOOTSTRAP)
  * config/locales/en.bootstrap.yml (when you install Twitter bootstrap
  *  app/assets/stylesheets/application.css (comment with 2 require_*'s)
-

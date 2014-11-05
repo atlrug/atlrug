@@ -91,4 +91,3 @@ Search.prototype = $.extend({}, Navigation, new function() {
   }
 
 });
-

@@ -225,4 +225,3 @@ Searcher.prototype = new function() {
     })
   }
 }
-
