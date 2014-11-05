@@ -8,4 +8,3 @@ To set up the "approving talk proposals" feature, you need to do the following:
    * Callback URL is http://atlrug4.herokuapp.com/auth/github/callback/
   c. You set up GITHUB_KEY and GITHUB_SECRET for Omniauth in your environment.
  4. Also remember to do this "heroku config:add" for GITHUB_KEY and GITHUB_SECRET on Heroku while deploying to production.
-
