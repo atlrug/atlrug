@@ -100,4 +100,6 @@ Feature: Visit Web Site
     Given I go to the home page
     When I follow "Find Presentations"
     Then I should see "Other videos"
-    Then I should see "See more newer stuff on YouTube"
+    Then I should see "See more newer stuff on Atlanta Ruby Users' Group Talk Series on YouTube"
+    Then I should see "Past Talks on our Wiki page"
+    Then I should see "Older Videos"
