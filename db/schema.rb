@@ -39,23 +39,23 @@ ActiveRecord::Schema.define(version: 20140214095331) do
   end
 
   create_table "talks", force: true do |t|
-    t.string   "title"
+    t.string   "title",       limit: 255
     t.integer  "duration"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email"
-    t.string   "twitter"
+    t.string   "email",       limit: 255
+    t.string   "twitter",     limit: 255
     t.text     "description"
-    t.boolean  "approved",    default: false
+    t.boolean  "approved",                default: false
   end
 
   create_table "users", force: true do |t|
-    t.string   "name"
-    t.string   "uid"
+    t.string   "name",         limit: 255
+    t.string   "uid",          limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "github_login"
-    t.string   "github_token"
+    t.string   "github_login", limit: 255
+    t.string   "github_token", limit: 255
   end
 
 end
