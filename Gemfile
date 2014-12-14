@@ -70,7 +70,7 @@ gem 'omniauth-github'
 gem 'octokit'
 
 gem 'coffee-rails'
-gem 'sass-rails',   '5.0.0.beta1' # For Rails 4.2
+gem 'sass-rails'
 gem 'uglifier'
 
 gem 'execjs'
