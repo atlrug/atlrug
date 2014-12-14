@@ -34,14 +34,12 @@ When(/^I submit a job proposal with empty "(.*?)"$/) do |field|
 
   fill_in "Contact name", :with => 'A Contact name'
   fill_in "Email", :with => 'example@example.com'
-
   # Undo the empty given field.
   fill_in field, :with => ''
-
   click_button "Submit Proposal"
 
   expect(page.body).to match /Your proposal couldn\'t be submitted!/
-  expect(page.body).to match /can\'t be blank/
+  expect(page.body).to match /can&#39;t be blank/
 end
 
 When(/^I submit a job proposal with start date greater than end date$/) do

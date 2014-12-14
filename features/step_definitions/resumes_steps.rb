@@ -29,7 +29,7 @@ When(/^I submit a resume proposal with empty "(.*?)"$/) do |field|
   click_button "Submit Resume"
 
   expect(page.body).to match /Your resume couldn\'t be submitted!/
-  expect(page.body).to match /can\'t be blank/
+  expect(page.body).to match /can&#39;t be blank/
 end
 
 When(/^I submit a resume proposal with an invalid email$/) do
