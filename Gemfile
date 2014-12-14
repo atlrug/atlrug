@@ -53,8 +53,6 @@ group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'
   gem 'ruby_gntp' # Linux
-  gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
-  gem 'growl' if /darwin/ =~ RUBY_PLATFORM
   gem 'rb-fsevent', :require => false # for Linux
   gem 'rb-inotify', :require => false # for OS X
   #gem 'rb-fchange', :require => false # for Windows
