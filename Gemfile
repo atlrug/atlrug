@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.0.rc3'
+gem 'rails', '4.2.0'
 ruby '2.1.5'
 
 group :development, :test do
