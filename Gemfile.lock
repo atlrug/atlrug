@@ -78,9 +78,9 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colored (1.2)
-    cucumber (2.0.0.beta.3)
+    cucumber (2.0.0.beta.5)
       builder (>= 2.1.2)
-      cucumber-core (~> 1.0.0.beta.3)
+      cucumber-core (~> 1.0.0.beta.4)
       diff-lcs (>= 1.1.3)
       gherkin (~> 2.12)
       multi_json (>= 1.7.5, < 2.0)
@@ -405,7 +405,7 @@ DEPENDENCIES
   capybara
   capybara-screenshot
   coffee-rails
-  cucumber (= 2.0.0.beta.3)
+  cucumber (= 2.0.0.beta.5)
   cucumber-rails
   dalli
   database_cleaner
