@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
-ruby '2.1.5'
+ruby '2.2.0'
 
 group :development, :test do
   gem 'sqlite3'
