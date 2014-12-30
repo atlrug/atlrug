@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140214095331) do
 
-  create_table "jobs", force: true do |t|
+  create_table "jobs", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
     t.text     "requirement"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20140214095331) do
     t.datetime "updated_at"
   end
 
-  create_table "resumes", force: true do |t|
+  create_table "resumes", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
     t.text     "personal_info"
@@ -38,24 +38,24 @@ ActiveRecord::Schema.define(version: 20140214095331) do
     t.datetime "updated_at"
   end
 
-  create_table "talks", force: true do |t|
-    t.string   "title",       limit: 255
+  create_table "talks", force: :cascade do |t|
+    t.string   "title"
     t.integer  "duration"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email",       limit: 255
-    t.string   "twitter",     limit: 255
+    t.string   "email"
+    t.string   "twitter"
     t.text     "description"
-    t.boolean  "approved",                default: false
+    t.boolean  "approved",    default: false
   end
 
-  create_table "users", force: true do |t|
-    t.string   "name",         limit: 255
-    t.string   "uid",          limit: 255
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "uid"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "github_login", limit: 255
-    t.string   "github_token", limit: 255
+    t.string   "github_login"
+    t.string   "github_token"
   end
 
 end
