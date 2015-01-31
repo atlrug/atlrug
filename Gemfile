@@ -19,7 +19,7 @@ group :development, :test do
   gem "autotest-fsevent"
   gem "autotest-growl"
 
-  gem 'cucumber', '2.0.0.beta.5'
+  gem 'cucumber', '2.0.0.rc.3'
   gem "cucumber-rails", :require => false
   gem "database_cleaner"
 
@@ -46,7 +46,7 @@ group :development do
   gem 'awesome_print'
   gem 'quiet_assets'
 
-  gem 'dawn', :require => false
+  gem 'dawnscanner', :require => false
 
   # For Guard
   gem 'guard'
