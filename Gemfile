@@ -48,6 +48,8 @@ group :development do
 
   gem 'dawnscanner', :require => false
 
+  gem "rubycritic", :require => false
+
   # For Guard
   gem 'guard'
   gem 'guard-livereload'
