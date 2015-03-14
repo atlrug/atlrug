@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.1.rc3'
+gem 'rails', '4.2.1.rc4'
+gem 'ffi', '1.9.6'
 ruby '2.2.1'
 
 group :development, :test do
