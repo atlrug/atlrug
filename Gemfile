@@ -1,8 +1,64 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.1.rc4'
-gem 'ffi', '1.9.6'
+
 ruby '2.2.1'
+
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'octokit'
+gem 'coffee-rails'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+gem "bootstrap-sass"
+gem 'simple_form'
+gem 'haml'
+gem "haml-rails"
+gem 'jquery-rails'
+
+# Turbolinks makes following links in your web application faster. Read
+#    more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder'
+
+# APP-specific gems
+gem 'rest-client'
+gem 'hassle3'
+gem 'kgio'
+gem 'tzinfo'
+gem 'unicorn'
+gem 'backports'
+gem 'memcachier'
+gem 'dalli'
+gem 'youtube_it'
+
+# For old-style action_caching
+gem "actionpack-action_caching"
+
+# Gems from  http://rubysource.com/boosting-your-rails-development-workflow
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem 'awesome_print'
+  gem 'quiet_assets'
+
+  gem 'dawnscanner', :require => false
+
+  gem "rubycritic", :require => false
+
+  # For Guard
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+  gem 'ruby_gntp' # Linux
+  gem 'rb-fsevent', :require => false # for Linux
+  gem 'rb-inotify', :require => false # for OS X
+  #gem 'rb-fchange', :require => false # for Windows
+end
 
 group :development, :test do
   gem 'sqlite3'
@@ -40,84 +96,7 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
-# Gems from  http://rubysource.com/boosting-your-rails-development-workflow
-group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
-  gem 'awesome_print'
-  gem 'quiet_assets'
-
-  gem 'dawnscanner', :require => false
-
-  gem "rubycritic", :require => false
-
-  # For Guard
-  gem 'guard'
-  gem 'guard-livereload'
-  gem 'rack-livereload'
-  gem 'ruby_gntp' # Linux
-  gem 'rb-fsevent', :require => false # for Linux
-  gem 'rb-inotify', :require => false # for OS X
-  #gem 'rb-fchange', :require => false # for Windows
-end
-
 group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-
-gem 'omniauth'
-gem 'omniauth-github'
-gem 'octokit'
-
-gem 'coffee-rails'
-gem 'sass-rails'
-gem 'uglifier'
-
-gem 'execjs'
-gem 'therubyracer', :platforms => :ruby
-
-#WAS:gem "bootstrap-sass-rails"
-gem "bootstrap-sass"
-gem 'simple_form'
-gem 'haml'
-gem "haml-rails"
-
-gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. Read
-#    more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder'
-
-# APP-specific gems
-gem 'rest-client'
-gem 'hassle3'
-gem 'kgio'
-gem 'tzinfo'
-gem 'unicorn'
-gem 'backports'
-
-# For old-style action_caching
-gem "actionpack-action_caching"
-
-gem 'memcachier'
-gem 'dalli'
-
-gem 'youtube_it'
-
-######################################################################
-# 4/24/2013: The following was created by "rails new" command.
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby'
-#
-# Use unicorn as the app server
-# gem 'unicorn'
-#
-# Deploy with Capistrano
-# gem 'capistrano', group: :development
-#
-# To use debugger
-# gem 'debugger'
