@@ -16,13 +16,15 @@ describe SessionsController, :type => :controller do
     before { allow(user).to receive_messages(:atlrug_organizer? => true) }
 
     it 'attempts to find a user by auth hash' do
-      allow_any_instance_of(SessionsController).to receive_messages(:auth_hash => auth_hash)
+      allow_any_instance_of(SessionsController).to receive_messages(
+        :auth_hash => auth_hash)
       expect(User).to receive(:find_by_hash).with(auth_hash).and_return(user)
       post :create, :provider => 'github'
     end
 
     it 'creates a user by auth hash if one is not found' do
-      allow_any_instance_of(SessionsController).to receive_messages(:auth_hash => auth_hash)
+      allow_any_instance_of(SessionsController).to receive_messages(
+        :auth_hash => auth_hash)
       allow(User).to receive_messages(:find_by_hash => nil)
       expect(User).to receive(:create_from_hash).with(auth_hash
         ).and_return(user)
