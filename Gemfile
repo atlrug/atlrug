@@ -34,7 +34,7 @@ gem 'unicorn'
 gem 'backports'
 gem 'memcachier'
 gem 'dalli'
-gem 'yt', '~> 0.14.5'
+gem 'yt'
 
 # For old-style action_caching
 gem "actionpack-action_caching"
