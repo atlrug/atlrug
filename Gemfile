@@ -34,7 +34,7 @@ gem 'unicorn'
 gem 'backports'
 gem 'memcachier'
 gem 'dalli'
-gem 'youtube_it'
+gem 'yt', '~> 0.14.5'
 
 # For old-style action_caching
 gem "actionpack-action_caching"
@@ -94,6 +94,7 @@ group :development, :test do
 
   # This loads environment variables from rails_root/.env if that file exists.
   gem 'dotenv-rails'
+
 end
 
 group :production do
