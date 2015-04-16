@@ -1,7 +1,7 @@
 #videos
   - if @most_recent_video.present?
     %h1
-      %a{:href => Video.player_url(@most_recent_video.video_id)}= @most_recent_video.title
+      %a{:href => Video.player_url(@mrv_id)}= @most_recent_video.title
     = raw @player
     - if @other_videos.any?
       %h3 Other videos

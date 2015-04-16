@@ -1,5 +1,3 @@
-require 'youtube_it'
-
 class Video
 
   def self.all
