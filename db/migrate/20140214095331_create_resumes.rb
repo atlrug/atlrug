@@ -10,7 +10,7 @@ class CreateResumes < ActiveRecord::Migration
       t.text :skill
       t.text :hobby
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

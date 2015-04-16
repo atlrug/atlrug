@@ -9,7 +9,7 @@ class CreateJobs < ActiveRecord::Migration
       t.date :start_date
       t.date :end_date
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
