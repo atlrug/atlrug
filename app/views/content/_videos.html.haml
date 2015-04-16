@@ -1,14 +1,14 @@
 #videos
   - if @most_recent_video.present?
     %h1
-      %a{:href => @most_recent_video.player_url}= @most_recent_video.title
+      %a{:href => Video.player_url(@mrv_id)}= @most_recent_video.title
     = raw @player
     - if @other_videos.any?
       %h3 Other videos
       %ul.other-list
         - @other_videos.each do |video|
           %li
-            %a{:href => video.player_url}= video.title
+            %a{:href => Video.player_url(video.id)}= video.title
     %h4
       See more newer stuff on
       = link_to "Atlanta Ruby Users' Group Talk Series on YouTube", @playlist_url

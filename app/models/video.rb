@@ -1,21 +1,26 @@
-require 'youtube_it'
-
 class Video
 
   def self.all
-    playlist.videos
+    playlist.playlist_items
   end
 
   def self.playlist_url
     "http://www.youtube.com/playlist?list=#{playlist_id}"
   end
 
+  def self.player_url(video_id)
+    "https://www.youtube.com/watch?v=#{video_id}&feature=youtube_gdata_player"
+  end
+
+  def self.embed_url(video_id)
+    "http://www.youtube.com/v/#{video_id}&feature=youtube_gdata_player"
+  end
+
   private
 
   def self.playlist
     @_playlist ||= begin
-      client = YouTubeIt::Client.new(:dev_key => ENV['YOUTUBE_KEY'])
-      client.playlist playlist_id
+      Yt::Playlist.new url: playlist_url
     end
   end
 

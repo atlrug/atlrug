@@ -38,9 +38,10 @@ class ContentController < ApplicationController
     def load_videos
       @videos            = Video.all
       @most_recent_video = @videos.first
-      @other_videos      = @videos[1..5]
+      @mrv_id            = @most_recent_video.video_id
+      @other_videos      = @videos.map(&:video)[1..5]
       @player            = %Q{<iframe width="560" height="315"
-        src="#{@most_recent_video.embed_url}" frameborder="0"
+        src="#{Video.embed_url(@mrv_id)}" frameborder="0"
         allowfullscreen></iframe>}
       @playlist_url      = Video.playlist_url
     end
