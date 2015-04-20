@@ -26,7 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder'
 
 # APP-specific gems
-gem 'rest-client'
+gem 'rest-client', '1.8.0'
 gem 'hassle3'
 gem 'kgio'
 gem 'tzinfo'
