@@ -18,7 +18,7 @@
 PreCommit:
   Rubocop:
     enabled: true
-    on_warn: fail # Treat all warnings as failures
+    on_warn: warn # fail # Treat all warnings as failures
 
 #  TrailingWhitespace:
 #    exclude:
