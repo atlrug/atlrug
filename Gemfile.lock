@@ -485,7 +485,7 @@ GEM
     websocket (1.2.2)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    yt (0.16.0)
+    yt (0.22.0)
       activesupport
     zonebie (0.5.1)
 
