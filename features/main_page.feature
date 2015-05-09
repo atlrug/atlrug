@@ -23,12 +23,11 @@ Feature: Visit Web Site
     Then I should see "Linkedin"
     Then I should see "IRC-Chat"
 ## MIDDLE/LEFT
-    Then I should see "Platinum Sponsor"
+    Then I should see "Platinum Sponsors"
+    Then I should see "Pardot"
     Then I should see "Mandrill"
 ## MIDDLE/RIGHT
-    Then I should see "Other Sponsors"
 #FIXME    Then I should see "Georgia Gwinett College Provides Space for Emerald City Meetings"
-    Then I should see "Big Nerd Ranch Pays for Meetup Account Fees"
 
   Scenario: Check "Go to Meetings" Link
     Given I go to the home page

@@ -1,7 +1,14 @@
 #sponsors.container
   .row
     .col-md-7
-      %h4 <b>Platinum Sponsor
+      %h4 <b>Platinum Sponsors
+      %ul.platinum
+        %li
+          %a{:href => 'http://www.pardot.com'} Pardot
+          – B2B Marketing Automation
+        %li.sponsor-image
+          %a{:href => 'http://www.pardot.com'}
+            =image_tag "pardot-logo.png", :alt => 'Pardot'
       %ul.platinum
         %li
           %a{:href => 'http://mandrill.com'} Mandrill
@@ -9,12 +16,9 @@
         %li.sponsor-image
           %a{:href => 'http://mandrill.com'}
             =image_tag "mandrill.png", :alt => 'Mandrill'
-    .col-md-5
-      %h4 <b>Other Sponsors
-      %ul.other
+    -# .col-md-5
+      -# %h4 <b>Other Sponsors
+      -# %ul.other
         -# %li
           -# %a{:href => 'http://www.ggc.edu'} Georgia Gwinett College
           -# %span Provides Space for Emerald City Meetings
-        %li
-          %a{:href => 'http://www.bignerdranch.com'} Big Nerd Ranch
-          %span Pays for Meetup Account Fees
