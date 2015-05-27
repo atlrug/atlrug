@@ -46,7 +46,7 @@ GEM
     addressable (2.3.8)
     arel (6.0.0)
     ast (2.0.0)
-    autoprefixer-rails (5.1.11)
+    autoprefixer-rails (5.2.0)
       execjs
       json
     autotest-fsevent (0.2.10)
@@ -440,8 +440,8 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
-    tins (1.5.1)
-    travis (1.7.6)
+    tins (1.5.2)
+    travis (1.7.7)
       addressable (~> 2.3)
       backports
       faraday (~> 0.9)
