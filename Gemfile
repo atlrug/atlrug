@@ -18,7 +18,6 @@ gem 'haml'
 gem "haml-rails"
 gem 'jquery-rails'
 gem 'overcommit'
-gem 'terminal-table', '1.4.5'
 
 # Turbolinks makes following links in your web application faster. Read
 #    more: https://github.com/rails/turbolinks
