@@ -12,6 +12,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
+gem 'libv8', '3.16.14.8' # LOCKED DOWN - TEMP FIX.
 gem "bootstrap-sass"
 gem 'simple_form'
 gem 'haml'
