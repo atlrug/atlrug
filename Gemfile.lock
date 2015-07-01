@@ -238,7 +238,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.4.1)
       launchy (~> 2.2)
-    libv8 (3.16.14.9)
+    libv8 (3.16.14.8)
     listen (3.0.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -519,6 +519,7 @@ DEPENDENCIES
   kgio
   launchy
   letter_opener
+  libv8 (= 3.16.14.8)
   memcachier
   octokit
   omniauth
