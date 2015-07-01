@@ -12,7 +12,6 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
-gem 'libv8', '3.16.14.8' #LOCKED DOWN STILL 3.16.14.9 IS YANKED.
 gem "bootstrap-sass"
 gem 'simple_form'
 gem 'haml'
