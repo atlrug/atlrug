@@ -59,7 +59,7 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    backports (3.6.5)
+    backports (3.6.6)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -207,7 +207,7 @@ GEM
     hassle3 (0.0.2)
       haml
       rack
-    highline (1.7.2)
+    highline (1.7.3)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
