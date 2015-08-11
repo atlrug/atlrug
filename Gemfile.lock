@@ -195,7 +195,7 @@ GEM
       em-websocket (~> 0.5)
       guard (~> 2.8)
       multi_json (~> 1.8)
-    haml (4.0.6)
+    haml (4.0.7)
       tilt
     haml-rails (0.9.0)
       actionpack (>= 4.0.1)
@@ -435,7 +435,7 @@ GEM
       typhoeus (~> 0.6, >= 0.6.8)
     turbolinks (2.5.3)
       coffee-rails
-    typhoeus (0.7.2)
+    typhoeus (0.7.3)
       ethon (>= 0.7.4)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
