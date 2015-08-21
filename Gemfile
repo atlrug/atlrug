@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.4.rc1'
 
-ruby '2.2.2'
+ruby '2.2.3'
 
 gem 'omniauth'
 gem 'omniauth-github'
