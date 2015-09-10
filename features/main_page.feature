@@ -21,7 +21,7 @@ Feature: Visit Web Site
     Then I should see "@atlrug"
     Then I should see "Wiki"
     Then I should see "Linkedin"
-    Then I should see "IRC-Chat"
+    Then I should see "Slack/Tech404/Rails"
 ## MIDDLE/LEFT
     Then I should see "Platinum Sponsors"
     Then I should see "Pardot"
