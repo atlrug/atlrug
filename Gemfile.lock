@@ -342,10 +342,10 @@ GEM
       rainbow (>= 1.99, < 3.0)
       unparser (~> 0.2.2)
     ref (2.0.0)
-    rest-client (1.8.0)
+    rest-client (2.0.0.rc2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.7)
+      netrc (~> 0.8)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -508,7 +508,7 @@ DEPENDENCIES
   rails_12factor
   rb-fsevent
   rb-inotify
-  rest-client (= 1.8.0)
+  rest-client (= 2.0.0.rc2)
   rspec-rails
   ruby_gntp
   rubycritic
