@@ -29,7 +29,8 @@ describe User, type: :model do
   describe '.create_from_hash' do
     it 'creates a new user with parameters given' do
       expect(User).to receive(:create).with(name: name, uid: uid,
-                                            github_login: login, github_token: token)
+                                            github_login: login,
+                                            github_token: token)
       User.create_from_hash(auth_hash)
     end
   end
