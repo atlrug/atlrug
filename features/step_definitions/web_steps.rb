@@ -11,7 +11,7 @@ Then /^I should see the image "(.+)"$/ do |image|
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
-   visit path_to(page_name)
+  visit path_to(page_name)
 end
 
 When /^(?:|I )follow "([^\"]*)"$/ do |link|

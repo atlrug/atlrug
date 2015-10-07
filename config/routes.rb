@@ -1,6 +1,5 @@
 Atlrug4::Application.routes.draw do
-
-  root :to => "content#index"
+  root to: 'content#index'
 
   get '/meetings' => 'content#meetings'
   get '/videos' => 'content#videos'
@@ -8,22 +7,22 @@ Atlrug4::Application.routes.draw do
   get '/learn' => 'content#learn'
   get '/job' => 'content#job'
 
-  resources :talks, :only => [:new, :create] do
-    get :approve, :on => :collection
-    put :accept, :on => :member
+  resources :talks, only: [:new, :create] do
+    get :approve, on: :collection
+    put :accept, on: :member
   end
 
-  resources :jobs, :only => [:index, :new, :create] do
-    get :view, :on => :member
-    get :delete, :on => :member
+  resources :jobs, only: [:index, :new, :create] do
+    get :view, on: :member
+    get :delete, on: :member
   end
 
-  resources :resumes, :only => [:index, :new, :create] do
-    get :view, :on => :member
-    get :delete, :on => :member
+  resources :resumes, only: [:index, :new, :create] do
+    get :view, on: :member
+    get :delete, on: :member
   end
 
-  get '/auth/:provider/callback', :to => 'sessions#create'
+  get '/auth/:provider/callback', to: 'sessions#create'
   get '/login' => redirect('/auth/github'), :as => :login
   get '/log_out' => 'sessions#destroy', :as => :log_out
 

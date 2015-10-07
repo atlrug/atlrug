@@ -11,7 +11,7 @@ class ResumesController < ApplicationController
     @resume = Resume.new(resume_params)
     if @resume.save
       redirect_to root_url,
-        :notice => "Your resume has been submitted!"
+                  notice: 'Your resume has been submitted!'
     else
       flash[:alert] = "Your resume couldn't be submitted!"
       render :new
@@ -24,15 +24,16 @@ class ResumesController < ApplicationController
 
   def delete
     @resume = Resume.find(params[:id])
-    if @resume != nil && @resume.destroy
+    if !@resume.nil? && @resume.destroy
       redirect_to root_url,
-        :notice => @resume['name'] + "'s resume has been deleted!"
+                  notice: @resume['name'] + "'s resume has been deleted!"
     else
       redirect_to resumes_path
     end
   end
 
-private
+  private
+
   def resume_params
     params.require(:resume).permit(
       :email, :name, :personal_info, :education, :career_objective,

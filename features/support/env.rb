@@ -37,7 +37,7 @@ ActionController::Base.allow_rescue = false
 begin
   DatabaseCleaner.strategy = :transaction
 rescue NameError
-  raise "You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it."
+  raise 'You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it.'
 end
 
 require 'cucumber/rspec/doubles'
@@ -63,5 +63,5 @@ require 'cucumber/rspec/doubles'
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
 # To fix https://github.com/rspec/rspec-rails/issues/1171
-require "multi_test"
+require 'multi_test'
 MultiTest.disable_autorun

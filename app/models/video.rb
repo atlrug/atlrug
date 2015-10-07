@@ -1,5 +1,4 @@
 class Video
-
   def self.all
     playlist.playlist_items
   end
@@ -25,6 +24,6 @@ class Video
   end
 
   def self.playlist_id
-    ENV["YOUTUBE_PLAYLIST_ID"] || "PLqZY2tk6rSRn2Vapk2raOTFjXGiDbpQUU"
+    ENV['YOUTUBE_PLAYLIST_ID'] || 'PLqZY2tk6rSRn2Vapk2raOTFjXGiDbpQUU'
   end
 end

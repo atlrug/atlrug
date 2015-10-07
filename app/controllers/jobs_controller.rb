@@ -11,7 +11,7 @@ class JobsController < ApplicationController
     @job = Job.new(job_params)
     if @job.save
       redirect_to root_url,
-        :notice => "Your job has been submitted!"
+                  notice: 'Your job has been submitted!'
     else
       flash[:alert] = "Your proposal couldn't be submitted!"
       render :new
@@ -24,15 +24,16 @@ class JobsController < ApplicationController
 
   def delete
     @job = Job.find(params[:id])
-    if @job != nil && @job.destroy
+    if !@job.nil? && @job.destroy
       redirect_to root_url,
-        :notice => @job['name'] + "'s job has been deleted!"
+                  notice: @job['name'] + "'s job has been deleted!"
     else
       redirect_to jobs_path
     end
   end
 
-private
+  private
+
   def job_params
     params.require(:job).permit(
       :title, :email, :name, :description, :requirement, :start_date, :end_date)

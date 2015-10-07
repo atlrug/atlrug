@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 # Assets should be precompiled for production (so we don't need the gems loaded then)
-#TODO# Bundler.require(*Rails.groups(assets: %w(development test)))
+# TODO# Bundler.require(*Rails.groups(assets: %w(development test)))
 Bundler.require(:default, Rails.env)
 
 module Atlrug4

@@ -4,11 +4,11 @@ module ApplicationHelper
   end
 
   def meetup_title(meetup)
-    "#{meetup['name']} (#{date_display(Time.at(meetup['time'].to_i/1000))})".
-      sub('The Atlanta Ruby Meetup Group ','')
+    "#{meetup['name']} (#{date_display(Time.at(meetup['time'].to_i / 1000))})"
+      .sub('The Atlanta Ruby Meetup Group ', '')
   end
 
   def date_display(time)
-    time.strftime('%B %d').sub(' 0',' ')
+    time.strftime('%B %d').sub(' 0', ' ')
   end
 end

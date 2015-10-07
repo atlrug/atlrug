@@ -11,51 +11,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140214095331) do
-
-  create_table "jobs", force: :cascade do |t|
-    t.string   "title"
-    t.text     "description"
-    t.text     "requirement"
-    t.string   "name"
-    t.string   "email"
-    t.date     "start_date"
-    t.date     "end_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+ActiveRecord::Schema.define(version: 20_140_214_095_331) do
+  create_table 'jobs', force: :cascade do |t|
+    t.string 'title'
+    t.text 'description'
+    t.text 'requirement'
+    t.string 'name'
+    t.string 'email'
+    t.date 'start_date'
+    t.date 'end_date'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
   end
 
-  create_table "resumes", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.text     "personal_info"
-    t.text     "career_objective"
-    t.text     "work_experience"
-    t.text     "education"
-    t.text     "skill"
-    t.text     "hobby"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table 'resumes', force: :cascade do |t|
+    t.string 'name'
+    t.string 'email'
+    t.text 'personal_info'
+    t.text 'career_objective'
+    t.text 'work_experience'
+    t.text 'education'
+    t.text 'skill'
+    t.text 'hobby'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
   end
 
-  create_table "talks", force: :cascade do |t|
-    t.string   "title"
-    t.integer  "duration"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "email"
-    t.string   "twitter"
-    t.text     "description"
-    t.boolean  "approved",    default: false
+  create_table 'talks', force: :cascade do |t|
+    t.string 'title'
+    t.integer 'duration'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
+    t.string 'email'
+    t.string 'twitter'
+    t.text 'description'
+    t.boolean 'approved', default: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "uid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "github_login"
-    t.string   "github_token"
+  create_table 'users', force: :cascade do |t|
+    t.string 'name'
+    t.string 'uid'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
+    t.string 'github_login'
+    t.string 'github_token'
   end
-
 end

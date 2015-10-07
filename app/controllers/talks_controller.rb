@@ -7,7 +7,7 @@ class TalksController < ApplicationController
     @talk = Talk.new(talk_params)
     if @talk.save
       redirect_to root_url,
-        :notice => "Your talk has been submitted for review!"
+                  notice: 'Your talk has been submitted for review!'
     else
       flash[:alert] = "Your proposal couldn't be submitted!"
       render :new
@@ -22,7 +22,8 @@ class TalksController < ApplicationController
     @talks = Talk.pending.map { |talk| TalkDecorator.new(talk) }
   end
 
-private
+  private
+
   def talk_params
     params.require(:talk).permit(
       :title, :email, :duration, :description, :twitter)
