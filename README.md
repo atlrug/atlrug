@@ -6,7 +6,6 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 [<img src="https://gemnasium.com/atlrug/atlrug4.png?travis" />](https://gemnasium.com/atlrug/atlrug4.png?travis)
 [<img src="https://travis-ci.org/atlrug/atlrug4.png" />](https://travis-ci.org/atlrug/atlrug4.png)
 [<img src="https://www.herokucdn.com/deploy/button.png" />](https://heroku.com/deploy)
-
 [Wiki](https://github.com/atlrug/atlrug4/wiki)
 
 ## Setup
