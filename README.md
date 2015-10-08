@@ -6,11 +6,11 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 {<img src="https://gemnasium.com/atlrug/atlrug4.png?travis" />}[https://gemnasium.com/atlrug/atlrug4.png?travis]
 
-{<img src="https://travis-ci.org/atlrug/atlrug4.png" />}[https://travis-ci.org/atlrug/atlrug4.png]
+[<img src="https://travis-ci.org/atlrug/atlrug4.png" />](https://travis-ci.org/atlrug/atlrug4.png)
 
 {<img src="https://www.herokucdn.com/deploy/button.png" />}[https://heroku.com/deploy]
 
-{Wiki}[https://github.com/atlrug/atlrug4/wiki]
+[Wiki](https://github.com/atlrug/atlrug4/wiki)
 
 ## Setup
 
@@ -65,11 +65,11 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 6. Push it back to Github.
 
-6b. The following command will encrypt and add it to atlrug/.travis.yml file. Note, you may have to do this twice. The first time may create $HOME/.travis/config.yml and if that has your repos in it, it will lock down your key to only your repos. So delete or edit that config.yml in your home directory and rerun this command:
+7. The following command will encrypt and add it to atlrug/.travis.yml file. Note, you may have to do this twice. The first time may create $HOME/.travis/config.yml and if that has your repos in it, it will lock down your key to only your repos. So delete or edit that config.yml in your home directory and rerun this command:
 
     travis encrypt MEETUP_KEY=your_meetup_key_here --add
 
-7. Create a Pull Request to original repo.
+8. Create a Pull Request to original repo.
 
 ## To Contribute to Wiki
 
