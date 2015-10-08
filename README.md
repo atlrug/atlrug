@@ -1,4 +1,4 @@
-= atlrug Web Site (atlrug4)
+## atlrug Web Site (atlrug4)
 
 This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group).
 
@@ -12,7 +12,7 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 {Wiki}[https://github.com/atlrug/atlrug4/wiki]
 
-== Setup
+## Setup
 
 On 4/26/2013, the requirements were: Ruby 2.0.0-p0; Rails 4.0.0.rc1
 
@@ -51,7 +51,7 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 12. For more detail about <b>Guard LiveReload</b>, go to: https://github.com/guard/guard-livereload
 
-== To Contribute
+## To Contribute
 
 1. Sign in at http://contribhub.co and click "I Wanna Help!" button at top.
 
@@ -71,7 +71,7 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 7. Create a Pull Request to original repo.
 
-== To Contribute to Wiki
+## To Contribute to Wiki
 
 1. Clone https://github.com/atlrug/atlrug4.wiki.git
 
@@ -79,10 +79,11 @@ Note: Install Ruby 2.0.0-p0 via RVM checkout https://coderwall.com/p/tptocq.
 
 3. Push it back to Github.
 
-== DISCUSSION
+## DISCUSSION
 
 If you have questions, please use this [Linkedin group](http://www.linkedin.com/groups/Atlanta-Ruby-Users-Group-106945/about)
 
-== License
+## License
 
-atlrug4 is released under the [MIT License](MIT-LICENSE.txt). http://www.opensource.org/licenses/mit-license
+atlrug4 is released under the [MIT License](MIT-LICENSE.txt).
+Reference: http://www.opensource.org/licenses/mit-license
