@@ -200,7 +200,7 @@ GEM
     hassle3 (0.0.2)
       haml
       rack
-    highline (1.7.7)
+    highline (1.7.8)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
@@ -372,7 +372,7 @@ GEM
       parser (>= 2.2.0, < 3.0)
       reek (= 1.6.5)
       virtus (~> 1.0)
-    sass (3.4.18)
+    sass (3.4.19)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
