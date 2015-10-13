@@ -58,7 +58,7 @@ group :development do
   gem 'ruby_gntp' # Linux
   gem 'rb-fsevent', require: false # for Linux
   gem 'rb-inotify', require: false # for OS X
-  # gem 'rb-fchange', :require => false # for Windows
+  # gem 'rb-fchange', require: false # for Windows
 end
 
 group :development, :test do
