@@ -223,7 +223,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     justify (1.0.2)
-    jwt (1.5.1)
+    jwt (1.5.2)
     kgio (2.10.0)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -253,7 +253,7 @@ GEM
     nenv (0.2.0)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
-    netrc (0.10.3)
+    netrc (0.11.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     notiffany (0.0.8)
@@ -457,7 +457,7 @@ GEM
     websocket (1.2.2)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    yt (0.25.9)
+    yt (0.25.10)
       activesupport
     zonebie (0.5.1)
 
