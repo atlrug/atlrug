@@ -245,7 +245,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.6.2)
-    minitest (5.8.2)
+    minitest (5.8.3)
     multi_json (1.11.2)
     multi_test (0.1.2)
     multi_xml (0.5.5)
@@ -276,7 +276,7 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    overcommit (0.28.0)
+    overcommit (0.29.1)
       childprocess (~> 0.5.6)
       iniparse (~> 1.4)
     parser (2.2.3.0)
@@ -439,7 +439,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
-    unicorn (5.0.0)
+    unicorn (5.0.1)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
