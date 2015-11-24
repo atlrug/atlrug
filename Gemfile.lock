@@ -46,7 +46,7 @@ GEM
     addressable (2.3.8)
     arel (6.0.3)
     ast (2.1.0)
-    autoprefixer-rails (6.1.0.1)
+    autoprefixer-rails (6.1.1)
       execjs
       json
     autotest-fsevent (0.2.11)
@@ -370,7 +370,7 @@ GEM
     ruby_gntp (0.3.4)
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
-    rubycritic (2.1.0)
+    rubycritic (2.2.0)
       flay (= 2.6.1)
       flog (= 4.3.2)
       parser (>= 2.2.0, < 3.0)
