@@ -113,7 +113,7 @@ GEM
       nokogiri (~> 1.5)
       rails (>= 3, < 5)
     cvss (0.99.0)
-    dalli (2.7.4)
+    dalli (2.7.5)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
