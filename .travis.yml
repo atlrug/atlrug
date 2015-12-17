@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.2.3
+- 2.2.4
 before_script: bundle exec rake db:migrate RAILS_ENV=test
 before_install: gem update bundler
 cache: bundler
@@ -16,4 +16,3 @@ env:
   - AR4_S_K_B=09ced0f5527b74049d122b000b36e7d5531584788dc2650ac0e8ade11d79668d8978ad725fe2c0dcba4f0f2cff7bba336fc726019def6b2dea969554c7deb2d8
   - secure: gr01YSiXwMpOUTWUcuR7O0hcvdE8xgYr+ugpL9H94Xvy7uN14bXF5FDYCLqsZxsXcpNA/vq8rX0RxOZcxFi+yxSbvZgSxryYzft6/fUWg/jIRrRMWSCIAjhHCUAyyTF89GsRBrn1YLeaKNAsEHvalwSyQpNakZnwQzVpsXsWcDQ=
   - secure: FBTbRyzNFfFhXO3cdiwEklt2hmpa7ufKne+TlQAqOph4WnXkmc/l4CFJw5BcJtdLWXt/wHu883ja1OAkLM/EYUMnipYbpKLrz/2MOxTRfXKzMZImPfdQajhV+k6uCyOhh0Mn3PLBEnySUo2b3PUKRaDmtf+0T2CV6F5aLC3zudI=
-dd: 
