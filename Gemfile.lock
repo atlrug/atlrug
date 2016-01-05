@@ -470,7 +470,7 @@ GEM
       ref
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.1)
+    tilt (2.0.2)
     travis (1.8.0)
       addressable (~> 2.3)
       backports
