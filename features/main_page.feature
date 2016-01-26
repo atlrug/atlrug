@@ -22,6 +22,8 @@ Feature: Visit Web Site
     Then I should see "Wiki"
     Then I should see "Linkedin"
     Then I should see "Slack/Tech404/Rails"
+    Then I should see "Code of Conduct"
+
 ## MIDDLE/LEFT
     Then I should see "Platinum Sponsors"
     Then I should see "Pardot"
