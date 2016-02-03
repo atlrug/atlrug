@@ -37,7 +37,6 @@ bin/scss
 bin/slimrb
 bin/unit_diff
 bin/zentest
-.gitignore
 
 app/.DS_Store
 
