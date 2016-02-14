@@ -42,7 +42,7 @@ GEM
     addressable (2.3.8)
     arel (6.0.3)
     ast (2.2.0)
-    autoprefixer-rails (6.3.2)
+    autoprefixer-rails (6.3.3)
       execjs
       json
     autotest-fsevent (0.2.11)
@@ -113,7 +113,7 @@ GEM
       railties (>= 3, < 5)
     cucumber-wire (0.0.1)
     cvss (0.99.0)
-    dalli (2.7.5)
+    dalli (2.7.6)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
