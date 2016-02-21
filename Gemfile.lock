@@ -328,7 +328,7 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    overcommit (0.31.0)
+    overcommit (0.32.0)
       childprocess (~> 0.5.8)
       iniparse (~> 1.4)
     parser (2.3.0.6)
