@@ -42,9 +42,8 @@ GEM
     addressable (2.3.8)
     arel (6.0.3)
     ast (2.2.0)
-    autoprefixer-rails (6.3.3)
+    autoprefixer-rails (6.3.3.1)
       execjs
-      json
     autotest-fsevent (0.2.11)
       sys-uname
     autotest-growl (0.2.16)
@@ -295,7 +294,7 @@ GEM
       mime-types (>= 1.16, < 3)
     memcachier (0.0.2)
     method_source (0.8.2)
-    mime-types (2.99)
+    mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
