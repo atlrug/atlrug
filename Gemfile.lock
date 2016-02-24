@@ -126,7 +126,7 @@ GEM
     data_objects (0.10.17)
       addressable (~> 2.1)
     database_cleaner (1.5.1)
-    dawnscanner (1.6.0)
+    dawnscanner (1.6.1)
       cvss
       data_mapper
       dm-sqlite-adapter
@@ -179,7 +179,7 @@ GEM
     do_sqlite3 (0.10.17)
       data_objects (= 0.10.17)
     docile (1.1.5)
-    domain_name (0.5.20160128)
+    domain_name (0.5.20160216)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.1.0)
     dotenv-rails (2.1.0)
