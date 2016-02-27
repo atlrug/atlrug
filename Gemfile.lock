@@ -93,7 +93,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     colorize (0.7.7)
-    concurrent-ruby (1.0.0)
+    concurrent-ruby (1.0.1)
     cucumber (2.3.2)
       builder (>= 2.1.2)
       cucumber-core (~> 1.4.0)
