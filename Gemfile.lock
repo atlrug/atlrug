@@ -126,7 +126,7 @@ GEM
     data_objects (0.10.17)
       addressable (~> 2.1)
     database_cleaner (1.5.1)
-    dawnscanner (1.6.1)
+    dawnscanner (1.6.2)
       cvss
       data_mapper
       dm-sqlite-adapter
