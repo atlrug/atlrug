@@ -12,18 +12,21 @@
             %a{:href => "#post"} Post a Job
           %li
             %a{:href => "#view"} View Jobs
+      
       #center
         %h2 Our sponsors are usually hiring!
         %p Check the bottom of this page. :)
         %div
         .col-md-6
         = image_tag "atl_meetup4.jpg", :alt => "Give a Talk", :class => "thumbnail"
+       
         #networking
           %h2 Networking
           %p
             Networking sounds like an MBA buzzword, but it is as easy as coming to a Meeting
             and talking about what interests you in software. We encourage you to come and ask
             people about their jobs.
+       
         #hire           
           %h2 How to hire a Ruby developer.
           %p There is a lot of demand for Ruby developers, so hiring can be challenging.
@@ -31,17 +34,17 @@
             Send one of your current developers to announce an opening at an AtlRug Meeting.
             Make sure to tell people how your job is different.
           %p If you have no technical experience, you may need a partner who understands technology.
-        .row
+        
+
           - model_class = Job
         #post  
           %h2 Have a new job?
           %a{:href => new_job_path}= 'Please click here to submit your new job'
-        #view
-        .row
+        
+        
           - model_class = Job
-          %p
+        #view  
           %h2 Current jobs
-        #current_jobs
         .row
           - if @jobs.any?
             %ul.other-list
@@ -55,4 +58,4 @@
                   %p= job_short_description(job)
                   %h6.continue_read= job_more_reading(job) + job_delete(job)
           - else
-          %h3 No jobs.
+            %h3 No jobs.
