@@ -11,7 +11,6 @@ Feature: Visit Web Site
     Then I should see "Learn Ruby"
     Then I should see the image "Atlanta Ruby Logo"
     Then I should see "Find a Job"
-    Then I should see "Hire Someone"
 
 ## BOTTOM BAR
     Then I should see "Meetup"
@@ -25,8 +24,8 @@ Feature: Visit Web Site
     Then I should see "Platinum Sponsors"
     Then I should see "Pardot"
     Then I should see "Mandrill"
-## MIDDLE/RIGHT
 
+## MIDDLE/RIGHT
   Scenario: Check "Go to Meetings" Link
     Given I go to the home page
     When I follow "Go to Meetings"
@@ -49,6 +48,7 @@ Feature: Visit Web Site
     When I follow "Find a Job"
     Then I should see "Our sponsors are usually hiring"
     Then I should see "Networking"
+    Then I should see "How to hire a Ruby developer."
     Then I should see "Have a new job?"
     Then I should see "Please click here to submit your new job"
     Then I should see "Current jobs"
@@ -65,27 +65,6 @@ Feature: Visit Web Site
     Then I should see "End date"
     Then I should see "Contact name"
     Then I should see "Email"
-
-  Scenario: Check "Hire Someone" Link
-    Given I go to the home page
-    When I follow "Hire Someone"
-    Then I should see "How to hire a Ruby developer."
-    Then I should see "Have not submitted your resume yet?"
-    When I should see "Please click here to submit your resume"
-    Then I should see "Current resumes"
-
-  Scenario: Check "Submit Resume" Link
-    Given I go to the home page
-    When I follow "Hire Someone"
-    When I follow "Please click here to submit your resume"
-    Then I should see "ATLRUG Resume Proposal"
-    Then I should see "Full name"
-    Then I should see "Email"
-    Then I should see "Your personal info"
-    Then I should see "Education"
-    Then I should see "Career objective"
-    Then I should see "Skill"
-    Then I should see "Hobby"
 
   Scenario: Check "Find Presentations" Link
     Given I go to the home page

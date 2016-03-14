@@ -17,11 +17,6 @@ Atlrug4::Application.routes.draw do
     get :delete, on: :member
   end
 
-  resources :resumes, only: [:index, :new, :create] do
-    get :view, on: :member
-    get :delete, on: :member
-  end
-
   get '/auth/:provider/callback', to: 'sessions#create'
   get '/login' => redirect('/auth/github'), :as => :login
   get '/log_out' => 'sessions#destroy', :as => :log_out

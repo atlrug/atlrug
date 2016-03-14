@@ -12,8 +12,6 @@ module NavigationHelpers
       '/'
     when /the new_jobs page/
       '/jobs/new'
-    when /the new_resume page/
-      '/resumes/new'
     end
   end
 end
