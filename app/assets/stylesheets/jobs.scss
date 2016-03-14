@@ -4,3 +4,22 @@
 .job-post-meta { margin-bottom: 1em; }
 .continue_read { margin-top: 0em; margin-bottom: 3em; color: #a20000; }
 .job_content   { margin-bottom: 5em; }
+#content {width: 920;margin-top:50px;min-height:40.0em;}
+#left {
+    width: 141px;
+    float: left;
+    margin-right: 40px;
+    min-height: 200px;
+}
+#center {width:470px;padding-right:30px;margin-right:10px;float:left;}
+.subjob h1 {margin-top:0;font-weight:normal;font-size:1.875em;color:#006c69;line-height: 1.25em;}
+.subjob h1 a {margin-top:0;font-weight:normal;font-size:1.2em;color:#006c69;line-height: 1.25em;}
+.sub h2 {color:#06272e;font-weight:normal;font-size:1.125em;}
+.subjob h2 a {color: #16a27b; font-weight:normal; font-size:1.125em; margin-bottom:2em;}
+.subjob h3 {text-transform:uppercase;font-weight:normal;color:#fd4f00;font-size:0.814em;margin:0;}
+#left ul {list-style-type:none;padding-left:0;border-top:2px dotted #c6d4d6;margin:0;}
+#left li {text-align:right;border-bottom:2px dotted #c6d4d6;padding:1em 2em 1em 0;background: url(/wp-content/uploads/2013/01/subArrow.jpg) no-repeat center right;}
+#left li a {font-size:12px;color:#aaaaaa;text-transform:uppercase;}
+#left li a:hover {color:#34cea3;}
+#left li.current_page_item {background: url(/wp-content/uploads/2013/01/subArrow-on.jpg) no-repeat center right;}
+#left li.current_page_item a {color:#34cea3;}
