@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+gem 'rails',      '5.0.0.beta3' # RAILS5
+gem 'turbolinks', '5.0.0.beta2' # RAILS5
+gem "omniauth",    github: 'twalpole/omniauth', branch: 'rack_master' # RAILS5
+gem 'simple_form', github: 'plataformatec/simple_form' # RAILS5
+
 
 ruby '2.3.0'
 
-gem 'omniauth'
 gem 'omniauth-github'
 gem 'octokit'
 gem 'coffee-rails'
@@ -13,21 +16,16 @@ gem 'uglifier'
 gem 'execjs'
 gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass'
-gem 'simple_form'
 gem 'haml'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'overcommit'
 
-# Turbolinks makes following links in your web application faster. Read
-#    more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 
 # APP-specific gems
-gem 'rest-client', '2.0.0.rc2'
+gem 'rest-client', '2.0.0.rc2' # LOCKED DOWN
 gem 'hassle3'
 gem 'kgio'
 gem 'tzinfo'
@@ -46,9 +44,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'awesome_print'
   gem 'quiet_assets'
-
   gem 'dawnscanner', require: false
-
   gem 'rubycritic', require: false
 
   # For Guard
@@ -65,14 +61,11 @@ group :development, :test do
   gem 'sqlite3'
 
   # TESTING/ANALYSIS
-  gem 'rails-footnotes'
-
-  gem 'rspec-rails'
-  gem 'email_spec'
-
-  gem 'capybara'
+  gem 'rspec-rails', '3.5.0.beta2' #RAILS5
+  gem 'rails-footnotes', github: 'josevalim/rails-footnotes' # RAILS5
+  gem 'capybara',        github: 'jnicklas/capybara', branch: 'master' # RAILS5
   gem 'capybara-screenshot'
-
+  gem 'email_spec'
   gem 'autotest-rails'
   gem 'autotest-fsevent'
   gem 'autotest-growl'

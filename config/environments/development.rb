@@ -28,7 +28,7 @@ Atlrug4::Application.configure do
   config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 
   config.middleware.insert_before(
-    Rack::Lock, Rack::LiveReload,
+    Rack::Runtime, Rack::LiveReload,
     min_delay: 500,
     max_delay: 10_000,
     port: 56_789,
