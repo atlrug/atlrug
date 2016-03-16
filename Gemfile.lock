@@ -27,6 +27,12 @@ GIT
       activemodel (> 4, < 5.1)
 
 GIT
+  remote: git://github.com/rails/arel.git
+  revision: d72cf2972efc0d5cfe72bb7c009b2e76111b766e
+  specs:
+    arel (7.0.0)
+
+GIT
   remote: git://github.com/twalpole/omniauth.git
   revision: d91dbcc4793ee83a4cc7ef649e9d526852428647
   branch: rack_master
@@ -79,7 +85,6 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    arel (7.0.0)
     ast (2.2.0)
     autoprefixer-rails (6.3.3.1)
       execjs
@@ -544,6 +549,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack-action_caching
+  arel!
   autotest-fsevent
   autotest-growl
   autotest-rails
