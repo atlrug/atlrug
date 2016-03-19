@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails',      '5.0.0.beta3' # RAILS5
-gem 'turbolinks', '5.0.0.beta2' # RAILS5
+gem 'rails',       github: 'rails/rails' #WAS: '5.0.0.beta3' # RAILS5
+gem 'turbolinks',  github: 'rails/turbolinks' #WAS: '5.0.0.beta2' # RAILS5
 gem "omniauth",    github: 'twalpole/omniauth', branch: 'rack_master' # RAILS5
 gem 'simple_form', github: 'plataformatec/simple_form' # RAILS5
 
