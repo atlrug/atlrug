@@ -2,6 +2,7 @@ language: ruby
 rvm:
 - 2.3.0
 
+before_script: bundle exec rake db:test:prepare
 before_install: gem update bundler
 cache: bundler
 notifications:
