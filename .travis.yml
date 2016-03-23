@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.3.0
 
-before_script: bundle exec rake db:test:prepare
+before_script: bundle exec bin/rails db:environment:set RAILS_ENV=test
 before_install: gem update bundler
 cache: bundler
 notifications:
