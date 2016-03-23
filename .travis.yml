@@ -7,7 +7,6 @@ before_install: gem update bundler
 script:
   - bundle exec rspec
   - bundle exec cucumber
-  - bundle exec rubocop
 cache: bundler
 notifications:
   email:
