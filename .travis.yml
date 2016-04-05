@@ -2,6 +2,12 @@ language: ruby
 rvm:
 - 2.3.0
 
+addons:
+  apt:
+    sources:
+      - travis-ci/sqlite3
+    packages:
+      - sqlite3
 before_script: bundle exec rake db:migrate RAILS_ENV=test
 before_install: gem update bundler
 script:
