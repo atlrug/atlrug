@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jnicklas/capybara.git
-  revision: 2a51b817b355f6c1a5e95a471a87f1a492562e55
+  revision: b04cc8b0d10b0b791f980655505a20b495b2d329
   branch: master
   specs:
     capybara (2.7.0.dev)
@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: dda31d59a03adb7e5aa372e72bb66a3886632f2f
+  revision: fa3537506a12635b51886919589211640ddd3a15
   specs:
     actioncable (5.0.0.beta3)
       actionpack (= 5.0.0.beta3)
@@ -111,7 +111,7 @@ GEM
     addressable (2.4.0)
     arel (7.0.0)
     ast (2.2.0)
-    autoprefixer-rails (6.3.3.1)
+    autoprefixer-rails (6.3.6)
       execjs
     autotest-fsevent (0.2.11)
       sys-uname
@@ -137,7 +137,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
-    capybara-screenshot (1.0.11)
+    capybara-screenshot (1.0.12)
       capybara (>= 1.0, < 3)
       launchy
     childprocess (0.5.9)
@@ -243,9 +243,9 @@ GEM
     docile (1.1.5)
     domain_name (0.5.20160310)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.1.0)
-    dotenv-rails (2.1.0)
-      dotenv (= 2.1.0)
+    dotenv (2.1.1)
+    dotenv-rails (2.1.1)
+      dotenv (= 2.1.1)
       railties (>= 4.0, < 5.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -353,8 +353,8 @@ GEM
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     lumberjack (1.0.10)
-    mail (2.6.3)
-      mime-types (>= 1.16, < 3)
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4)
     memcachier (0.0.2)
     method_source (0.8.2)
     mime-types (2.99.1)
@@ -391,7 +391,7 @@ GEM
     overcommit (0.32.0)
       childprocess (~> 0.5.8)
       iniparse (~> 1.4)
-    parser (2.3.0.6)
+    parser (2.3.0.7)
       ast (~> 2.2)
     pg (0.18.4)
     pry (0.10.3)
@@ -425,10 +425,10 @@ GEM
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.5)
-    rails_stdout_logging (0.0.4)
+    rails_stdout_logging (0.0.5)
     rainbow (2.1.0)
     raindrops (0.16.0)
-    rake (11.1.1)
+    rake (11.1.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -470,7 +470,7 @@ GEM
       reek (= 3.11)
       ruby_parser (~> 3.8)
       virtus (~> 1.0)
-    sass (3.4.21)
+    sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
@@ -522,15 +522,13 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.2)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
+    uglifier (3.0.0)
+      execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    unicorn (5.0.1)
+    unicorn (5.1.0)
       kgio (~> 2.6)
-      rack
       raindrops (~> 0.7)
     uuidtools (2.1.5)
     virtus (1.0.5)
@@ -538,13 +536,13 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
-    websocket (1.2.2)
+    websocket (1.2.3)
     websocket-driver (0.6.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    yt (0.25.24)
+    yt (0.25.28)
       activesupport
     zonebie (0.6.0)
 
