@@ -5,8 +5,9 @@ rvm:
 before_script: bundle exec rake db:migrate RAILS_ENV=test
 before_install: gem update bundler
 script:
-  - bundle exec rspec
-  - bundle exec cucumber
+  - bundle exec rake
+#  - bundle exec rspec
+#  - bundle exec cucumber
 cache: bundler
 notifications:
   email:
