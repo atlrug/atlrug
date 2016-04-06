@@ -328,7 +328,7 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    overcommit (0.32.0)
+    overcommit (0.33.0)
       childprocess (~> 0.5.8)
       iniparse (~> 1.4)
     parser (2.3.0.7)
@@ -451,7 +451,7 @@ GEM
       json
       simplecov
     slop (3.6.0)
-    sprockets (3.5.2)
+    sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.0.4)
@@ -501,7 +501,7 @@ GEM
     websocket (1.2.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    yt (0.25.27)
+    yt (0.25.28)
       activesupport
     zonebie (0.6.0)
 
