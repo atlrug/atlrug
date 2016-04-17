@@ -49,13 +49,12 @@
           - if @jobs.any?
             %ul.other-list
             - @jobs.each do |job|
-              %li
-                .job_content
-                  %h4= job_header_link(job)
-                  .job-post-meta
-                  %span= job_post_date_by(job)
-                  =job_mail_to(job)
-                  %p= job_short_description(job)
-                  %h6.continue_read= job_more_reading(job) + job_delete(job)
+              .job_content
+                %h4= job_header_link(job)
+                .job-post-meta
+                %span= job_post_date_by(job)
+                =job_mail_to(job)
+                %p= job_short_description(job)
+                %h6.continue_read= job_more_reading(job) + job_delete(job)
           - else
             %h3 No jobs.
