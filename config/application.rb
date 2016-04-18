@@ -6,7 +6,7 @@ require 'rails/all'
 # TODO# Bundler.require(*Rails.groups(assets: %w(development test)))
 Bundler.require(:default, Rails.env)
 
-module Atlrug4
+module Atlrug
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

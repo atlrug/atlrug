@@ -1,4 +1,4 @@
-Atlrug4::Application.routes.draw do
+Atlrug::Application.routes.draw do
   root to: 'content#index'
 
   get '/meetings' => 'content#meetings'

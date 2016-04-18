@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Atlrug4::Application.load_tasks
+Atlrug::Application.load_tasks

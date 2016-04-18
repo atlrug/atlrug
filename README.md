@@ -1,12 +1,12 @@
-## atlrug Web Site (atlrug4)
+## atlrug Web Site (atlrug)
 
 This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group).
 
-[<img src="https://codeclimate.com/github/atlrug/atlrug4.png" />]([https://codeclimate.com/github/atlrug/atlrug4)
-[<img src="https://gemnasium.com/atlrug/atlrug4.png?travis" />](https://gemnasium.com/atlrug/atlrug4.png?travis)
-[<img src="https://travis-ci.org/atlrug/atlrug4.png" />](https://travis-ci.org/atlrug/atlrug4.png)
+[<img src="https://codeclimate.com/github/atlrug/atlrug.png" />]([https://codeclimate.com/github/atlrug/atlrug)
+[<img src="https://gemnasium.com/atlrug/atlrug.png?travis" />](https://gemnasium.com/atlrug/atlrug.png?travis)
+[<img src="https://travis-ci.org/atlrug/atlrug.png" />](https://travis-ci.org/atlrug/atlrug.png)
 [<img src="https://www.herokucdn.com/deploy/button.png" />](https://heroku.com/deploy)
-[Wiki](https://github.com/atlrug/atlrug4/wiki)
+[Wiki](https://github.com/atlrug/atlrug/wiki)
 
 ## Setup
 
@@ -24,7 +24,7 @@ Note: Install Ruby 2.3.0 via RVM checkout https://coderwall.com/p/tptocq.
 
 3. Run the tests by typing <b>rake</b> (when we write them -- smile)
 
-4. Project is on Github at https://github.com/atlrug/atlrug4.
+4. Project is on Github at https://github.com/atlrug/atlrug.
 
 5. Follow these instructions regarding Heroku and Rails 4 (avoid "bundle --binstubs"): https://gist.github.com/peter/3025502
 
@@ -69,7 +69,7 @@ Note: Install Ruby 2.3.0 via RVM checkout https://coderwall.com/p/tptocq.
 
 ## To Contribute to Wiki
 
-1. Clone https://github.com/atlrug/atlrug4.wiki.git
+1. Clone https://github.com/atlrug/atlrug.wiki.git
 
 2. Add your information.
 
@@ -81,5 +81,5 @@ If you have questions, please use this [Linkedin group](http://www.linkedin.com/
 
 ## License
 
-atlrug4 is released under the [MIT License](MIT-LICENSE.txt).
+atlrug is released under the [MIT License](MIT-LICENSE.txt).
 Reference: http://www.opensource.org/licenses/mit-license

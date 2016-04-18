@@ -1,1 +1,1 @@
-var search_data = {"index":{"searchIndex":["readme"],"longSearchIndex":[""],"info":[["README","","README_rdoc.html","","<p>atlrug Web Site (atlrug4)\n<p>This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User\nGroup …\n"]]}}
+var search_data = {"index":{"searchIndex":["readme"],"longSearchIndex":[""],"info":[["README","","README_rdoc.html","","<p>atlrug Web Site (atlrug)\n<p>This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User\nGroup …\n"]]}}
