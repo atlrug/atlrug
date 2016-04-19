@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/josevalim/rails-footnotes.git
-  revision: d3ea16d60c780d541d9f99073d40ebfe23d162db
-  specs:
-    rails-footnotes (4.1.8)
-      rails (>= 3.2)
-
-GIT
   remote: git://github.com/plataformatec/simple_form.git
   revision: ac63da0f0b38df82385493f25f649e320b0acb4a
   specs:
@@ -410,6 +403,8 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
+    rails-footnotes (4.1.8)
+      rails (>= 3.2)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails4_upgrade (0.5.0)
@@ -584,7 +579,7 @@ DEPENDENCIES
   quiet_assets
   rack-livereload
   rails!
-  rails-footnotes!
+  rails-footnotes
   rails4_upgrade
   rails_12factor
   rb-fsevent

@@ -5,7 +5,6 @@ gem 'turbolinks',  github: 'rails/turbolinks' #WAS: '5.0.0.beta2' # RAILS5
 gem "omniauth",    github: 'twalpole/omniauth', branch: 'rack_master' # RAILS5
 gem 'simple_form', github: 'plataformatec/simple_form' # RAILS5
 
-
 ruby '2.3.0'
 
 gem 'omniauth-github'
@@ -62,7 +61,7 @@ group :development, :test do
 
   # TESTING/ANALYSIS
   gem 'rspec-rails', '3.5.0.beta2' #RAILS5
-  gem 'rails-footnotes', github: 'josevalim/rails-footnotes' # RAILS5
+  gem 'rails-footnotes'
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'email_spec'
