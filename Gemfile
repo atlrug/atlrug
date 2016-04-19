@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails',       github: 'rails/rails' #WAS: '5.0.0.beta3' # RAILS5
 gem 'turbolinks',  github: 'rails/turbolinks' #WAS: '5.0.0.beta2' # RAILS5
 gem "omniauth",    github: 'twalpole/omniauth', branch: 'rack_master' # RAILS5
-gem 'simple_form', github: 'plataformatec/simple_form' # RAILS5
 
 ruby '2.3.0'
 
@@ -19,6 +18,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'overcommit'
+gem 'simple_form'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'

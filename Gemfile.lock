@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/plataformatec/simple_form.git
-  revision: ac63da0f0b38df82385493f25f649e320b0acb4a
-  specs:
-    simple_form (3.2.1)
-      actionpack (> 4, < 5.1)
-      activemodel (> 4, < 5.1)
-
-GIT
   remote: git://github.com/rails/rails.git
   revision: 406a2380b88714387e015efcc0696bd2b20f49f1
   specs:
@@ -471,6 +463,9 @@ GEM
       faraday (~> 0.8, < 0.10)
     sexp_processor (4.7.0)
     shellany (0.0.1)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     simplecov (0.11.2)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -589,7 +584,7 @@ DEPENDENCIES
   ruby_gntp
   rubycritic
   sass-rails
-  simple_form!
+  simple_form
   simplecov
   simplecov-json
   sqlite3
