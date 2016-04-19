@@ -63,7 +63,7 @@ group :development, :test do
   # TESTING/ANALYSIS
   gem 'rspec-rails', '3.5.0.beta2' #RAILS5
   gem 'rails-footnotes', github: 'josevalim/rails-footnotes' # RAILS5
-  gem 'capybara',        github: 'jnicklas/capybara', branch: 'master' # RAILS5
+  gem 'capybara'
   gem 'capybara-screenshot'
   gem 'email_spec'
   gem 'autotest-rails'

@@ -1,17 +1,4 @@
 GIT
-  remote: git://github.com/jnicklas/capybara.git
-  revision: 4be1a3126c4fbf836561f2e2ce86f02dbdb8d1c0
-  branch: master
-  specs:
-    capybara (2.8.0.dev)
-      addressable
-      mime-types (>= 1.16)
-      nokogiri (>= 1.3.3)
-      rack (>= 1.0.0)
-      rack-test (>= 0.5.4)
-      xpath (~> 2.0)
-
-GIT
   remote: git://github.com/josevalim/rails-footnotes.git
   revision: d3ea16d60c780d541d9f99073d40ebfe23d162db
   specs:
@@ -28,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 71657146374595b6b9b04916649922fa4f5f512d
+  revision: 406a2380b88714387e015efcc0696bd2b20f49f1
   specs:
     actioncable (5.0.0.beta3)
       actionpack (= 5.0.0.beta3)
@@ -137,6 +124,13 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
+    capybara (2.7.0)
+      addressable
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     capybara-screenshot (1.0.12)
       capybara (>= 1.0, < 3)
       launchy
@@ -559,7 +553,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
-  capybara!
+  capybara
   capybara-screenshot
   coffee-rails
   cucumber
