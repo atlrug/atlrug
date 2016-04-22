@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 3b38fb3d574a4af148682e92ba90bbdb377c6163
+  revision: aa804b152fcafc9e50d122622e3eec4e75486848
   specs:
     actioncable (5.0.0.beta3)
       actionpack (= 5.0.0.beta3)
@@ -166,7 +166,7 @@ GEM
       dm-validations (~> 1.2.0)
     data_objects (0.10.17)
       addressable (~> 2.1)
-    database_cleaner (1.5.2)
+    database_cleaner (1.5.3)
     dawnscanner (1.6.2)
       cvss
       data_mapper
