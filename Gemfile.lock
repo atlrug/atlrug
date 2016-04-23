@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: aa804b152fcafc9e50d122622e3eec4e75486848
+  revision: 4c76ce640449cc2568e31b5ed533caec8af5e39f
   specs:
     actioncable (5.0.0.beta3)
       actionpack (= 5.0.0.beta3)
@@ -325,7 +325,7 @@ GEM
     letter_opener (1.4.1)
       launchy (~> 2.2)
     libv8 (3.16.14.13)
-    listen (3.0.6)
+    listen (3.1.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     logger-colors (1.0.0)
