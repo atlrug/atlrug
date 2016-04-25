@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 8f22006c6923ef4083936af95be1f412edeee0ee
+  revision: 643cac08a325243cab21d870c68a9c4088c58380
   specs:
     actioncable (5.0.0.beta3)
       actionpack (= 5.0.0.beta3)
@@ -339,7 +339,7 @@ GEM
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     multi_test (0.1.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
