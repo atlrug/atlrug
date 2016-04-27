@@ -4,7 +4,7 @@ gem 'rails',       github: 'rails/rails' #WAS: '5.0.0.beta3' # RAILS5
 gem 'turbolinks',  github: 'rails/turbolinks' #WAS: '5.0.0.beta2' # RAILS5
 gem "omniauth",    github: 'twalpole/omniauth', branch: 'rack_master' # RAILS5
 
-ruby '2.3.0'
+ruby '2.3.1'
 
 gem 'omniauth-github'
 gem 'octokit'
