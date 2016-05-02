@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 6bd3e867f97ce0ef7c0900442cf1df533a7fb758
+  revision: e0a9baa044022eea52b8c4b36689396dac165944
   specs:
     rails (5.0.0.beta4)
       actioncable (= 5.0.0.beta4)
@@ -128,7 +128,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     colorize (0.7.7)
-    concurrent-ruby (1.0.1)
+    concurrent-ruby (1.0.2)
     cucumber (2.3.3)
       builder (>= 2.1.2)
       cucumber-core (~> 1.4.0)
