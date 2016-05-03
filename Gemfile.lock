@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 5fd17b92577a82ca3808bac199fa051c5ee9f7a9
+  revision: 83a8682c1d10306a5e73cfb9c3f28172ed48427a
   specs:
     rails (5.0.0.beta4)
       actioncable (= 5.0.0.beta4)
