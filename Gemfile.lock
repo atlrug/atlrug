@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: b8de57411227b79f17181deb88f5a32175777083
+  revision: ea3b88b1eff1d242da5e03ca3ae82f737c0cedbe
   specs:
     rails (5.0.0.beta4)
       actioncable (= 5.0.0.beta4)
@@ -442,7 +442,7 @@ GEM
     rspec-support (3.5.0.beta2)
     ruby_dep (1.2.0)
     ruby_gntp (0.3.4)
-    ruby_parser (3.8.1)
+    ruby_parser (3.8.2)
       sexp_processor (~> 4.1)
     rubycritic (2.9.0)
       colorize
