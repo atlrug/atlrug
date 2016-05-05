@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 3bed679670dd8348ffc348509a653677c6ecb7f3
+  revision: b8de57411227b79f17181deb88f5a32175777083
   specs:
     rails (5.0.0.beta4)
       actioncable (= 5.0.0.beta4)
@@ -223,7 +223,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    email_spec (2.0.0)
+    email_spec (2.1.0)
       htmlentities (~> 4.3.3)
       launchy (~> 2.1)
       mail (~> 2.6.3)
