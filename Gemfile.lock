@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: ea3b88b1eff1d242da5e03ca3ae82f737c0cedbe
+  revision: 254f57ca3668398a5fcfd4f63be5d91c4c3b1cd4
   specs:
     rails (5.0.0.beta4)
       actioncable (= 5.0.0.beta4)
@@ -440,7 +440,7 @@ GEM
       rspec-mocks (= 3.5.0.beta2)
       rspec-support (= 3.5.0.beta2)
     rspec-support (3.5.0.beta2)
-    ruby_dep (1.2.0)
+    ruby_dep (1.3.0)
     ruby_gntp (0.3.4)
     ruby_parser (3.8.2)
       sexp_processor (~> 4.1)
