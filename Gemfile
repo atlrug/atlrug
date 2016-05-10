@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails',       github: 'rails/rails'      # RAILS5
+gem 'rails',       '5.0.0.rc1' # RAILS5
 gem 'turbolinks',  github: 'rails/turbolinks' # RAILS5
 gem "omniauth",    github: 'twalpole/omniauth', branch: 'rack_master' # RAILS5
 
