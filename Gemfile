@@ -60,7 +60,7 @@ group :development, :test do
   gem 'sqlite3'
 
   # TESTING/ANALYSIS
-  gem 'rspec-rails', '3.5.0.beta2' #RAILS5
+  gem 'rspec-rails', '3.5.0.beta4' #RAILS5
   gem 'rails-footnotes'
   gem 'capybara'
   gem 'capybara-screenshot'
