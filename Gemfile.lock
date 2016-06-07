@@ -59,7 +59,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.0.0)
-    ast (2.2.0)
+    ast (2.3.0)
     autoprefixer-rails (6.3.6.2)
       execjs
     autotest-fsevent (0.2.11)
