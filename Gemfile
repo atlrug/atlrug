@@ -24,7 +24,7 @@ gem 'simple_form'
 gem 'jbuilder'
 
 # APP-specific gems
-gem 'rest-client', '2.0.0.rc2' # LOCKED DOWN
+gem 'rest-client', '2.0.0.rc4' # LOCKED DOWN
 gem 'hassle3'
 gem 'kgio'
 gem 'tzinfo'
