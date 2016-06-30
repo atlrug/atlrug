@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/rails/turbolinks.git
-  revision: 37a7c296232d20a61bd1946f600da7f2009189db
-  specs:
-    turbolinks (3.0.0)
-      coffee-rails
-
-GIT
   remote: git://github.com/twalpole/omniauth.git
   revision: d91dbcc4793ee83a4cc7ef649e9d526852428647
   branch: rack_master
@@ -453,8 +446,8 @@ GEM
       ruby_parser (~> 3.8)
       virtus (~> 1.0)
     sass (3.4.22)
-    sass-rails (5.0.4)
-      railties (>= 4.0.0, < 5.0)
+    sass-rails (5.0.5)
+      railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
@@ -503,6 +496,9 @@ GEM
       launchy (~> 2.1)
       pusher-client (~> 0.4)
       typhoeus (~> 0.6, >= 0.6.8)
+    turbolinks (5.0.0)
+      turbolinks-source (~> 5)
+    turbolinks-source (5.0.0)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
@@ -591,7 +587,7 @@ DEPENDENCIES
   sqlite3
   therubyracer
   travis
-  turbolinks!
+  turbolinks
   tzinfo
   uglifier
   unicorn

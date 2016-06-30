@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails',       '5.0.0.rc2' # RAILS5
-gem 'turbolinks',  github: 'rails/turbolinks' # RAILS5
 gem "omniauth",    github: 'twalpole/omniauth', branch: 'rack_master' # RAILS5
 
 ruby '2.3.1'
 
+gem 'turbolinks'
 gem 'omniauth-github'
 gem 'octokit'
 gem 'coffee-rails'
