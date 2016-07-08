@@ -34,4 +34,6 @@ Atlrug::Application.configure do
     port: 56_789,
     host: 'localhost', ignore: [%r{dont/modify\.html$}]
   )
+
+  config.assets.quiet = true
 end
