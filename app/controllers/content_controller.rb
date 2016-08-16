@@ -13,6 +13,10 @@ class ContentController < ApplicationController
     load_videos
   end
 
+  def community
+    render template: 'content/_community'
+  end
+
   def learn
     render template: 'content/_learn'
   end

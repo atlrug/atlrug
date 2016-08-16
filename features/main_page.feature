@@ -8,6 +8,7 @@ Feature: Visit Web Site
     When I go to the home page
     Then I should see "Go to Meetings"
     Then I should see "Find Presentations"
+    Then I should see "Community"
     Then I should see "Learn Ruby"
     Then I should see the image "Atlanta Ruby Logo"
     Then I should see "Find a Job"
@@ -32,6 +33,14 @@ Feature: Visit Web Site
     Then I should see "Monthly Meetup"
     Then I should see "Future Meetings"
     Then I should see "See more on Meetup.com/atlantaruby"
+
+  Scenario: Check "Community" Link
+    Given I go to the home page
+    When I follow "Community"
+    Then I should see "Community and Giving Back"
+    Then I should see "Meetings"
+    Then I should see "Software"
+    Then I should see "Programs"
 
   Scenario: Check "Learn Ruby" Link
     Given I go to the home page

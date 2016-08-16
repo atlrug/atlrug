@@ -5,6 +5,7 @@ Atlrug::Application.routes.draw do
   get '/videos' => 'content#videos'
   get '/hire' => 'content#hire'
   get '/learn' => 'content#learn'
+  get '/community' => 'content#community'
   get '/job' => 'content#job'
 
   resources :talks, only: [:new, :create] do
