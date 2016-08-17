@@ -437,7 +437,7 @@ GEM
     ruby_gntp (0.3.4)
     ruby_parser (3.8.2)
       sexp_processor (~> 4.1)
-    rubycritic (2.9.2)
+    rubycritic (2.9.3)
       colorize
       flay (= 2.8.0)
       flog (= 4.4.0)
