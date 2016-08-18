@@ -40,6 +40,7 @@ Feature: Visit Web Site
     Then I should see "Community and Giving Back"
     Then I should see "Meetings"
     Then I should see "Software"
+    Then I should see "Gem Monitoring"
     Then I should see "Programs"
 
   Scenario: Check "Learn Ruby" Link
