@@ -18,7 +18,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'overcommit'
-gem 'simple_form', '3.2.1' # LOCKED DOWN
+gem 'simple_form'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
