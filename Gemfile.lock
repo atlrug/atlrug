@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/twalpole/omniauth.git
+  remote: https://github.com/twalpole/omniauth
   revision: d91dbcc4793ee83a4cc7ef649e9d526852428647
   branch: rack_master
   specs:
