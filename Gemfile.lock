@@ -481,7 +481,7 @@ GEM
     stringex (1.5.1)
     sys-uname (1.0.2)
       ffi (>= 1.0.0)
-    terminal-table (1.7.1)
+    terminal-table (1.7.2)
       unicode-display_width (~> 1.1.1)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
