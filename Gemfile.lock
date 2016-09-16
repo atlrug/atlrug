@@ -290,7 +290,7 @@ GEM
     json (1.8.3)
     json_pure (1.8.3)
     justify (1.0.2)
-    jwt (1.5.4)
+    jwt (1.5.5)
     kgio (2.10.0)
     launchy (2.4.3)
       addressable (~> 2.3)
