@@ -53,9 +53,9 @@ GEM
     addressable (2.4.0)
     arel (7.1.2)
     ast (2.3.0)
-    autoprefixer-rails (6.4.1.1)
+    autoprefixer-rails (6.5.0.1)
       execjs
-    autotest-fsevent (0.2.11)
+    autotest-fsevent (0.2.12)
       sys-uname
     autotest-growl (0.2.16)
     autotest-rails (4.2.1)
@@ -79,7 +79,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
-    capybara (2.9.1)
+    capybara (2.9.2)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -115,9 +115,9 @@ GEM
       multi_test (>= 0.1.2)
     cucumber-core (1.5.0)
       gherkin (~> 4.0)
-    cucumber-rails (1.4.4)
+    cucumber-rails (1.4.5)
       capybara (>= 1.1.2, < 3)
-      cucumber (>= 1.3.8, < 3)
+      cucumber (>= 1.3.8, < 4)
       mime-types (>= 1.16, < 4)
       nokogiri (~> 1.5)
       railties (>= 3, < 5.1)
@@ -137,7 +137,7 @@ GEM
     data_objects (0.10.17)
       addressable (~> 2.1)
     database_cleaner (1.5.3)
-    dawnscanner (1.6.3)
+    dawnscanner (1.6.4)
       cvss
       data_mapper
       dm-sqlite-adapter
