@@ -103,7 +103,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    colorize (0.8.1)
     concurrent-ruby (1.0.2)
     connection_pool (2.2.0)
     cucumber (2.4.0)
@@ -437,12 +436,12 @@ GEM
     ruby_gntp (0.3.4)
     ruby_parser (3.8.3)
       sexp_processor (~> 4.1)
-    rubycritic (2.9.4)
-      colorize
+    rubycritic (3.0.0)
       flay (~> 2.8)
       flog (~> 4.4)
       launchy (= 2.4.3)
       parser (= 2.3.1.2)
+      rainbow
       reek (~> 4.4)
       ruby_parser (~> 3.8)
       virtus (~> 1.0)
@@ -479,7 +478,7 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.3.12)
     stringex (1.5.1)
-    sys-uname (1.0.2)
+    sys-uname (1.0.3)
       ffi (>= 1.0.0)
     terminal-table (1.7.3)
       unicode-display_width (~> 1.1.1)
@@ -511,7 +510,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.2)
     unicode-display_width (1.1.1)
-    unicorn (5.1.0)
+    unicorn (5.2.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     uuidtools (2.1.5)
