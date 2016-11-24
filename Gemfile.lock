@@ -136,7 +136,7 @@ GEM
     data_objects (0.10.17)
       addressable (~> 2.1)
     database_cleaner (1.5.3)
-    dawnscanner (1.6.6)
+    dawnscanner (1.6.7)
       cvss
       data_mapper
       dm-sqlite-adapter
@@ -344,7 +344,7 @@ GEM
     overcommit (0.37.0)
       childprocess (~> 0.5.8)
       iniparse (~> 1.4)
-    parser (2.3.1.2)
+    parser (2.3.1.4)
       ast (~> 2.2)
     path_expander (1.0.0)
     pg (0.19.0)
@@ -434,11 +434,11 @@ GEM
     ruby_gntp (0.3.4)
     ruby_parser (3.8.3)
       sexp_processor (~> 4.1)
-    rubycritic (3.0.0)
+    rubycritic (3.1.0)
       flay (~> 2.8)
       flog (~> 4.4)
       launchy (= 2.4.3)
-      parser (= 2.3.1.2)
+      parser (= 2.3.1.4)
       rainbow
       reek (~> 4.4)
       ruby_parser (~> 3.8)
