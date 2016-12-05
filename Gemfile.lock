@@ -53,7 +53,7 @@ GEM
     addressable (2.4.0)
     arel (7.1.4)
     ast (2.3.0)
-    autoprefixer-rails (6.5.3)
+    autoprefixer-rails (6.5.3.1)
       execjs
     autotest-fsevent (0.2.12)
       sys-uname
@@ -404,7 +404,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    reek (4.5.2)
+    reek (4.5.3)
       codeclimate-engine-rb (~> 0.4.0)
       parser (~> 2.3.1, >= 2.3.1.2)
       rainbow (~> 2.0)
