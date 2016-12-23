@@ -53,7 +53,7 @@ GEM
     addressable (2.4.0)
     arel (7.1.4)
     ast (2.3.0)
-    autoprefixer-rails (6.5.4)
+    autoprefixer-rails (6.6.0)
       execjs
     autotest-fsevent (0.2.12)
       sys-uname
