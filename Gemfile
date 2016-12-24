@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails',    '5.0.0.rc2' # RAILS5
-gem "omniauth", git: 'https://github.com/twalpole/omniauth', branch: 'rack_master' # RAILS5
+gem 'rails', '5.0.1'
+gem 'omniauth'
 
 ruby '2.3.3'
 
@@ -35,7 +35,7 @@ gem 'dalli'
 gem 'yt'
 
 # For old-style action_caching
-gem 'actionpack-action_caching'
+gem 'actionpack-action_caching', git: 'https://github.com/rails/actionpack-action_caching'
 
 # Gems from  http://rubysource.com/boosting-your-rails-development-workflow
 group :development do
