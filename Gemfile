@@ -44,7 +44,6 @@ group :development do
   gem 'awesome_print'
   gem 'dawnscanner', require: false
   gem 'rubycritic', require: false
-  gem 'rainbow', '< 2.2.0' # TEMP - LOCKED DOWN
 
   # For Guard
   gem 'guard'
