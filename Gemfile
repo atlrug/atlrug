@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '5.0.1'
-gem 'omniauth'
+gem 'rainbow', '2.1.0' # WORKAROUND/TEMP - LOCKED DOWN
 
 ruby '2.3.3'
 
+gem 'omniauth'
 gem 'turbolinks'
 gem 'omniauth-github'
 gem 'octokit'
