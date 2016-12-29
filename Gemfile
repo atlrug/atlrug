@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '5.0.1'
-gem 'rainbow', git: 'https://github.com/sickill/rainbow' # WORKAROUND/TEMP - LOCKED DOWN
 
 ruby '2.3.3'
 
