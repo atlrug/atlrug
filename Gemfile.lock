@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/actionpack-action_caching
-  revision: a5f48da050cd06624835748c29ddefee8ba03010
+  revision: 9044141824650138bf27741e8f0ed95ccd9ef26d
   specs:
     actionpack-action_caching (1.1.1)
       actionpack (>= 4.0.0, < 6)
@@ -469,7 +469,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.3.12)
+    sqlite3 (1.3.13)
     stringex (1.5.1)
     sys-uname (1.0.3)
       ffi (>= 1.0.0)
