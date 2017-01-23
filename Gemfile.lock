@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/rails/actionpack-action_caching
-  revision: 9044141824650138bf27741e8f0ed95ccd9ef26d
+  revision: 796049647865e9a0ccdd65df292902a984bd4a94
   specs:
-    actionpack-action_caching (1.1.1)
+    actionpack-action_caching (1.2.0)
       actionpack (>= 4.0.0, < 6)
 
 GEM
@@ -592,4 +592,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.1
+   1.14.2
