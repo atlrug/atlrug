@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/actionpack-action_caching
-  revision: 796049647865e9a0ccdd65df292902a984bd4a94
+  revision: d73dd50dcaa2fbf01a947588fd02e8c37fbead2c
   specs:
     actionpack-action_caching (1.2.0)
       actionpack (>= 4.0.0, < 6)
@@ -340,7 +340,7 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    overcommit (0.37.0)
+    overcommit (0.38.0)
       childprocess (~> 0.5.8)
       iniparse (~> 1.4)
     parser (2.3.3.1)
@@ -592,4 +592,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.2
+   1.14.3
