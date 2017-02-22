@@ -35,7 +35,7 @@ gem 'dalli'
 gem 'yt'
 
 # For old-style action_caching
-gem 'actionpack-action_caching', git: 'https://github.com/rails/actionpack-action_caching'
+gem 'actionpack-action_caching'
 
 # Gems from  http://rubysource.com/boosting-your-rails-development-workflow
 group :development do
