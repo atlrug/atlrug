@@ -80,7 +80,7 @@ GEM
     capybara-screenshot (1.0.14)
       capybara (>= 1.0, < 3)
       launchy
-    childprocess (0.5.9)
+    childprocess (0.6.3)
       ffi (~> 1.0, >= 1.0.11)
     codeclimate-engine-rb (0.4.0)
       virtus (~> 1.0)
@@ -335,8 +335,8 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    overcommit (0.38.0)
-      childprocess (~> 0.5.8)
+    overcommit (0.39.0)
+      childprocess (~> 0.6.1)
       iniparse (~> 1.4)
     parser (2.4.0.0)
       ast (~> 2.2)
@@ -516,7 +516,7 @@ GEM
     yt (0.30.0)
       activesupport
       yt-support (>= 0.1)
-    yt-support (0.1.1)
+    yt-support (0.1.2)
     zonebie (0.6.1)
 
 PLATFORMS
