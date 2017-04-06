@@ -180,7 +180,7 @@ GEM
     do_sqlite3 (0.10.17)
       data_objects (= 0.10.17)
     docile (1.1.5)
-    domain_name (0.5.20170223)
+    domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.2.0)
     dotenv-rails (2.2.0)
