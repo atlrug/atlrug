@@ -127,7 +127,7 @@ GEM
     data_objects (0.10.17)
       addressable (~> 2.1)
     database_cleaner (1.5.3)
-    dawnscanner (1.6.7)
+    dawnscanner (1.6.8)
       cvss
       data_mapper
       dm-sqlite-adapter
@@ -335,8 +335,8 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    overcommit (0.39.0)
-      childprocess (~> 0.6.1)
+    overcommit (0.39.1)
+      childprocess (~> 0.6.3)
       iniparse (~> 1.4)
     parser (2.4.0.0)
       ast (~> 2.2)
