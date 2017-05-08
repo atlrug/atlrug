@@ -350,7 +350,7 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    rack (2.0.1)
+    rack (2.0.2)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
