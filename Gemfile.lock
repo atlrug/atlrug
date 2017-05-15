@@ -44,7 +44,7 @@ GEM
     addressable (2.4.0)
     arel (7.1.4)
     ast (2.3.0)
-    autoprefixer-rails (7.0.1)
+    autoprefixer-rails (7.1.0)
       execjs
     autotest-fsevent (0.2.12)
       sys-uname
@@ -350,7 +350,7 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    rack (2.0.2)
+    rack (2.0.3)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
