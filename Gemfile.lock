@@ -267,7 +267,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
-    i18n (0.8.5)
+    i18n (0.8.6)
     ice_nine (0.11.2)
     iniparse (1.4.4)
     jbuilder (2.7.0)
