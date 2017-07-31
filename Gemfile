@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.5.rc2'
+gem 'rails', '5.0.5'
 
 ruby '2.4.1'
 
