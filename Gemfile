@@ -69,7 +69,7 @@ group :development, :test do
   gem 'autotest-fsevent'
   gem 'autotest-growl'
 
-  gem 'cucumber', '3.0.0.pre.2' # LOCKED DOWN
+  gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
 
