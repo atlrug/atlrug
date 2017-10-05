@@ -446,7 +446,7 @@ GEM
       reek (~> 4.4)
       ruby_parser (~> 3.8)
       virtus (~> 1.0)
-    sass (3.5.1)
+    sass (3.5.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -606,4 +606,4 @@ RUBY VERSION
    ruby 2.4.2p198
 
 BUNDLED WITH
-   1.16.0.pre.2
+   1.16.0.pre.3
