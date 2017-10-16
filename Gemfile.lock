@@ -47,7 +47,7 @@ GEM
     ast (2.3.0)
     autoprefixer-rails (7.1.5)
       execjs
-    autotest-fsevent (0.2.12)
+    autotest-fsevent (0.2.13)
       sys-uname
     autotest-growl (0.2.16)
     autotest-rails (4.2.1)
@@ -276,7 +276,8 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
-    i18n (0.8.6)
+    i18n (0.9.0)
+      concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     iniparse (1.4.4)
     jbuilder (2.7.0)
