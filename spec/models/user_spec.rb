@@ -13,8 +13,8 @@ describe User, type: :model do
 
   context 'validations' do
     it 'is invalid if it has a non-unique uid' do
-      user1 = FactoryGirl.create(:user, uid: uid)
-      user2 = FactoryGirl.build(:user, uid: uid)
+      user1 = FactoryBot.create(:user, uid: uid)
+      user2 = FactoryBot.build(:user, uid: uid)
       expect(user2).to be_invalid
     end
   end
@@ -37,7 +37,7 @@ describe User, type: :model do
 
   describe '#octokit' do
     it 'creates an octokit client with the users GitHub credentials' do
-      user = FactoryGirl.build(:user, github_login: login,
+      user = FactoryBot.build(:user, github_login: login,
                                       github_token: token)
       expect(Octokit::Client).to receive(:new).with(login: login,
                                                     oauth_token: token)
@@ -47,7 +47,7 @@ describe User, type: :model do
 
   describe '#atlrug_team_id' do
     it 'looks up the Owners team id' do
-      user = FactoryGirl.build(:user)
+      user = FactoryBot.build(:user)
       teams = [double(name: 'ATLRUGers'), double(name: 'Owners',
                                                  id: 1), double(name: 'Other')]
       octokit = double(org_teams: teams)
@@ -56,7 +56,7 @@ describe User, type: :model do
     end
 
     it "doesn't raise exception if user has no permission to ATLRUG org" do
-      user = FactoryGirl.build(:user)
+      user = FactoryBot.build(:user)
       octokit = double and allow(octokit).to receive(
         :org_teams).and_raise(Octokit::Forbidden)
       allow(user).to receive_messages(octokit: octokit)
@@ -66,7 +66,7 @@ describe User, type: :model do
   end
 
   describe '#atlrug_organizer?' do
-    let(:user) { FactoryGirl.build(:user, uid: uid) }
+    let(:user) { FactoryBot.build(:user, uid: uid) }
 
     it 'is true if the user is in the ATLRUG Owners team' do
       members = [double(id: uid + '1'), double(id: uid),

@@ -10,7 +10,7 @@ describe SessionsController, type: :controller do
                                 'nickname' => login },
       'credentials' => { 'token' => token } }
   end
-  let(:user) { FactoryGirl.create(:user) }
+  let(:user) { FactoryBot.create(:user) }
 
   describe '#create' do
     before { allow(user).to receive_messages(atlrug_organizer?: true) }
