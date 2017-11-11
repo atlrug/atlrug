@@ -96,7 +96,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.2)
-    cucumber (3.0.1)
+    cucumber (3.0.2)
       builder (>= 2.1.2)
       cucumber-core (~> 3.0.0)
       cucumber-expressions (~> 4.0.3)
