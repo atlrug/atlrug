@@ -264,7 +264,7 @@ GEM
     hassle3 (0.0.2)
       haml
       rack
-    highline (1.7.8)
+    highline (1.7.10)
     html2haml (2.1.0)
       erubis (~> 2.7.0)
       haml (~> 4.0)
