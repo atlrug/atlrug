@@ -82,7 +82,7 @@ GEM
       launchy
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
-    codeclimate-engine-rb (0.4.0)
+    codeclimate-engine-rb (0.4.1)
       virtus (~> 1.0)
     coderay (1.1.2)
     coercible (1.0.0)
