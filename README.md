@@ -10,9 +10,9 @@ This is a Ruby-on-Rails web application for the ATLRUG (Atlanta Ruby User Group)
 
 ## Setup
 
-On 12/14/2017, the requirements were: Ruby 2.4.3 and Rails 5.1.4.
+On 12/27/2017, the requirements were: Ruby 2.5.0 and Rails 5.1.4.
 
-Note: Install Ruby 2.4.3 via RVM checkout https://coderwall.com/p/tptocq.
+Note: Install Ruby 2.5.0 via RVM checkout https://coderwall.com/p/tptocq.
 
 1. To install gems, run:
     bundle install

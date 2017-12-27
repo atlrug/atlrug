@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.4.3
+- 2.5.0
 
 addons:
   apt:
@@ -9,7 +9,9 @@ addons:
     packages:
       - sqlite3
 before_script: bundle exec rake db:migrate RAILS_ENV=test
-before_install: gem update bundler
+before_install:
+  - gem update --system
+  - gem update bundler
 script:
   - bundle exec rake
 #  - bundle exec rspec
