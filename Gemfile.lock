@@ -44,7 +44,7 @@ GEM
     addressable (2.4.0)
     arel (8.0.0)
     ast (2.3.0)
-    autoprefixer-rails (7.2.3)
+    autoprefixer-rails (7.2.4)
       execjs
     autotest-fsevent (0.2.13)
       sys-uname
@@ -292,7 +292,7 @@ GEM
     kgio (2.11.1)
     launchy (2.4.3)
       addressable (~> 2.3)
-    letter_opener (1.4.1)
+    letter_opener (1.5.0)
       launchy (~> 2.2)
     libv8 (3.16.14.19)
     listen (3.1.5)
@@ -313,7 +313,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.10.3)
+    minitest (5.11.0)
     multi_json (1.12.2)
     multi_test (0.1.2)
     multi_xml (0.6.0)
